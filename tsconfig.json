@@ -6,6 +6,7 @@
 		"noEmit": true,
 		"allowJs": true,
 		"checkJs": true,
+		"baseUrl": ".",
 
 		/* Preact Config */
 		"jsx": "react-jsx",
@@ -13,8 +14,12 @@
 		"skipLibCheck": true,
 		"paths": {
 			"react": ["./node_modules/preact/compat/"],
-			"react-dom": ["./node_modules/preact/compat/"]
+			"react-dom": ["./node_modules/preact/compat/"],
+			"*" : ["src/*"]
 		}
 	},
-	"include": ["node_modules/vite/client.d.ts", "**/*"]
+	"include": [
+		"node_modules/vite/client.d.ts", "**/*",
+		"src"
+	]
 }
