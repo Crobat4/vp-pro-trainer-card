@@ -10,7 +10,7 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
-	"homepage": "https://github.com/Crobat4/vp-pro-trainer-card/#readme",
+	"homepage": "https://crobat4.github.io/vp-pro-trainer-card/",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.4.2",
 		"@fortawesome/free-brands-svg-icons": "^6.4.2",
