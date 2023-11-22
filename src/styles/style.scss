@@ -161,14 +161,14 @@ img {
 	border: 1px solid #d9dadb !important;
 }
 .pokemon-btn {
-	background-image: url('src/assets/icons/pokeball-icon.png');
+	background-image: url('/assets/icons/pokeball-icon.png');
 }
 .badge-img-container {
 	position: relative;
 }
 .badge-file-button-bg {
 	//content: "";
-    //background-image: url('src/assets/icons/upload.svg');
+    //background-image: url('/assets/icons/upload.svg');
     width: 100%;
     height: 100%;
     position: absolute;
@@ -242,21 +242,21 @@ img {
 	}
 }
 .empty-list-bg.less-than-two-characters {
-	background-image: url('src/assets/icons/pikachu-normal.png');
+	background-image: url('/assets/icons/pikachu-normal.png');
 
 	::after {
 		content: "Type two more characters";
 	}
 }
 .empty-list-bg.one-left-character {
-	background-image: url('src/assets/icons/pikachu-happy.png');
+	background-image: url('/assets/icons/pikachu-happy.png');
 
 	::after {
 		content: "Type one more character";
 	}
 }
 .empty-list-bg.no-results {
-	background-image: url('src/assets/icons/pikachu-sleeping.png');
+	background-image: url('/assets/icons/pikachu-sleeping.png');
 
 	::after {
 		content: "No Pokémon found";

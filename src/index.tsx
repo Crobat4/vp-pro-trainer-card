@@ -4,7 +4,7 @@ import 'styles/style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { fetchMoveList, fetchPokemonList } from './modules/FetchLists';
-import Sparkle from 'assets/icons/sparkle-sharp.svg';
+import Sparkle from '/assets/icons/sparkle-sharp.svg';
 import Select from 'react-select';
 import { TypeColors, typeSelect } from 'modules/Constants';
 import PokemonType from 'modules/emums/PokemonType';
@@ -128,7 +128,7 @@ export class App extends Component {
                                 <div className="align-center fw-bold badge-title" style={{ color: TypeColors[TemplateData.type.value].darker }}>Badge</div>
                                 <button id="badge-file-button" className="btn btn-light d-block mx-auto p-0 badge-img-container" style={{ width: signatureSize, height: signatureSize }} onClick={this.openDialog}>
                                     <img className={`badge-image ${TemplateData.badgeURL.value ? 'w-100' : ''}`} style={{}} src={TemplateData.badgeURL.value || ''} />
-                                    <div className={'badge-file-button-bg'} style={{ backgroundImage: !TemplateData.badgeURL.value ? 'url("src/assets/icons/upload.svg")' : '' }}></div>
+                                    <div className={'badge-file-button-bg'} style={{ backgroundImage: !TemplateData.badgeURL.value ? 'url("assets/icons/upload.svg")' : '' }}></div>
                                 </button>
                                 <input type="file" onChange={this.handleChange} accept={'image/*'} className="form-control" hidden id="badge-file" />
                                 {/* Template button */}

@@ -1,6 +1,6 @@
 import React from 'preact/compat';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Sparkle from 'assets/icons/sparkle-sharp.svg';
+import Sparkle from '/assets/icons/sparkle-sharp.svg';
 import TemplateData from 'components/trainer-card-preview/TemplateData';
 import { TypeColors } from 'modules/Constants';
 import PokemonType from 'modules/emums/PokemonType';
@@ -61,7 +61,7 @@ function Template () {
                         <div className="">
                             <div className="align-center fw-bold" style={{ margin: '8px 0', fontSize: 28, color: TypeColors[TemplateData.type.value].darker }}>Badge</div>
                             <div style="width: 116px; height: 116px; margin: 8px auto; background: white;">
-                                <img className="badge-image-template" style={{}} src={TemplateData.badgeURL.value || 'src/assets/icons/amelia.png'} />
+                                <img className="badge-image-template" style={{}} src={TemplateData.badgeURL.value || 'assets/icons/amelia.png'} />
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'preact/compat';
 import PartyPokemon from 'modules/pokemon/PartyPokemon';
-import Sparkle from 'assets/icons/sparkle-sharp.svg';
-import Crown from 'assets/icons/crown.svg';
+import Sparkle from '/assets/icons/sparkle-sharp.svg';
+import Crown from '/assets/icons/crown.svg';
 import PokemonType from 'modules/emums/PokemonType';
 import { signal } from '@preact/signals';
 import { TypeColors } from 'modules/Constants';

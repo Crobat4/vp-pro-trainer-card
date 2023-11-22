@@ -41,7 +41,7 @@ export function typeSelect() {
 
 export function getPokemonImage(id = 0, shiny = false, female = false) {
     const femaleToggle = female && States.pokemonList.value.find((p) => p.id === id).genderDifferences;
-    return `src/assets/${shiny ? 'shiny' : ''}pokemon/${femaleToggle ? 'female/' : ''}${id.toString().padStart(4, '0')}.png`;
+    return `assets/${shiny ? 'shiny' : ''}pokemon/${femaleToggle ? 'female/' : ''}${id.toString().padStart(4, '0')}.png`;
 }
 
 export function sanitizeString(str) { // Remove all non-alphanumeric characters (except blank spaces)
