@@ -12,7 +12,7 @@ import TemplateModal from 'components/trainer-card-preview/TemplateModal';
 import GeneratePokemonSlot from 'modules/GenerateSlot';
 import States from 'modules/States';
 import TemplateData from 'components/trainer-card-preview/TemplateData';
-import PokemonImageList from 'components/pokemon-search/PokemonSearchModal';
+import PokemonSearchModal from 'src/components/pokemon-search/PokemonSearchModal';
 import Loader from 'components/Loader';
 
 
@@ -180,8 +180,8 @@ export class App extends Component {
                         </div>
                     </div>
                 </div>
-
-                {PokemonImageList()}
+                {/* Modals calls */}
+                <PokemonSearchModal />
             </>
         );
     }

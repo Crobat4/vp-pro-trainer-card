@@ -39,7 +39,7 @@ function filterBySearch(event) {
 }
 
 // Search
-function Search() {
+function SearchBar() {
     //const [filteredList, setFilteredList] = useState(null);
 
     const toggleShiny = e => {
@@ -81,4 +81,4 @@ function Search() {
     );
 }
 
-export default Search;
+export default SearchBar;
