@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 import axios from 'axios';
 import { bannedMoves, sanitizeString } from 'modules/Constants';
+import PokemonData from './pokemon/PokemonData';
 
 export function fetchPokemonList() {
     const [pokemondata, setPokemondata] = useState([]);
@@ -13,13 +14,16 @@ export function fetchPokemonList() {
                 .then((r) => {
                     return axios.get(`https://pokeapi.co/api/v2/pokemon/${i + 1}`)
                         .then((res) => {
-                            return {
-                                id: r.data.id,
-                                name: r.data.name,
-                                genderDifferences: r.data.has_gender_differences,
-                                prettyName: r.data.names.find((ns) => ns.language.name == 'en').name,
-                                types: { type1: res.data.types[0]?.type.name, type2: res.data.types[1]?.type.name },
-                            };
+                            return new PokemonData(
+                                r.data.id,
+                                r.data.name,
+                                r.data.has_gender_differences,
+                                r.data.names.find((ns) => ns.language.name == 'en').name,
+                                {
+                                    primary: res.data.types[0]?.type.name,
+                                    secondary: res.data.types[1]?.type.name,
+                                }
+                            );
                         });
                 })
         )).then(setPokemondata);
