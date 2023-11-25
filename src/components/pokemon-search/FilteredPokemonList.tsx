@@ -33,7 +33,9 @@ function FilteredPokemonList({ itemList }: Props) {
                         {pokemon.prettyName}
                     </Tooltip>
                 )}>
-                    <button className="pokemon-btn btn btn-light d-block m-auto my-3" data-id={pokemon.id} onClick={() => handlePokemonClick(pokemon.id)}>
+                    <button className="pokemon-btn btn btn-light d-block m-auto my-3"
+                        data-id={pokemon.id}
+                        onClick={() => handlePokemonClick(pokemon.id)}>
                         <LazyLoadImage
                             className="gallery-img"
                             effect={'opacity'}
