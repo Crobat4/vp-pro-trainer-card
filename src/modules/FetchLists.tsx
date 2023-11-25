@@ -7,7 +7,7 @@ export function fetchPokemonList() {
     const [pokemondata, setPokemondata] = useState([]);
     const lastPokemonID = 1017; // Ogerpon
     useEffect(() => {
-        console.log('ccc');
+        console.log('Getting all Pokemon data...');
         Promise.all(Array.from({ length: lastPokemonID }, (_, i) =>
             axios.get(`https://pokeapi.co/api/v2/pokemon-species/${i + 1}`)
                 //.then(res => res.json())
@@ -29,7 +29,7 @@ export function fetchPokemonList() {
         )).then(setPokemondata);
     },[]);
     //console.log(JSON.stringify(pokemondata))
-    //console.log(pokemondata)
+    console.log(pokemondata);
     return pokemondata;
 }
 
@@ -37,7 +37,7 @@ export function fetchMoveList() {
     const [movedata, setMovedata] = useState([]);
     const lastMoveID = 904;
     useEffect(() => {
-        console.log('ddd');
+        console.log('Getting all move data...');
         Promise.all(Array.from({ length: lastMoveID }, (_, i) =>
             axios.get(`https://pokeapi.co/api/v2/move/${i + 1}`)
                 //.then(res => res.json())
@@ -55,6 +55,7 @@ export function fetchMoveList() {
         )).then(setMovedata);
     },[]);
     //console.log(JSON.stringify(pokemondata))
-    //console.log(movedata)
+    // Filter: Remove all undefined elements (Banned moves)
+    console.log(movedata?.filter((m) => m));
     return movedata;
 }

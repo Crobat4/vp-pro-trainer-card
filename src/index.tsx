@@ -7,6 +7,11 @@ import { Home } from 'components/home';
 import Loader from 'components/Loader';
 
 function App() {
+    // Use these to get the data for database files (one at time)
+    // Then copy the console.log result into the database files
+    //fetchPokemonList();
+    //fetchMoveList();
+
     return (
         <>
             <Loader />

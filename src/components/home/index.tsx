@@ -8,7 +8,9 @@ import TemplateModal from 'components/trainer-card-preview/TemplateModal';
 import GeneratePokemonSlot from 'modules/GenerateSlot';
 import States from 'modules/States';
 import TemplateData from 'components/trainer-card-preview/TemplateData';
-import PokemonSearchModal from 'src/components/pokemon-search/PokemonSearchModal';
+import PokemonSearchModal from 'components/pokemon-search/PokemonSearchModal';
+import { pokemonList } from 'modules/databases/PokemonList';
+import { moveList } from 'modules/databases/MoveList';
 
 function openDialog() {
     document.getElementById('badge-file').click();
@@ -18,20 +20,9 @@ const handleChange = e => {
     TemplateData.badgeURL.value = URL.createObjectURL(e.target.files[0]);
 };
 
-
-
 function initialize() {
-    // Fill the Pokemon and Moves arrays
-    States.pokemonList.value = fetchPokemonList();
-    let moveArray = [];
-    if (States.pokemonList.value.length) { // Need Pokemon List to finish, otherwise, it will try to build both lists at the same time
-        if (!States.moveList.value.length) {
-            moveArray = fetchMoveList();
-        }
-        if (moveArray?.length) {
-            States.moveList.value = moveArray?.filter((m) => m); // Remove all undefined elements
-        }
-    }
+    States.pokemonList.value = pokemonList;
+    States.moveList.value = moveList;
     // Initialize slots count
     States.count = 0;
 }
