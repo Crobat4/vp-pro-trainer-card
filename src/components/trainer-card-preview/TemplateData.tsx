@@ -33,15 +33,11 @@ export default class TemplateData {
                     Array.from({length: pokemonSlots}, () => {
                         let count;
                         if (isTemplate) {
-                            if (States.countTemplate < 40) {
-                                States.countTemplate++;
-                                count = States.countTemplate;
-                            }
+                            States.countTemplate++;
+                            count = States.countTemplate;
                         } else {
-                            if (States.count < 40) {
-                                States.count++;
-                                count = States.count;
-                            }
+                            States.count++;
+                            count = States.count;
                         }
                         return <GeneratePokemonSlot key={count} slotID={count} baseSize={baseSize} isTemplate={isTemplate} />;
                     })

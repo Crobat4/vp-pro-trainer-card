@@ -30,7 +30,7 @@ export function camelCaseToString(text) {
     return text.replace(/[\s_-]?([A-Z])/g, ' $1').replace(/\b\w/g, (w) => (w.replace(/\w/, (c) => c.toUpperCase()))).trim();
 }
 
-export function typeSelect() {
+export function generateTypeSelect() {
     const types = [];
     Object.entries(enumStrings(PokemonType)).forEach(([keys, value]) => {
         types.push({ value: PokemonType[value], label: value });

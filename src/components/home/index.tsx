@@ -2,45 +2,22 @@ import React, { useState } from 'preact/compat';
 import { fetchMoveList, fetchPokemonList } from 'modules/FetchLists';
 import Sparkle from '/assets/icons/sparkle-sharp.svg';
 import Select from 'react-select';
-import { TypeColors, typeSelect } from 'modules/Constants';
+import { TypeColors } from 'modules/Constants';
 import PokemonType from 'modules/emums/PokemonType';
-import TemplateModal from 'components/trainer-card-preview/TemplateModal';
-import GeneratePokemonSlot from 'modules/GenerateSlot';
 import States from 'modules/States';
 import TemplateData from 'components/trainer-card-preview/TemplateData';
 import PokemonSearchModal from 'components/pokemon-search/PokemonSearchModal';
 import { pokemonList } from 'modules/databases/PokemonList';
 import { moveList } from 'modules/databases/MoveList';
-
-function openDialog() {
-    document.getElementById('badge-file').click();
-}
-
-const handleChange = e => {
-    TemplateData.badgeURL.value = URL.createObjectURL(e.target.files[0]);
-};
+import GeneralInfo from 'components/home/general-info';
 
 function initialize() {
     States.pokemonList.value = pokemonList;
     States.moveList.value = moveList;
-    // Initialize slots count
-    States.count = 0;
 }
 
 export function Home() {
-    const [state, setState] = useState({ value: '', checked: false, file: null, showOptions: false, noResultsMessage: 'Type 2 more characters' });
-
-    function inputEntered(inputText) {
-        const inputMinCharacters = 2;
-        if (inputText.length >= inputMinCharacters) {
-            setState({ ...state, showOptions: true, noResultsMessage: (inputMinCharacters - inputText.length) <= 0 ? 'No results' : '' });
-        } else {
-            setState({ ...state, showOptions: false, noResultsMessage: (inputMinCharacters - inputText.length) === 1 ? 'Type 1 more character' : `Type ${(inputMinCharacters - inputText.length)} more characters` });
-        }
-    }
-
     initialize();
-    const signatureSize = 180;
     const gymLeaderTitleSparkle = <div className="gym-leader-title-sparkle">{new Array(4).fill(<img className="white-icon" src={Sparkle} />)}</div>;
 
     return (
@@ -61,66 +38,7 @@ export function Home() {
                     </div>
                 </div>
                 <div className="col-4 d-flex align-items-center">
-                    <div className="row">
-                        <div className="col-6">
-                            {/* Type select */}
-                            <Select
-                                className="basic-single"
-                                classNamePrefix="select"
-                                defaultValue={typeSelect()[0]}
-                                name="color"
-                                isSearchable={false}
-                                onChange={(type) => {
-                                    TemplateData.type.value = type.value;
-                                }}
-                                options={typeSelect()}
-                            />
-                        </div>
-                        <div className="col-6">
-                            {/* Theme title */}
-                            <div className="input-group">
-                                <span className="input-group-text" id="basic-addon3">Theme</span>
-                                <input type="text" value={TemplateData.theme.value} className="form-control" id="pkmn-theme" maxLength={30} placeholder="" onChange={(e) => {
-                                    TemplateData.theme.value = (e.target as HTMLTextAreaElement).value;
-                                } } />
-                            </div>
-                        </div>
-                        <div className="col-6 signature-img-container">
-                            {/* Signature */}
-                            <div className="align-center fw-bold signature-title" style={{ color: TypeColors[TemplateData.type.value].darker }}>Signature PKMN</div>
-                            <GeneratePokemonSlot
-                                slotID={States.count}
-                                baseSize={signatureSize}
-                            />
-                            {/* Move list */}
-                            <Select
-                                className="basic-single"
-                                classNamePrefix="select"
-                                defaultValue={{ value: null, label: 'Search move...' }}
-                                name="color"
-                                isDisabled={!States.moveList.value.length}
-                                noOptionsMessage={() => state.noResultsMessage}
-                                isSearchable={true}
-                                styles={{control: (base) => ({...base, width: signatureSize, margin: 'auto'}), menuList: (base) => ({...base, maxHeight: 200})}}
-                                onInputChange={(e) => inputEntered(e)}
-                                onChange={(move) => {
-                                    TemplateData.move.value = move.label;
-                                }}
-                                options={state.showOptions ? States.moveList.value : []}
-                            />
-                        </div>
-                        <div className="col-6">
-                            {/* Badge */}
-                            <div className="align-center fw-bold badge-title" style={{ color: TypeColors[TemplateData.type.value].darker }}>Badge</div>
-                            <button id="badge-file-button" className="btn btn-light d-block mx-auto p-0 badge-img-container" style={{ width: signatureSize, height: signatureSize }} onClick={openDialog}>
-                                <img className={`badge-image ${TemplateData.badgeURL.value ? 'w-100' : ''}`} style={{}} src={TemplateData.badgeURL.value || ''} />
-                                <div className={'badge-file-button-bg'} style={{ backgroundImage: !TemplateData.badgeURL.value ? 'url("assets/icons/upload.svg")' : '' }}></div>
-                            </button>
-                            <input type="file" onChange={handleChange} accept={'image/*'} className="form-control" hidden id="badge-file" />
-                            {/* Template button */}
-                            <TemplateModal />
-                        </div>
-                    </div>
+                    <GeneralInfo />
                 </div>
                 <div className="col-8">
                     <div className="row">
