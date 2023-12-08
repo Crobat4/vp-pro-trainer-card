@@ -1,7 +1,7 @@
 import React from 'preact/compat';
 import Select from 'react-select';
-import TemplateData from 'components/trainer-card-preview/TemplateData';
-import { generateTypeSelect } from 'modules/Constants';
+import Data from 'modules/Data';
+import { generateTypeSelect } from 'modules/Utils';
 
 function TypeSelect() {
     return (
@@ -12,7 +12,7 @@ function TypeSelect() {
             name="color"
             isSearchable={false}
             onChange={(type) => {
-                TemplateData.type.value = type.value;
+                Data.type.value = type.value;
             }}
             options={generateTypeSelect()}
         />

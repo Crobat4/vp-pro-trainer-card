@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'preact/hooks';
 import axios from 'axios';
-import { bannedMoves, sanitizeString } from 'modules/Constants';
-import PokemonData from './pokemon/PokemonData';
+import { BannedMoves } from 'modules/Constants';
+import { sanitizeString } from 'modules/Utils';
+import PokemonData from 'modules/pokemon/PokemonData';
 
 export function fetchPokemonList() {
     const [pokemondata, setPokemondata] = useState([]);
@@ -43,7 +44,7 @@ export function fetchMoveList() {
                 //.then(res => res.json())
                 .then((r) => {
                     const prettyName = r.data.names.find((ns) => ns.language.name == 'en').name;
-                    const isZMove = bannedMoves.find((zm) => sanitizeString(zm).toLowerCase() === sanitizeString(prettyName).toLowerCase());
+                    const isZMove = BannedMoves.find((zm) => sanitizeString(zm).toLowerCase() === sanitizeString(prettyName).toLowerCase());
                     if (!isZMove) {
                         return {
                             value: r.data.id,

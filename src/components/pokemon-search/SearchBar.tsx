@@ -2,9 +2,7 @@ import React from 'react';
 import States from 'modules/States';
 import PokemonSearchStates from 'modules/emums/PokemonSearchState';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-// Images
-import Star from '/assets/icons/shiny-icon.png';
-import Female from '/assets/icons/female.svg';
+import { Star, Female } from 'modules/Constants';
 
 function filterBySearch(event) {
     const searchMinCharacters = 2;

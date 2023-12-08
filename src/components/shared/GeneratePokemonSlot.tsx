@@ -1,24 +1,26 @@
 import React from 'preact/compat';
 import States from 'modules/States';
-import SlotImage from 'modules/SlotImage';
+import SlotImage from 'components/shared/SlotImage';
+import Slot from 'modules/pokemon/Slot';
 
-function handleShow(slotID) {
+function handleShow(slot) {
     //setShow(true);
     States.modal.pokemonListModal.value = true;
-    States.modal.pokemonSlotID = slotID;
+    States.modal.pokemonSlot = slot;
 }
 
 type Props = {
-    slotID: number,
+    //slotID: number,
     baseSize: number,
+    slot: Slot,
     isTemplate?: boolean,
 }
-export default function GeneratePokemonSlot({ slotID, baseSize, isTemplate = false }: Props) {
+export default function GeneratePokemonSlot({ baseSize, slot, isTemplate = false }: Props) {
     return <div
         className={`d-block p-0 signature-slot ${!isTemplate ? 'pokemon-btn btn btn-light mx-auto' : 'bg-white'}`}
-        {...(!isTemplate && { onClick: () => handleShow(slotID) })}
+        {...(!isTemplate && { onClick: () => handleShow(slot) })}
         style={{width: baseSize, height: baseSize, margin: isTemplate ? '0 1px' : ''}}
     >
-        <SlotImage slotID={slotID} baseSize={baseSize} isTemplate={isTemplate} />
+        <SlotImage baseSize={baseSize} slot={slot} isTemplate={isTemplate} />
     </div>;
 }

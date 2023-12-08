@@ -1,6 +1,6 @@
 import React, { useState } from 'preact/compat';
 import Select from 'react-select';
-import TemplateData from 'components/trainer-card-preview/TemplateData';
+import Data from 'modules/Data';
 import States from 'modules/States';
 
 type Props = {
@@ -29,7 +29,7 @@ function MoveSelect({ size }: Props) {
             styles={{control: (base) => ({...base, width: size, margin: 'auto'}), menuList: (base) => ({...base, maxHeight: 200})}}
             onInputChange={(e) => inputEntered(e)}
             onChange={(move) => {
-                TemplateData.move.value = move.label;
+                Data.move.value = move.label;
             }}
             options={moveSearchState.showOptions ? States.moveList.value : []}
         />

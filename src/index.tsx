@@ -8,7 +8,7 @@ import Loader from 'components/Loader';
 
 function App() {
     // Use these to get the data for database files (one at time)
-    // Then copy the console.log result into the database files
+    // Then copy the console.log result into the database files (src/modules/databases)
     //fetchPokemonList();
     //fetchMoveList();
 

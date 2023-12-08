@@ -1,5 +1,5 @@
 // Uncomment the function call in /src/index.tsx and copy the console.log result here
-export const pokemonList = [
+export const PokemonList = [
     {
         'id': 1,
         'name': 'bulbasaur',

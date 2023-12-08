@@ -1,5 +1,5 @@
 // Uncomment the function call in /src/index.tsx and copy the console.log result here
-export const moveList = [
+export const MoveList = [
     {
         'value': 1,
         'label': 'Pound',

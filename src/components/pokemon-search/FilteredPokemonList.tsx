@@ -1,14 +1,14 @@
 import React from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { getPokemonImage } from 'src/modules/Constants';
-import States from 'src/modules/States';
+import { getPokemonImage } from 'modules/Utils';
+import States from 'modules/States';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import TemplateData from '../trainer-card-preview/TemplateData';
-import PokemonData from 'src/modules/pokemon/PokemonData';
+import PokemonData from 'modules/pokemon/PokemonData';
 
 // Pokemon list buttons
 const handlePokemonClick = (pokemonID) => {
-    const pokemon = TemplateData.slotList[States.modal.pokemonSlotID];
+    //const pokemon = Data.slotList[States.modal.pokemonSlotID];
+    const pokemon = States.modal.pokemonSlot.pokemon;
     pokemon.id = pokemonID;
     pokemon.shiny = States.search.shiny.value;
     pokemon.female = States.search.female.value;
