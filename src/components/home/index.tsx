@@ -20,7 +20,7 @@ export function Home() {
 
     return (
         <>
-            <div id="main-page-pkmn" className="row" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
+            <div id="main-page-pkmn" className="row m-0" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
                 <div className="col-12">
                     <div className="row border-bottom mb-2">
                         <div className="col-6">

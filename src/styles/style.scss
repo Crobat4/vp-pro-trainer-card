@@ -21,9 +21,9 @@ body {
 }
 
 #app {
-	max-width: 1280px;
-	margin: 0 auto;
-	text-align: center;
+	//max-width: 1280px;
+	//margin: 0 auto;
+	//text-align: center;
 }
 
 
@@ -367,6 +367,7 @@ img {
 	font-size: 22px;
 }
 #main-page-pkmn {
+	text-align: center;
 
 	.crown-icon {
 		padding: 0;
@@ -381,4 +382,38 @@ img {
 .signature-img-container .signature-slot {
 	margin-left: auto !important;
 	margin-right: auto !important;
+}
+
+/* Sidebar */
+.menu-sidebar {
+	z-index: 11;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	z-index: 0;
+}
+
+.overlay.visible {
+	visibility: visible;
+	opacity: 1;
+	z-index: 10;
+}
+
+.icon-bg .ps-menu-icon {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.expand-button {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.expand-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
 }

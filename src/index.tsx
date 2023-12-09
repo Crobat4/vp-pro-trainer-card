@@ -5,6 +5,7 @@ import 'styles/style.scss';
 import React, { render } from 'preact/compat';
 import { Home } from 'components/home';
 import Loader from 'components/Loader';
+import MenuSidebar from './components/menu-sidebar';
 
 function App() {
     // Use these to get the data for database files (one at time)
@@ -15,7 +16,10 @@ function App() {
     return (
         <>
             <Loader />
-            <Home />
+            <div className={'d-flex px-3'}>
+                {/*<MenuSidebar />*/}
+                <Home />
+            </div>
         </>
     );
 }
