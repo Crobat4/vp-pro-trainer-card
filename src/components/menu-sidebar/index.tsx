@@ -1,11 +1,18 @@
 import React, { useState } from 'preact/compat';
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { List, XLg, Clock, CaretRightFill, CaretLeftFill } from 'react-bootstrap-icons';
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Clock, CaretRightFill, CaretLeftFill } from 'react-bootstrap-icons';
+import ChangelogModal from 'components/changelog';
 
 function MenuSidebar() {
     const [collapsed, setCollapsed] = useState(true);
     const menuWidth = 60;
     const expandBar = 12;
+
+    // Changelog
+    const [showChangelog, setShowChangelog] = useState(false);
+    const handleShowChangelog = () => setShowChangelog(true);
+    const handleCloseChangelog = () => setShowChangelog(false);
+
     return (
         <>
             <div style={{flex: `0 0 ${menuWidth + expandBar}px`}}>
@@ -28,7 +35,10 @@ function MenuSidebar() {
                                 icon={<img src={'assets/icons/crobat.png'} width={25} />}>
                                 {'/vp/\'s PRO TRAINER CARD'}
                             </MenuItem>
-                            <MenuItem className={'icon-bg'} icon={<Clock />}> Changelog </MenuItem>
+                            <MenuItem className={'icon-bg'} icon={<Clock />} onClick={handleShowChangelog}>
+                                Changelog
+                                <ChangelogModal show={showChangelog} onClose={handleCloseChangelog} />
+                            </MenuItem>
                             <MenuItem className={'icon-bg'} icon={<Clock />}> Credits </MenuItem>
                             <MenuItem className={'icon-bg'} icon={<Clock />}> Export JSON </MenuItem>
                             <MenuItem className={'icon-bg'} icon={<Clock />}> Import JSON </MenuItem>
