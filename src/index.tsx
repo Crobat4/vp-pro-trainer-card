@@ -17,7 +17,7 @@ function App() {
         <>
             <Loader />
             <div className={'d-flex px-3'}>
-                {/*<MenuSidebar />*/}
+                {<MenuSidebar />}
                 <Home />
             </div>
         </>

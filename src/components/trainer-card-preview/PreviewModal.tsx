@@ -29,7 +29,7 @@ function PreviewModal() {
 
     return (
         <>
-            <Button variant="light" style={{width: 180}}onClick={handleShow}>
+            <Button variant="" style={{width: 180, backgroundColor: 'var(--bs-body-bg)'}} onClick={handleShow}>
                 Generate Template
             </Button>
 

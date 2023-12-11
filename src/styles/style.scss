@@ -124,7 +124,7 @@ img {
 }
 .pokemon-slot, .badge-slot {
 	//height: 90px;
-	margin: 0 1px;
+	//margin: 0 1px;
 }
 .badge-slot {
 	pointer-events: none;
@@ -155,10 +155,35 @@ img {
 .pokemon-btn, .badge-img-container {
 	background-position: center center;
     background-size: contain;
-	border: 1px solid #d9dadb !important;
+	border: 1px solid rgba(100, 100, 100, 0.25) !important;
 }
 .pokemon-btn {
+	background-image: url('/assets/icons/pokeball-icon-transparent.png');
+	position: relative;
+	padding: 4%;
+}
+/*
+.pokemon-btn:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
 	background-image: url('/assets/icons/pokeball-icon.png');
+	background-repeat: no-repeat;
+  	background-size: contain;
+}
+*/
+.pokemon-btn .gallery-img-wrapper {
+	//z-index: 1;
+    //position: relative;
+}
+.pokemon-image {
+	//z-index: 1;
+    //position: relative;
 }
 .badge-img-container {
 	position: relative;
@@ -174,7 +199,7 @@ img {
     background-repeat: no-repeat;
     background-origin: content-box;
     padding: 32px;
-    opacity: .2;
+    opacity: .5;
 }
 
 .search-box-close-button {
@@ -387,6 +412,9 @@ img {
 /* Sidebar */
 .menu-sidebar {
 	z-index: 11;
+}
+.ps-sidebar-container {
+	background-color: unset !important;
 }
 .overlay {
 	position: fixed;

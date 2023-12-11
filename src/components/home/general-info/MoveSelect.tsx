@@ -26,12 +26,47 @@ function MoveSelect({ size }: Props) {
             isDisabled={!States.moveList.value.length}
             noOptionsMessage={() => moveSearchState.noResultsMessage}
             isSearchable={true}
-            styles={{control: (base) => ({...base, width: size, margin: 'auto'}), menuList: (base) => ({...base, maxHeight: 200})}}
             onInputChange={(e) => inputEntered(e)}
             onChange={(move) => {
                 Data.move.value = move.label;
             }}
             options={moveSearchState.showOptions ? States.moveList.value : []}
+            styles={{
+                control: (baseStyles, state) => ({
+                    ...baseStyles,
+                    width: size, margin: 'auto',
+                    backgroundColor: 'var(--bs-body-bg)',
+                    borderColor: 'var(--bs-border-color)',
+                }),
+                singleValue: (baseStyles, state) => ({
+                    ...baseStyles,
+                    color: 'var(--bs-body-color)',
+                }),
+                indicatorSeparator: (baseStyles, state) => ({
+                    ...baseStyles,
+                    backgroundColor: 'var(--bs-border-color)',
+                }),
+                menu: (baseStyles, state) => ({
+                    ...baseStyles,
+                    backgroundColor: 'var(--bs-body-bg)',
+                }),
+                menuList: (baseStyles, state) => ({
+                    ...baseStyles, maxHeight: 200,
+                }),
+                option: (baseStyles, state) => {
+                    let optionBGColor;
+                    if (state.isSelected) {
+                        optionBGColor = 'var(--bs-primary)';
+                    }
+                    if (state.isFocused) {
+                        optionBGColor = 'var(--bs-primary-bg-subtle)';
+                    }
+                    return {
+                        ...baseStyles,
+                        backgroundColor: optionBGColor,
+                    };
+                },
+            }}
         />
     );
 }
