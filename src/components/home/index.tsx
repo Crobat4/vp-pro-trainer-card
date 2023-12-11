@@ -29,7 +29,8 @@ export function Home() {
                         </div>
                         <div className="col-6">
                             {/* Type specialist title */}
-                            <div className="d-flex align-items-center justify-content-center type-specialist-title" style={{height: 48, color: TypeColors[Data.type.value].darker }}>
+                            <div className="d-flex align-items-center justify-content-center type-specialist-title"
+                                style={{height: 48, backgroundColor: States.darkMode.value ? TypeColors[Data.type.value].darker : 'white', color: States.darkMode.value ? 'white' : TypeColors[Data.type.value].darker }}>
                                 {PokemonType[Data.type.value]?.toUpperCase()} TYPE SPECIALIST
                             </div>
                         </div>
