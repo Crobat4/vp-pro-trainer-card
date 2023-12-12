@@ -11,14 +11,14 @@ function EliteTeam() {
     </span>;
     return (
         <div className="row">
-            <div className="col-6">
+            <div className="col-md-6 col-12">
                 {/* Elite 4 */}
                 <div className="col-12">
                     <TeamTitle content={eliteFourTitleContent}/>
                     <GymSlot badges={8} slotQty={5} totalSlots={9} />
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-12">
                 {/* Champion */}
                 <div className="col-12">
                     <TeamTitle content={championTitleContent}/>

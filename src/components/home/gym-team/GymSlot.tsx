@@ -17,7 +17,7 @@ function GymSlot({ badges, slotQty, totalSlots = 7 }: Props) {
         Data.slotsPerBadge[slotGroup.id] = slotGroup;
     }
 
-    return BadgeSlots(Data.slotsPerBadge[groupID], slotQty, badges, baseSize, totalSlots);
+    return BadgeSlots(Data.slotsPerBadge[groupID], slotQty, badges, baseSize);
 }
 
 export default GymSlot;

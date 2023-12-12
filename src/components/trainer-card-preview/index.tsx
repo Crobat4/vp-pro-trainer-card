@@ -41,53 +41,59 @@ function TrainerCardPreview () {
                 {/* Gym Leader title*/}
                 <TeamTitle content={gymTitleContent}/>
 
-                <div className="row">
-                    <div className="col-5">
-                        <div className="align-center fw-bold" style={{ marginTop: 6, marginBottom: 14, fontSize: 30, color: TypeColors[Data.type.value].darker }}>
-                            Signature PKMN
+                <div className="info-badges-container">
+                    <div>
+                        <div className="signature-tm p-0 d-inline-block">
+                            <div className="align-center fw-bold" style={{ marginTop: 6, marginBottom: 14, fontSize: 30, color: TypeColors[Data.type.value].darker }}>
+                                Signature PKMN
+                            </div>
+                            <div className={'signature-img-container'}>
+                                <GeneratePokemonSlot
+                                    slot={Data.slotsPerBadge.signature?.slots[0]}
+                                    baseSize={signatureSize}
+                                    isTemplate={true}
+                                />
+                            </div>
+                            <div className="d-flex align-items-center justify-content-start bg-white fw-bold" style={{ width: signatureSize, height: 56, fontSize: 20, margin: '16px auto', padding: '0 16px', color: TypeColors[Data.type.value].darker }}>
+                            TM: {Data.move.value}
+                            </div>
                         </div>
-                        <div className={'signature-img-container'}>
-                            <GeneratePokemonSlot
-                                slot={Data.slotsPerBadge.signature?.slots[0]}
-                                baseSize={signatureSize}
-                                isTemplate={true}
-                            />
-                        </div>
-                        <div className="d-flex align-items-center justify-content-start bg-white fw-bold" style={{ width: signatureSize, height: 56, fontSize: 20, margin: '16px auto', padding: '0 16px', color: TypeColors[Data.type.value].darker }}>
-                        TM: {Data.move.value}
+                        <div className="badge-slot-0-3 p-0 d-inline-block">
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges0} />
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges1} />
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges2} />
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges3} />
                         </div>
                     </div>
-                    <div className="col-7 ps-0">
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges0} />
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges1} />
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges2} />
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges3} />
-                    </div>
-                    <div className="col-3" style="width: 27% !important;">
-                        <div className="">
-                            <div className="align-center fw-bold" style={{ margin: '8px 0', fontSize: 28, color: TypeColors[Data.type.value].darker }}>Badge</div>
+                    <div className={'d-flex'}>
+                        <div className="badge-container p-0 d-flex position-relative align-items-center">
+                            <div className="align-center fw-bold badge-title m-0"
+                                style={{ margin: '8px 0', fontSize: 28, color: TypeColors[Data.type.value].darker }}>
+                                    Badge
+                            </div>
                             <div style="width: 116px; height: 116px; margin: 8px auto; background: white;">
                                 <img className="badge-image-template" style={{}} src={Data.badgeURL.value || Amelia} />
                             </div>
                         </div>
+                        <div className="badge-slot-4-5 p-0 d-inline-block">
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges4} />
+                            <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges5} />
+                        </div>
                     </div>
-                    <div className="col-9" style="width: 73% !important;">
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges4} />
-                        <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges5} />
-                    </div>
-                    <div className="col-12">
+
+                    <div className="badge-slot-6 p-0 d-inline-block w-100">
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges6} />
                     </div>
-                    <div className="col-12">
+                    <div className="badge-slot-7 p-0 d-inline-block w-100">
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges7} />
                     </div>
                     {/* Elite 4 */}
-                    <div className="col-12">
+                    <div className="badge-slot-elite-4 p-0 d-inline-block w-100">
                         <TeamTitle content={eliteFourTitleContent}/>
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges8} />
                     </div>
                     {/* Champion */}
-                    <div className="col-12">
+                    <div className="badge-slot-champion p-0 d-inline-block w-100">
                         <TeamTitle content={championTitleContent}/>
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges9} />
                     </div>

@@ -3,9 +3,9 @@ import { TypeColors, Crown, Sparkle } from 'modules/Constants';
 import GeneratePokemonSlot from 'components/shared/GeneratePokemonSlot';
 import Data from 'modules/Data';
 
-function generateSparklesSlot(badgeWidth, baseSize, badges, isTemplate) {
-    return <div className={`d-flex justify-content-center align-items-center p-0 badge-slot ${!isTemplate ? 'btn' : ''}`}
-        style={{ width: badgeWidth, height: baseSize, backgroundColor: TypeColors[Data.type.value].dark, borderColor: TypeColors[Data.type.value].dark }}>
+function generateSparklesSlot(baseSize, badges, isTemplate) {
+    return <div className={`d-flex justify-content-center align-items-center p-0 badge-slot w-100 ${!isTemplate ? 'btn' : ''}`}
+        style={{ height: baseSize, backgroundColor: TypeColors[Data.type.value].dark, borderColor: TypeColors[Data.type.value].dark }}>
         <div className={`${badges > 8 ? 'h-100 d-flex justify-content-center align-items-center' : 'px-0'}`}>
             {generateSparkles(badges)}
         </div>
@@ -25,21 +25,27 @@ function generateSparkles(number) {
 }
 
 // Shared with Home page and Preview slots
-function BadgeSlots(slotGroup, slotQty, badges, baseSize, totalSlots, isTemplate = false) {
-    const badgeWidth = baseSize * (totalSlots - slotQty) + 2 * (totalSlots - slotQty - 1);
+function BadgeSlots(slotGroup, slotQty, badges, baseSize, isTemplate = false) {
+    //const badgeWidth = baseSize * (totalSlots - slotQty) + 2 * (totalSlots - slotQty - 1);
     return (
-        <div className={`d-flex slots ${!isTemplate ? 'btn-group' : ''}`} style={{ height: baseSize, marginBottom: 8 }}>
-            {generateSparklesSlot(badgeWidth, baseSize, badges, isTemplate)}
-            {
-                Array.from({length: slotQty}, (val, key) => {
-                    return <GeneratePokemonSlot
-                        key={key}
-                        baseSize={baseSize}
-                        slot={slotGroup.slots[key]}
-                        isTemplate={isTemplate}
-                    />;
-                })
-            }
+        <div className={`w-100 slots d-md-flex ${isTemplate ? 'd-flex' : ''}`} style={{ marginBottom: 8 }}>
+            {generateSparklesSlot(baseSize, badges, isTemplate)}
+            <div className={'d-flex'}>
+                {
+                    Array.from({length: slotQty}, (val, key) => {
+                        return (
+                            <div key={key} className={'badge-pokemon-slot w-100'}>
+                                <GeneratePokemonSlot
+                                    key={key}
+                                    baseSize={baseSize}
+                                    slot={slotGroup.slots[key]}
+                                    isTemplate={isTemplate}
+                                />
+                            </div>
+                        );
+                    })
+                }
+            </div>
         </div>
     );
 }

@@ -16,8 +16,8 @@ function App() {
     return (
         <>
             <Loader />
-            <div className={'d-flex px-3'}>
-                {<MenuSidebar />}
+            <div className={'d-flex p-3'}>
+                <MenuSidebar />
                 <Home />
             </div>
         </>

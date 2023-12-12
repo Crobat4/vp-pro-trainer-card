@@ -15,7 +15,7 @@ function SlotImage({ baseSize, slot, isTemplate = false }: Props) {
     setModalState(States.modal.pokemonListModal.value);
     return (
         <img className={'pokemon-image'} src={getPokemonImage(pokemon.id, pokemon.shiny, pokemon.female)}
-            style={{width: '100%', padding: '4%', opacity: (!isTemplate && pokemon.id === 0) ? 0 : 1}} />
+            style={{width: '100%', height: 'auto', maxWidth: baseSize, maxHeight: baseSize, padding: '4%', opacity: (!isTemplate && pokemon.id === 0) ? 0 : 1}} />
     );
 }
 export default SlotImage;

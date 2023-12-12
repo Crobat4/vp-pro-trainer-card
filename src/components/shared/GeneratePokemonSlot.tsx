@@ -18,7 +18,7 @@ type Props = {
 export default function GeneratePokemonSlot({ baseSize, slot, isTemplate = false }: Props) {
     const btnColor = States.darkMode.value ? 'btn-dark' : 'btn-light';
     return <div
-        className={`d-block p-0 signature-slot ${!isTemplate ? `pokemon-btn btn ${btnColor} mx-auto` : 'bg-white'}`}
+        className={`d-flex align-items-center justify-content-center p-0 pokemon-slot-button signature-slot ${!isTemplate ? `pokemon-btn btn ${btnColor}` : 'bg-white'}`}
         {...(!isTemplate && { onClick: () => handleShow(slot) })}
         style={{width: baseSize, flex: `0 0 ${baseSize}px`, height: baseSize, margin: isTemplate ? '0 1px' : ''}}
     >
