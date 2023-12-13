@@ -64,6 +64,7 @@ function MoveSelect({ size }: Props) {
                     return {
                         ...baseStyles,
                         backgroundColor: optionBGColor,
+                        '&:active': { backgroundColor: 'var(--bs-primary-bg-subtle)' },
                     };
                 },
             }}

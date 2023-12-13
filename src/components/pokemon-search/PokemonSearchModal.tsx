@@ -43,11 +43,15 @@ function PokemonSearchModal() {
             size='xl'
         >
             <Modal.Header>
-                <div className="search-box-close-button">
-                    <SearchBar />
-                    <Button variant="danger" onClick={handleClose}>
-                        Close
-                    </Button>
+                <div className="search-box-close-button d-flex">
+                    <div className={'flex-grow-1'}>
+                        <SearchBar />
+                    </div>
+                    <div className={'form-check d-md-flex d-none'}>
+                        <Button className={'h-100'} variant="danger" onClick={handleClose}>
+                            Close
+                        </Button>
+                    </div>
                 </div>
             </Modal.Header>
             <Modal.Body className={`${generateBodyBGClass()}`}>
@@ -55,13 +59,11 @@ function PokemonSearchModal() {
                     <FilteredPokemonList itemList={States.search.filteredSearchList.value} />
                 </div>
             </Modal.Body>
-            {/*
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+            <Modal.Footer className={'d-md-none d-flex'}>
+                <Button className={'h-100'} variant="danger" onClick={handleClose}>
                     Close
                 </Button>
             </Modal.Footer>
-            */}
         </Modal>
     );
 }
