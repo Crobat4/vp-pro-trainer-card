@@ -9,7 +9,7 @@ function PreviewModal() {
     // Image download
     const downloadImage = useCallback(() => {
         const node = document.getElementById('template-pkmn');
-        toPng(node, { /*cacheBust: true,*/ })
+        toPng(node, { /*cacheBust: true,*/ pixelRatio: 2 })
             .then((dataUrl) => {
                 const link = document.createElement('a');
                 link.download = 'vp-pro-trainer-card.png';
@@ -37,7 +37,7 @@ function PreviewModal() {
                 <Modal.Header closeButton>
                     <Modal.Title>Trainer Card Preview</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className={'d-flex justify-content-md-center'}>
+                <Modal.Body className={'d-flex justify-content-lg-center'}>
                     <TrainerCardPreview />
                 </Modal.Body>
                 <Modal.Footer>

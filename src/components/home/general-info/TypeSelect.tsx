@@ -6,6 +6,7 @@ import { generateTypeSelect } from 'modules/Utils';
 function TypeSelect() {
     return (
         <Select
+            //defaultMenuIsOpen
             className="basic-single"
             classNamePrefix="select"
             defaultValue={generateTypeSelect()[0]}
@@ -44,6 +45,7 @@ function TypeSelect() {
                     return {
                         ...baseStyles,
                         backgroundColor: optionBGColor,
+                        '&:active': { backgroundColor: 'var(--bs-primary-bg-subtle)' },
                     };
                 },
             }}

@@ -1,3 +1,5 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -11,6 +13,12 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+
+	/* Variables */
+	--sidebar-expand-bar: 12px;
+	--sidebar-collapsed-width: 60px;
+	--sidebar-collapsed-width-mobile: 0;
+	--sidebar-expanded-width: 280px;
 }
 
 body {
@@ -59,7 +67,7 @@ section {
 
 @media (max-width: 639px) {
 	#app {
-		margin: 2rem;
+		//margin: 2rem;
 	}
 	section {
 		margin-top: 5rem;
@@ -146,10 +154,10 @@ img {
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(lg) {
 	.pokemon-btn{
-		width: 150px;
-    	height: 150px;
+		//width: 150px;
+    	//height: 150px;
 	}
 }
 .pokemon-btn, .badge-img-container {
@@ -368,7 +376,7 @@ img {
 }
 .gym-leader-title-container {
 	width: 100%; 
-	height: 56px; 
+	//height: 56px; 
 	margin-bottom: 8px;
 
 	.gym-leader-title-sparkle {
@@ -444,4 +452,94 @@ img {
 }
 .expand-button:hover {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-margin {
+	flex: 0 0 calc(var(--sidebar-collapsed-width) + var(--sidebar-expand-bar));
+}
+.sidebar {
+	max-width: var(--sidebar-expanded-width);
+}
+.sidebar.collapsed {
+	max-width: var(--sidebar-collapsed-width);
+}
+@include media-breakpoint-down(xl) { // Mobile
+	.sidebar-margin {
+		flex: 0 0 calc(var(--sidebar-collapsed-width-mobile) + var(--sidebar-expand-bar));
+	}
+	.sidebar.collapsed {
+		max-width: var(--sidebar-collapsed-width-mobile);
+	}
+}
+
+/* Titles */
+@include media-breakpoint-up(xl) {
+	.type-specialist-title {
+		height: 48px;
+	}
+	.gym-leader-title-container {
+		height: 56px;
+	}
+}
+
+/* Badge Pokemon Slot */
+.pokemon-slot-button {
+	background-repeat: no-repeat;
+}
+@include media-breakpoint-down(xl) {
+	#main-page-pkmn {
+		.badge-pokemon-slot .pokemon-slot-button {
+			width: 100% !important;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	#main-page-pkmn {
+		.type-specialist-title, .gym-leader-title {
+			letter-spacing: normal !important;
+		}
+	}
+}
+
+
+/* Template */
+#template-pkmn {
+	width: 664px;
+	padding: 16px;
+
+	.type-specialist-title {
+		height: 72px;
+	}
+
+	.theme-title, .gym-leader-title-container {
+		height: 56px;
+	}
+
+	.gym-leader-title {
+		letter-spacing: 2px;
+	}
+
+	.signature-tm {
+		width: 272px;
+	}
+
+	.badge-slot-0-3 {
+		width: 360px;
+	}
+
+	.badge-container {
+		width: 184px;
+	}
+
+	.badge-slot-4-5 {
+		width: 448px;
+	}
+
+	.badge-title {
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+		line-height: 1;
+	}
 }

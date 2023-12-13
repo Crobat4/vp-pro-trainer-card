@@ -51,8 +51,10 @@ function SearchBar() {
 
     return (
         <>
-            <div className="form-check p-0 pokemon-search">
-                <input type="checkbox" className="btn-check" style="opacity: 0;" id="btn-check-shiny" autoComplete="off" checked={States.search.shiny.value} onClick={toggleShiny}/>
+            <div className="form-check p-0 pokemon-search input-group">
+                <input id="search-box" className="form-control m-0" type="text" name="search-pkmn" placeholder="Search Pokémon..." onChange={filterBySearch} />
+
+                <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-shiny" autoComplete="off" checked={States.search.shiny.value} onClick={toggleShiny}/>
                 <OverlayTrigger placement="bottom" overlay={(props) => (
                     <Tooltip id="button-tooltip" {...props}>
                         Toggle Shiny images
@@ -63,7 +65,7 @@ function SearchBar() {
                     </label>
                 </OverlayTrigger>
 
-                <input type="checkbox" className="btn-check" style="opacity: 0;" id="btn-check-female" autoComplete="off" checked={States.search.female.value} onClick={toggleFemale}/>
+                <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-female" autoComplete="off" checked={States.search.female.value} onClick={toggleFemale}/>
                 <OverlayTrigger placement="bottom" overlay={(props) => (
                     <Tooltip id="button-tooltip" {...props}>
                         Toggle female images (when applies)
@@ -74,7 +76,6 @@ function SearchBar() {
                     </label>
                 </OverlayTrigger>
             </div>
-            <input id="search-box" type="text" name="search-pkmn" className="form-control" placeholder="Search Pokémon..." onChange={filterBySearch} />
         </>
     );
 }

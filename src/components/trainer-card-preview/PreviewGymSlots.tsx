@@ -8,8 +8,8 @@ type Props = {
 }
 
 function PreviewGymSlots({ slotGroup, totalSlots = 7 }: Props) {
-    const baseSize = 90;
-    return BadgeSlots(slotGroup, slotGroup.slots.length, slotGroup.badges, baseSize, totalSlots, true);
+    const baseSize = 88;
+    return BadgeSlots(slotGroup, slotGroup.slots.length, slotGroup.badges, baseSize, true);
 }
 
 export default PreviewGymSlots;

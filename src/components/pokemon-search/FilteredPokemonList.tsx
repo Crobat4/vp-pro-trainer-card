@@ -27,7 +27,7 @@ type Props = {
 function FilteredPokemonList({ itemList }: Props) {
     const listItems = itemList?.map((pokemon) => {
         const list =
-            <div className="col-6 col-md-2">
+            <div className="col-6 col-md-4 col-lg-3 col-xl-2">
                 <OverlayTrigger placement="bottom" flip={true} overlay={(props) => (
                     <Tooltip id="button-tooltip" {...props} name={pokemon.prettyName}>
                         {pokemon.prettyName}

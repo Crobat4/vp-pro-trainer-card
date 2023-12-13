@@ -25,10 +25,10 @@ function MenuSidebar() {
 
     return (
         <>
-            <div style={{flex: `0 0 ${sidebarMinWidth + expandBar}px`}}>
+            <div className={'sidebar-margin'}>
                 <div className={'menu-sidebar d-flex position-absolute top-0 start-0 h-100 bg-body position-fixed'}>
-                    <div className="offcanvas offcanvas-start show overflow-hidden border-0 position-relative list-group"
-                        style={{position: 'unset', maxWidth: collapsed ? sidebarMinWidth : sidebarMaxWidth, transition: '0.2s', minWidth: 0}}
+                    <div className={`offcanvas offcanvas-start show overflow-hidden border-0 position-relative list-group sidebar ${collapsed ? 'collapsed' : ''}`}
+                        style={{position: 'unset', transition: '0.2s', minWidth: 0}}
                         data-bs-backdrop="false" data-bs-scroll="true" id="offcanvas" aria-labelledby="offcanvasLabel">
                         <div className={`offcanvas-header p-0 ${collapsed ? 'text-truncate' : ''}`}>
                             <SidebarMenuItem

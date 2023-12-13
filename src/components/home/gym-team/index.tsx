@@ -4,7 +4,7 @@ import TeamTitle from 'components/shared/TeamTitle';
 import { Sparkle } from 'modules/Constants';
 
 function GymTeam() {
-    const gymLeaderTitleSparkle = <div className="gym-leader-title-sparkle">
+    const gymLeaderTitleSparkle = <div className="gym-leader-title-sparkle d-none d-md-block">
         {new Array(4).fill(<img className="white-icon" src={Sparkle} />)}
     </div>;
     const titleContent = <>
@@ -17,13 +17,13 @@ function GymTeam() {
             <div className="col-12">
                 <TeamTitle content={titleContent}/>
             </div>
-            <div className="col-5">
+            <div className="col-xl-5 col-12">
                 <GymSlot badges={0} slotQty={2} />
                 <GymSlot badges={1} slotQty={3} />
                 <GymSlot badges={2} slotQty={3} />
                 <GymSlot badges={3} slotQty={3} />
             </div>
-            <div className="col-7">
+            <div className="col-xl-7 col-12">
                 <GymSlot badges={4} slotQty={4} />
                 <GymSlot badges={5} slotQty={4} />
                 <GymSlot badges={6} slotQty={4} />
