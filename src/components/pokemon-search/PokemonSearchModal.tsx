@@ -47,7 +47,7 @@ function PokemonSearchModal() {
                     <div className={'flex-grow-1'}>
                         <SearchBar />
                     </div>
-                    <div className={'form-check d-md-flex d-none'}>
+                    <div className={'form-check d-xl-flex d-none'}>
                         <Button className={'h-100'} variant="danger" onClick={handleClose}>
                             Close
                         </Button>
@@ -59,7 +59,7 @@ function PokemonSearchModal() {
                     <FilteredPokemonList itemList={States.search.filteredSearchList.value} />
                 </div>
             </Modal.Body>
-            <Modal.Footer className={'d-md-none d-flex'}>
+            <Modal.Footer className={'d-xl-none d-flex'}>
                 <Button className={'h-100'} variant="danger" onClick={handleClose}>
                     Close
                 </Button>

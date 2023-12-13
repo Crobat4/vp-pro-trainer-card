@@ -28,7 +28,7 @@ function generateSparkles(number) {
 function BadgeSlots(slotGroup, slotQty, badges, baseSize, isTemplate = false) {
     //const badgeWidth = baseSize * (totalSlots - slotQty) + 2 * (totalSlots - slotQty - 1);
     return (
-        <div className={`w-100 slots d-md-flex ${isTemplate ? 'd-flex' : ''}`} style={{ marginBottom: 8 }}>
+        <div className={`w-100 slots d-xl-flex ${isTemplate ? 'd-flex' : ''}`} style={{ marginBottom: 8 }}>
             {generateSparklesSlot(baseSize, badges, isTemplate)}
             <div className={'d-flex'}>
                 {

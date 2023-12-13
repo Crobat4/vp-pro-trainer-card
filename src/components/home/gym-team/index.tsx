@@ -17,13 +17,13 @@ function GymTeam() {
             <div className="col-12">
                 <TeamTitle content={titleContent}/>
             </div>
-            <div className="col-md-5 col-12">
+            <div className="col-xl-5 col-12">
                 <GymSlot badges={0} slotQty={2} />
                 <GymSlot badges={1} slotQty={3} />
                 <GymSlot badges={2} slotQty={3} />
                 <GymSlot badges={3} slotQty={3} />
             </div>
-            <div className="col-md-7 col-12">
+            <div className="col-xl-7 col-12">
                 <GymSlot badges={4} slotQty={4} />
                 <GymSlot badges={5} slotQty={4} />
                 <GymSlot badges={6} slotQty={4} />

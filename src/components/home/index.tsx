@@ -20,14 +20,14 @@ export function Home() {
 
     return (
         <>
-            <div id="main-page-pkmn" className="row m-0" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
+            <div id="main-page-pkmn" className="row m-0 align-items-center" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
                 <div className="col-12">
                     <div className="row border-bottom mb-2">
-                        <div className="col-md-6 col-12">
+                        <div className="col-xl-6 col-12">
                             {/* Trainer card title */}
                             <div className="trainer-card-title fw-bold">{'/vp/\'s PRO TRAINER CARD'}</div>
                         </div>
-                        <div className="col-md-6 col-12">
+                        <div className="col-xl-6 col-12">
                             {/* Type specialist title */}
                             <div className="d-flex align-items-center justify-content-center type-specialist-title"
                                 style={{backgroundColor: States.darkMode.value ? TypeColors[Data.type.value].darker : 'white', color: States.darkMode.value ? 'white' : TypeColors[Data.type.value].darker }}>
@@ -36,10 +36,10 @@ export function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 col-12 d-flex align-items-center">
+                <div className="col-xl-4 col-12">
                     <GeneralInfo />
                 </div>
-                <div className="col-md-8 col-12">
+                <div className="col-xl-8 col-12">
                     <GymTeam />
                 </div>
                 <div className="col-12">

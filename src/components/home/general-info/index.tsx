@@ -11,17 +11,17 @@ function GeneralInfo() {
     // Initialize slots count
     return (
         <div className="row" style={{ marginBottom: 8 }}>
-            <div className="col-md-6 col-12" style={{ marginBottom: 8 }}>
+            <div className="col-xl-6 col-md-6 col-12" style={{ marginBottom: 8 }}>
                 <TypeSelect />
             </div>
-            <div className="col-md-6 col-12" style={{ marginBottom: 8 }}>
+            <div className="col-xl-6 col-md-6 col-12" style={{ marginBottom: 8 }}>
                 <Theme />
             </div>
-            <div className="col-md-6 col-12 signature-img-container">
+            <div className="col-xl-6 col-md-6 col-12 signature-img-container">
                 <SignaturePokemon size={signatureSize} />
                 <MoveSelect size={signatureSize} />
             </div>
-            <div className="col-md-6 col-12">
+            <div className="col-xl-6 col-md-6 col-12">
                 <BadgeImage size={signatureSize} />
                 <PreviewModal />
             </div>
