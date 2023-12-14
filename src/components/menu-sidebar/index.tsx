@@ -1,10 +1,10 @@
 import React, { useState } from 'preact/compat';
 import { CaretRightFill, CaretLeftFill, MoonStarsFill, SunFill, ClockHistory, PeopleFill } from 'react-bootstrap-icons';
-import ChangelogModal from 'components/changelog';
 import SidebarMenuItem from 'components/menu-sidebar/SidebarMenuItem';
 import States from 'modules/States';
 import ModalTemplate from 'components/shared/ModalTemplate';
 import CreditsContent from 'components/credits';
+import ChangelogContent from 'components/changelog';
 
 function MenuSidebar() {
     const [collapsed, setCollapsed] = useState(true);
@@ -40,7 +40,9 @@ function MenuSidebar() {
                         <div className={`offcanvas-header p-0 ${collapsed ? 'text-truncate' : ''}`}>
                             <SidebarMenuItem
                                 iconWidth={sidebarMinWidth} iconBackground={false}
-                                iconElement={<img className={'mw-100'} src={'assets/icons/crobat.png'} />}>
+                                iconElement={<img className={'mw-100'} src={'assets/icons/crobat.png'} />}
+                                titleClass='fw-bold'
+                            >
                                 {'/vp/\'s PRO TRAINER CARD'}
                             </SidebarMenuItem>
                         </div>
@@ -48,7 +50,9 @@ function MenuSidebar() {
                             style={!collapsed ? {width: sidebarMaxWidth} : {}}>
                             <SidebarMenuItem iconWidth={sidebarMinWidth} iconElement={<ClockHistory />} onClick={handleShowChangelog}>
                                 Changelog
-                                <ChangelogModal show={showChangelog} onClose={handleCloseChangelog} />
+                                <ModalTemplate title={'Changelog'} bodyClass='p-0' show={showChangelog} onClose={handleCloseChangelog}>
+                                    <ChangelogContent />
+                                </ModalTemplate>
                             </SidebarMenuItem>
                             <SidebarMenuItem iconWidth={sidebarMinWidth} iconElement={<PeopleFill />} onClick={handleShowCredits}>
                                 Credits
