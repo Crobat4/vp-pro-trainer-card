@@ -1,8 +1,10 @@
 import React, { useState } from 'preact/compat';
-import { Clock, CaretRightFill, CaretLeftFill, MoonStarsFill, SunFill } from 'react-bootstrap-icons';
-import ChangelogModal from 'components/changelog';
+import { CaretRightFill, CaretLeftFill, MoonStarsFill, SunFill, ClockHistory, PeopleFill } from 'react-bootstrap-icons';
 import SidebarMenuItem from 'components/menu-sidebar/SidebarMenuItem';
 import States from 'modules/States';
+import ModalTemplate from 'components/shared/ModalTemplate';
+import CreditsContent from 'components/credits';
+import ChangelogContent from 'components/changelog';
 
 function MenuSidebar() {
     const [collapsed, setCollapsed] = useState(true);
@@ -14,6 +16,11 @@ function MenuSidebar() {
     const [showChangelog, setShowChangelog] = useState(false);
     const handleShowChangelog = () => setShowChangelog(true);
     const handleCloseChangelog = () => setShowChangelog(false);
+
+    // Credits
+    const [showCredits, setShowCredits] = useState(false);
+    const handleShowCredits = () => setShowCredits(true);
+    const handleCloseCredits = () => setShowCredits(false);
 
     // Dark mode
     const [darkMode, setDarkMode] = useState(true);
@@ -33,15 +40,25 @@ function MenuSidebar() {
                         <div className={`offcanvas-header p-0 ${collapsed ? 'text-truncate' : ''}`}>
                             <SidebarMenuItem
                                 iconWidth={sidebarMinWidth} iconBackground={false}
-                                iconElement={<img className={'mw-100'} src={'assets/icons/crobat.png'} />}>
+                                iconElement={<img className={'mw-100'} src={'assets/icons/crobat.png'} />}
+                                titleClass='fw-bold'
+                            >
                                 {'/vp/\'s PRO TRAINER CARD'}
                             </SidebarMenuItem>
                         </div>
                         <div className={`offcanvas-body p-0 ${collapsed ? 'text-truncate' : ''}`}
                             style={!collapsed ? {width: sidebarMaxWidth} : {}}>
-                            <SidebarMenuItem iconWidth={sidebarMinWidth} iconElement={<Clock />} onClick={handleShowChangelog}>
+                            <SidebarMenuItem iconWidth={sidebarMinWidth} iconElement={<ClockHistory />} onClick={handleShowChangelog}>
                                 Changelog
-                                <ChangelogModal show={showChangelog} onClose={handleCloseChangelog} />
+                                <ModalTemplate title={'Changelog'} bodyClass='p-0' show={showChangelog} onClose={handleCloseChangelog}>
+                                    <ChangelogContent />
+                                </ModalTemplate>
+                            </SidebarMenuItem>
+                            <SidebarMenuItem iconWidth={sidebarMinWidth} iconElement={<PeopleFill />} onClick={handleShowCredits}>
+                                Credits
+                                <ModalTemplate title={'Credits'} show={showCredits} onClose={handleCloseCredits}>
+                                    <CreditsContent />
+                                </ModalTemplate>
                             </SidebarMenuItem>
                         </div>
                         <div className={'sidebar-footer position-absolute bottom-0 bg-body-tertiary w-100'}>

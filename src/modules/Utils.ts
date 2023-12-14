@@ -26,3 +26,7 @@ export function getPokemonImage(id = 0, shiny = false, female = false) {
 export function sanitizeString(str) { // Remove all non-alphanumeric characters (except blank spaces)
     return str.replace(/[^a-z0-9 ]/i, '');
 }
+
+export function spacesToDashesLowerCase(str: string) { // Replace all spaces and non-alphanumeric characters with dash (-)
+    return str.replace(/\W+/g, '-').toLowerCase();
+}

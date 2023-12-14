@@ -4,11 +4,12 @@ type Props = {
     children: React.ReactNode,
     iconWidth: number,
     iconElement: React.JSX.Element,
+    titleClass?: string,
     iconBackground?: boolean,
     onClick?: () => void,
 }
 
-function SidebarMenuItem({ iconWidth, iconElement, iconBackground = true, onClick }: Props) {
+function SidebarMenuItem({ iconWidth, iconElement, titleClass = '', iconBackground = true, onClick }: Props) {
     const iconMargin = 10;
     return (
         <a className={'text-decoration-none text-reset sidebar-menu-item d-block list-group-item list-group-item-action p-0 border-0'} href={'#'} onClick={onClick}>
@@ -17,7 +18,7 @@ function SidebarMenuItem({ iconWidth, iconElement, iconBackground = true, onClic
                     style={{flex: `0 0 ${iconWidth - (iconMargin * 2)}px`, height: iconWidth - (iconMargin * 2), margin: iconMargin}}>
                     {iconElement}
                 </div>
-                <div>{this.props.children}</div>
+                <div className={titleClass}>{this.props.children}</div>
             </div>
         </a>
     );
