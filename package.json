@@ -8,7 +8,7 @@
 		"eslint": "eslint src/**/*.{js,ts,jsx,tsx}",
 		"eslint-fix": "eslint --fix src/**/*.{js,ts,jsx,tsx}",
 		"predeploy": "npm run build && cp README.md dist || copy README.md dist",
-		"deploy": "gh-pages -b master-bak6 -d dist -m \"[v%npm_package_version%] Live website\" -g %npm_package_version%",
+		"deploy": "gh-pages -b master -d dist -m \"[v%npm_package_version%] Live website\" -g %npm_package_version%",
 		"publish": "npm run build && node publish.js",
 		"test": "gh-pages --help"
 	},
