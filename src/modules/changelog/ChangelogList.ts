@@ -7,13 +7,16 @@ import Changelog from 'modules/changelog/Changelog';
  */
 
 export const ChangelogList = [
-    new Changelog('1.0.1', new Date(), '',
+    new Changelog('1.0.1', new Date('2023-12-15'), '',
         {
             added: [
+                'Added Dark mode',
                 'Added Sidebar',
                 'Added Changelog',
+                'Added Credits',
             ],
             changed: ['Code improvements'],
+            fixed: ['Screen breakpoints'],
         }
     ),
     new Changelog('1.0.0', new Date('2023-11-22'), 'Initial Release',
