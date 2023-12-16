@@ -8,9 +8,8 @@
 		"eslint": "eslint src/**/*.{js,ts,jsx,tsx}",
 		"eslint-fix": "eslint --fix src/**/*.{js,ts,jsx,tsx}",
 		"copy-files": "(cp README.md dist || copy README.md dist) && (cp package.json dist || copy package.json dist)",
-		"predeploy": "npm run build && cp README.md dist || copy README.md docs",
 		"deploy": "gh-pages -b master-bak15 -d dist -m \"[v%npm_package_version%] Live website\" -g %npm_package_version%",
-		"publish": "npm run build && node publish.js",
+		"publish": "npm run build && node publish.js && npm run deploy",
 		"test": "gh-pages --help"
 	},
 	"homepage": "https://github.com/Crobat4/vp-pro-trainer-card/#readme",
