@@ -18,9 +18,11 @@ export function generateTypeSelect() {
     return types;
 }
 
-export function getPokemonImage(id = 0, shiny = false, female = false) {
-    const femaleToggle = female && States.pokemonList.value.find((p) => p.id === id).genderDifferences;
-    return `assets/${shiny ? 'shiny' : ''}pokemon/${femaleToggle ? 'female/' : ''}${id.toString().padStart(4, '0')}.png`;
+export function getPokemonImage(id = 0, shiny = false, female = false, formID = 0, formName = '') {
+    const isGMax = formName === 'gmax';
+    const femaleToggle = female && !isGMax && States.pokemonList.value.find((p) => p.id === id && p.formID === formID).genderDifferences;
+    const isForm = formID > 0;
+    return `assets/${shiny ? 'shiny' : ''}pokemon/${femaleToggle ? 'female/' : ''}${isForm || isGMax ? 'forms/' : ''}${id.toString().padStart(4, '0')}${isForm || isGMax ? `_${formID.toString().padStart(3, '0')}` : ''}${isGMax ? '_GMAX' : ''}.png`;
 }
 
 export function sanitizeString(str) { // Remove all non-alphanumeric characters (except blank spaces)

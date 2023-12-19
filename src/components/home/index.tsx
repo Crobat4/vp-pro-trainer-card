@@ -4,14 +4,14 @@ import PokemonType from 'modules/emums/PokemonType';
 import States from 'modules/States';
 import Data from 'modules/Data';
 import PokemonSearchModal from 'components/pokemon-search/PokemonSearchModal';
-import { PokemonList } from 'modules/databases/PokemonList';
 import { MoveList } from 'modules/databases/MoveList';
 import GeneralInfo from 'components/home/general-info';
 import GymTeam from 'components/home/gym-team';
 import EliteTeam from 'components/home/elite-team';
+import { FullPokemonList } from 'modules/databases/FullPokemonList';
 
 function initialize() {
-    States.pokemonList.value = PokemonList;
+    States.pokemonList.value = FullPokemonList;
     States.moveList.value = MoveList;
 }
 
