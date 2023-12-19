@@ -14,7 +14,10 @@ function filterBySearch(event) {
     if (query.length >= searchMinCharacters) {
         updatedList = [...States.pokemonList.value];
         updatedList = updatedList.filter((item) => {
-            return item.name.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+            return (
+                item.prettyName.toLowerCase().indexOf(query.toLowerCase()) !== -1 || // By name
+                item.formPrettyName.toLowerCase().indexOf(query.toLowerCase()) !== -1 // By form name
+            );
         });
         // Trigger render with updated values
         //setFilteredList(updatedList);
