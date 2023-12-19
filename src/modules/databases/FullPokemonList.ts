@@ -457,7 +457,7 @@ export const FullPokemonList = [
         'id': 19,
         'name': 'rattata',
         'genderDifferences': false,
-        'prettyName': 'Rattata',
+        'prettyName': 'Alolan Rattata',
         'types': {
             'primary': 'dark',
             'secondary': 'normal',
@@ -467,7 +467,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'rattata-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 20,
@@ -488,7 +488,7 @@ export const FullPokemonList = [
         'id': 20,
         'name': 'raticate',
         'genderDifferences': false,
-        'prettyName': 'Raticate',
+        'prettyName': 'Alolan Raticate',
         'types': {
             'primary': 'dark',
             'secondary': 'normal',
@@ -498,7 +498,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'raticate-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 21,
@@ -731,7 +731,7 @@ export const FullPokemonList = [
         'id': 26,
         'name': 'raichu',
         'genderDifferences': false,
-        'prettyName': 'Raichu',
+        'prettyName': 'Alolan Raichu',
         'types': {
             'primary': 'electric',
             'secondary': 'psychic',
@@ -741,7 +741,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'raichu-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 27,
@@ -762,7 +762,7 @@ export const FullPokemonList = [
         'id': 27,
         'name': 'sandshrew',
         'genderDifferences': false,
-        'prettyName': 'Sandshrew',
+        'prettyName': 'Alolan Sandshrew',
         'types': {
             'primary': 'ice',
             'secondary': 'steel',
@@ -772,7 +772,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'sandshrew-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 28,
@@ -793,7 +793,7 @@ export const FullPokemonList = [
         'id': 28,
         'name': 'sandslash',
         'genderDifferences': false,
-        'prettyName': 'Sandslash',
+        'prettyName': 'Alolan Sandslash',
         'types': {
             'primary': 'ice',
             'secondary': 'steel',
@@ -803,7 +803,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'sandslash-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 29,
@@ -946,7 +946,7 @@ export const FullPokemonList = [
         'id': 37,
         'name': 'vulpix',
         'genderDifferences': false,
-        'prettyName': 'Vulpix',
+        'prettyName': 'Alolan Vulpix',
         'types': {
             'primary': 'ice',
         },
@@ -955,7 +955,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'vulpix-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 38,
@@ -976,7 +976,7 @@ export const FullPokemonList = [
         'id': 38,
         'name': 'ninetales',
         'genderDifferences': false,
-        'prettyName': 'Ninetales',
+        'prettyName': 'Alolan Ninetales',
         'types': {
             'primary': 'ice',
             'secondary': 'fairy',
@@ -986,7 +986,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'ninetales-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 39,
@@ -1183,7 +1183,7 @@ export const FullPokemonList = [
         'id': 50,
         'name': 'diglett',
         'genderDifferences': false,
-        'prettyName': 'Diglett',
+        'prettyName': 'Alolan Diglett',
         'types': {
             'primary': 'ground',
             'secondary': 'steel',
@@ -1193,7 +1193,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'diglett-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 51,
@@ -1214,7 +1214,7 @@ export const FullPokemonList = [
         'id': 51,
         'name': 'dugtrio',
         'genderDifferences': false,
-        'prettyName': 'Dugtrio',
+        'prettyName': 'Alolan Dugtrio',
         'types': {
             'primary': 'ground',
             'secondary': 'steel',
@@ -1224,7 +1224,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'dugtrio-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 52,
@@ -1245,7 +1245,7 @@ export const FullPokemonList = [
         'id': 52,
         'name': 'meowth',
         'genderDifferences': false,
-        'prettyName': 'Meowth',
+        'prettyName': 'Alolan Meowth',
         'types': {
             'primary': 'dark',
         },
@@ -1254,7 +1254,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'meowth-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 52,
@@ -1305,7 +1305,7 @@ export const FullPokemonList = [
         'id': 53,
         'name': 'persian',
         'genderDifferences': false,
-        'prettyName': 'Persian',
+        'prettyName': 'Alolan Persian',
         'types': {
             'primary': 'dark',
         },
@@ -1314,7 +1314,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'persian-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 54,
@@ -1704,7 +1704,7 @@ export const FullPokemonList = [
         'id': 74,
         'name': 'geodude',
         'genderDifferences': false,
-        'prettyName': 'Geodude',
+        'prettyName': 'Alolan Geodude',
         'types': {
             'primary': 'rock',
             'secondary': 'electric',
@@ -1714,7 +1714,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'geodude-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 75,
@@ -1736,7 +1736,7 @@ export const FullPokemonList = [
         'id': 75,
         'name': 'graveler',
         'genderDifferences': false,
-        'prettyName': 'Graveler',
+        'prettyName': 'Alolan Graveler',
         'types': {
             'primary': 'rock',
             'secondary': 'electric',
@@ -1746,7 +1746,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'graveler-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 76,
@@ -1768,7 +1768,7 @@ export const FullPokemonList = [
         'id': 76,
         'name': 'golem',
         'genderDifferences': false,
-        'prettyName': 'Golem',
+        'prettyName': 'Alolan Golem',
         'types': {
             'primary': 'rock',
             'secondary': 'electric',
@@ -1778,7 +1778,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'golem-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 77,
@@ -2065,7 +2065,7 @@ export const FullPokemonList = [
         'id': 88,
         'name': 'grimer',
         'genderDifferences': false,
-        'prettyName': 'Grimer',
+        'prettyName': 'Alolan Grimer',
         'types': {
             'primary': 'poison',
             'secondary': 'dark',
@@ -2075,7 +2075,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'grimer-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 89,
@@ -2096,7 +2096,7 @@ export const FullPokemonList = [
         'id': 89,
         'name': 'muk',
         'genderDifferences': false,
-        'prettyName': 'Muk',
+        'prettyName': 'Alolan Muk',
         'types': {
             'primary': 'poison',
             'secondary': 'dark',
@@ -2106,7 +2106,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'muk-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 90,
@@ -2408,7 +2408,7 @@ export const FullPokemonList = [
         'id': 103,
         'name': 'exeggutor',
         'genderDifferences': false,
-        'prettyName': 'Exeggutor',
+        'prettyName': 'Alolan Exeggutor',
         'types': {
             'primary': 'grass',
             'secondary': 'dragon',
@@ -2418,7 +2418,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'exeggutor-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 104,
@@ -2454,7 +2454,7 @@ export const FullPokemonList = [
         'id': 105,
         'name': 'marowak',
         'genderDifferences': false,
-        'prettyName': 'Marowak',
+        'prettyName': 'Alolan Marowak',
         'types': {
             'primary': 'fire',
             'secondary': 'ghost',
@@ -2464,7 +2464,7 @@ export const FullPokemonList = [
             'formName': 'alola',
             'fullFormName': 'marowak-alola',
         },
-        'formPrettyName': 'Alolan Form',
+        'formPrettyName': '',
     },
     {
         'id': 106,
