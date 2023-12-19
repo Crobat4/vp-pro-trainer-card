@@ -2884,7 +2884,7 @@ export const FullPokemonList = [
         'id': 128,
         'name': 'tauros',
         'genderDifferences': false,
-        'prettyName': 'Tauros',
+        'prettyName': 'Paldean Tauros',
         'types': {
             'primary': 'fighting',
         },
@@ -2893,13 +2893,13 @@ export const FullPokemonList = [
             'formName': 'paldea-combat-breed',
             'fullFormName': 'tauros-paldea-combat-breed',
         },
-        'formPrettyName': 'Paldean Form',
+        'formPrettyName': 'Combat Breed',
     },
     {
         'id': 128,
         'name': 'tauros',
         'genderDifferences': false,
-        'prettyName': 'Tauros',
+        'prettyName': 'Paldean Tauros',
         'types': {
             'primary': 'fighting',
             'secondary': 'fire',
@@ -2909,13 +2909,13 @@ export const FullPokemonList = [
             'formName': 'paldea-blaze-breed',
             'fullFormName': 'tauros-paldea-blaze-breed',
         },
-        'formPrettyName': 'Paldean Form',
+        'formPrettyName': 'Blaze Breed',
     },
     {
         'id': 128,
         'name': 'tauros',
         'genderDifferences': false,
-        'prettyName': 'Tauros',
+        'prettyName': 'Paldean Tauros',
         'types': {
             'primary': 'fighting',
             'secondary': 'water',
@@ -2925,7 +2925,7 @@ export const FullPokemonList = [
             'formName': 'paldea-aqua-breed',
             'fullFormName': 'tauros-paldea-aqua-breed',
         },
-        'formPrettyName': 'Paldean Form',
+        'formPrettyName': 'Aqua Breed',
     },
     {
         'id': 129,
@@ -4141,7 +4141,7 @@ export const FullPokemonList = [
         'id': 194,
         'name': 'wooper',
         'genderDifferences': false,
-        'prettyName': 'Wooper',
+        'prettyName': 'Paldean Wooper',
         'types': {
             'primary': 'poison',
             'secondary': 'ground',
@@ -4151,7 +4151,7 @@ export const FullPokemonList = [
             'formName': 'paldea',
             'fullFormName': 'wooper-paldea',
         },
-        'formPrettyName': 'Paldean Form',
+        'formPrettyName': '',
     },
     {
         'id': 195,
