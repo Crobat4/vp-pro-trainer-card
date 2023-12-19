@@ -1260,7 +1260,7 @@ export const FullPokemonList = [
         'id': 52,
         'name': 'meowth',
         'genderDifferences': false,
-        'prettyName': 'Meowth',
+        'prettyName': 'Galarian Meowth',
         'types': {
             'primary': 'steel',
         },
@@ -1269,7 +1269,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'meowth-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 52,
@@ -1799,7 +1799,7 @@ export const FullPokemonList = [
         'id': 77,
         'name': 'ponyta',
         'genderDifferences': false,
-        'prettyName': 'Ponyta',
+        'prettyName': 'Galarian Ponyta',
         'types': {
             'primary': 'psychic',
         },
@@ -1808,7 +1808,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'ponyta-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 78,
@@ -1829,7 +1829,7 @@ export const FullPokemonList = [
         'id': 78,
         'name': 'rapidash',
         'genderDifferences': false,
-        'prettyName': 'Rapidash',
+        'prettyName': 'Galarian Rapidash',
         'types': {
             'primary': 'psychic',
             'secondary': 'fairy',
@@ -1839,7 +1839,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'rapidash-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 79,
@@ -1861,7 +1861,7 @@ export const FullPokemonList = [
         'id': 79,
         'name': 'slowpoke',
         'genderDifferences': false,
-        'prettyName': 'Slowpoke',
+        'prettyName': 'Galarian Slowpoke',
         'types': {
             'primary': 'psychic',
         },
@@ -1870,7 +1870,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'slowpoke-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 80,
@@ -1908,7 +1908,7 @@ export const FullPokemonList = [
         'id': 80,
         'name': 'slowbro',
         'genderDifferences': false,
-        'prettyName': 'Slowbro',
+        'prettyName': 'Galarian Slowbro',
         'types': {
             'primary': 'poison',
             'secondary': 'psychic',
@@ -1918,7 +1918,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'slowbro-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 81,
@@ -1972,7 +1972,7 @@ export const FullPokemonList = [
         'id': 83,
         'name': 'farfetchd',
         'genderDifferences': false,
-        'prettyName': 'Farfetch’d',
+        'prettyName': 'Galarian Farfetch’d',
         'types': {
             'primary': 'fighting',
         },
@@ -1981,7 +1981,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'farfetchd-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 84,
@@ -2545,7 +2545,7 @@ export const FullPokemonList = [
         'id': 110,
         'name': 'weezing',
         'genderDifferences': false,
-        'prettyName': 'Weezing',
+        'prettyName': 'Galarian Weezing',
         'types': {
             'primary': 'poison',
             'secondary': 'fairy',
@@ -2555,7 +2555,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'weezing-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 111,
@@ -2760,7 +2760,7 @@ export const FullPokemonList = [
         'id': 122,
         'name': 'mr-mime',
         'genderDifferences': false,
-        'prettyName': 'Mr. Mime',
+        'prettyName': 'Galarian Mr. Mime',
         'types': {
             'primary': 'ice',
             'secondary': 'psychic',
@@ -2770,7 +2770,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'mr-mime-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 123,
@@ -3257,7 +3257,7 @@ export const FullPokemonList = [
         'id': 144,
         'name': 'articuno',
         'genderDifferences': false,
-        'prettyName': 'Articuno',
+        'prettyName': 'Galarian Articuno',
         'types': {
             'primary': 'psychic',
             'secondary': 'flying',
@@ -3267,7 +3267,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'articuno-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 145,
@@ -3289,7 +3289,7 @@ export const FullPokemonList = [
         'id': 145,
         'name': 'zapdos',
         'genderDifferences': false,
-        'prettyName': 'Zapdos',
+        'prettyName': 'Galarian Zapdos',
         'types': {
             'primary': 'fighting',
             'secondary': 'flying',
@@ -3299,7 +3299,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'zapdos-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 146,
@@ -3321,7 +3321,7 @@ export const FullPokemonList = [
         'id': 146,
         'name': 'moltres',
         'genderDifferences': false,
-        'prettyName': 'Moltres',
+        'prettyName': 'Galarian Moltres',
         'types': {
             'primary': 'dark',
             'secondary': 'flying',
@@ -3331,7 +3331,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'moltres-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 147,
@@ -4235,7 +4235,7 @@ export const FullPokemonList = [
         'id': 199,
         'name': 'slowking',
         'genderDifferences': false,
-        'prettyName': 'Slowking',
+        'prettyName': 'Galarian Slowking',
         'types': {
             'primary': 'poison',
             'secondary': 'psychic',
@@ -4245,7 +4245,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'slowking-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 200,
@@ -5094,7 +5094,7 @@ export const FullPokemonList = [
         'id': 222,
         'name': 'corsola',
         'genderDifferences': false,
-        'prettyName': 'Corsola',
+        'prettyName': 'Galarian Corsola',
         'types': {
             'primary': 'ghost',
         },
@@ -5103,7 +5103,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'corsola-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 223,
@@ -5821,7 +5821,7 @@ export const FullPokemonList = [
         'id': 263,
         'name': 'zigzagoon',
         'genderDifferences': false,
-        'prettyName': 'Zigzagoon',
+        'prettyName': 'Galarian Zigzagoon',
         'types': {
             'primary': 'dark',
             'secondary': 'normal',
@@ -5831,7 +5831,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'zigzagoon-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 264,
@@ -5852,7 +5852,7 @@ export const FullPokemonList = [
         'id': 264,
         'name': 'linoone',
         'genderDifferences': false,
-        'prettyName': 'Linoone',
+        'prettyName': 'Galarian Linoone',
         'types': {
             'primary': 'dark',
             'secondary': 'normal',
@@ -5862,7 +5862,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'linoone-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 265,
@@ -11408,7 +11408,7 @@ export const FullPokemonList = [
         'id': 554,
         'name': 'darumaka',
         'genderDifferences': false,
-        'prettyName': 'Darumaka',
+        'prettyName': 'Galarian Darumaka',
         'types': {
             'primary': 'ice',
         },
@@ -11417,7 +11417,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'darumaka-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 555,
@@ -11454,7 +11454,7 @@ export const FullPokemonList = [
         'id': 555,
         'name': 'darmanitan',
         'genderDifferences': false,
-        'prettyName': 'Darmanitan',
+        'prettyName': 'Galarian Darmanitan',
         'types': {
             'primary': 'ice',
         },
@@ -11463,13 +11463,13 @@ export const FullPokemonList = [
             'formName': 'galar-standard',
             'fullFormName': 'darmanitan-galar-standard',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 555,
         'name': 'darmanitan',
         'genderDifferences': false,
-        'prettyName': 'Darmanitan',
+        'prettyName': 'Galarian Darmanitan',
         'types': {
             'primary': 'ice',
             'secondary': 'fire',
@@ -11595,7 +11595,7 @@ export const FullPokemonList = [
         'id': 562,
         'name': 'yamask',
         'genderDifferences': false,
-        'prettyName': 'Yamask',
+        'prettyName': 'Galarian Yamask',
         'types': {
             'primary': 'ground',
             'secondary': 'ghost',
@@ -11605,7 +11605,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'yamask-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 563,
@@ -12616,7 +12616,7 @@ export const FullPokemonList = [
         'id': 618,
         'name': 'stunfisk',
         'genderDifferences': false,
-        'prettyName': 'Stunfisk',
+        'prettyName': 'Galarian Stunfisk',
         'types': {
             'primary': 'ground',
             'secondary': 'steel',
@@ -12626,7 +12626,7 @@ export const FullPokemonList = [
             'formName': 'galar',
             'fullFormName': 'stunfisk-galar',
         },
-        'formPrettyName': 'Galarian Form',
+        'formPrettyName': '',
     },
     {
         'id': 619,
