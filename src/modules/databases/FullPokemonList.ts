@@ -1395,7 +1395,7 @@ export const FullPokemonList = [
         'id': 58,
         'name': 'growlithe',
         'genderDifferences': false,
-        'prettyName': 'Growlithe',
+        'prettyName': 'Hisuian Growlithe',
         'types': {
             'primary': 'fire',
             'secondary': 'rock',
@@ -1405,7 +1405,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'growlithe-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 59,
@@ -1426,7 +1426,7 @@ export const FullPokemonList = [
         'id': 59,
         'name': 'arcanine',
         'genderDifferences': false,
-        'prettyName': 'Arcanine',
+        'prettyName': 'Hisuian Arcanine',
         'types': {
             'primary': 'fire',
             'secondary': 'rock',
@@ -1436,7 +1436,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'arcanine-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 60,
@@ -2329,7 +2329,7 @@ export const FullPokemonList = [
         'id': 100,
         'name': 'voltorb',
         'genderDifferences': false,
-        'prettyName': 'Voltorb',
+        'prettyName': 'Hisuian Voltorb',
         'types': {
             'primary': 'electric',
             'secondary': 'grass',
@@ -2339,7 +2339,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'voltorb-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 101,
@@ -2360,7 +2360,7 @@ export const FullPokemonList = [
         'id': 101,
         'name': 'electrode',
         'genderDifferences': false,
-        'prettyName': 'Electrode',
+        'prettyName': 'Hisuian Electrode',
         'types': {
             'primary': 'electric',
             'secondary': 'grass',
@@ -2370,7 +2370,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'electrode-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 102,
@@ -3534,7 +3534,7 @@ export const FullPokemonList = [
         'id': 157,
         'name': 'typhlosion',
         'genderDifferences': false,
-        'prettyName': 'Typhlosion',
+        'prettyName': 'Hisuian Typhlosion',
         'types': {
             'primary': 'fire',
             'secondary': 'ghost',
@@ -3544,7 +3544,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'typhlosion-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 158,
@@ -4857,7 +4857,7 @@ export const FullPokemonList = [
         'id': 211,
         'name': 'qwilfish',
         'genderDifferences': false,
-        'prettyName': 'Qwilfish',
+        'prettyName': 'Hisuian Qwilfish',
         'types': {
             'primary': 'dark',
             'secondary': 'poison',
@@ -4867,7 +4867,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'qwilfish-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 212,
@@ -4969,7 +4969,7 @@ export const FullPokemonList = [
         'id': 215,
         'name': 'sneasel',
         'genderDifferences': false,
-        'prettyName': 'Sneasel',
+        'prettyName': 'Hisuian Sneasel',
         'types': {
             'primary': 'fighting',
             'secondary': 'poison',
@@ -4979,7 +4979,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'sneasel-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 216,
@@ -10546,7 +10546,7 @@ export const FullPokemonList = [
         'id': 503,
         'name': 'samurott',
         'genderDifferences': false,
-        'prettyName': 'Samurott',
+        'prettyName': 'Hisuian Samurott',
         'types': {
             'primary': 'water',
             'secondary': 'dark',
@@ -10556,7 +10556,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'samurott-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 504,
@@ -11284,7 +11284,7 @@ export const FullPokemonList = [
         'id': 549,
         'name': 'lilligant',
         'genderDifferences': false,
-        'prettyName': 'Lilligant',
+        'prettyName': 'Hisuian Lilligant',
         'types': {
             'primary': 'grass',
             'secondary': 'fighting',
@@ -11294,7 +11294,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'lilligant-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 550,
@@ -11750,7 +11750,7 @@ export const FullPokemonList = [
         'id': 570,
         'name': 'zorua',
         'genderDifferences': false,
-        'prettyName': 'Zorua',
+        'prettyName': 'Hisuian Zorua',
         'types': {
             'primary': 'normal',
             'secondary': 'ghost',
@@ -11760,7 +11760,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'zorua-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 571,
@@ -11781,7 +11781,7 @@ export const FullPokemonList = [
         'id': 571,
         'name': 'zoroark',
         'genderDifferences': false,
-        'prettyName': 'Zoroark',
+        'prettyName': 'Hisuian Zoroark',
         'types': {
             'primary': 'normal',
             'secondary': 'ghost',
@@ -11791,7 +11791,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'zoroark-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 572,
@@ -12788,7 +12788,7 @@ export const FullPokemonList = [
         'id': 628,
         'name': 'braviary',
         'genderDifferences': false,
-        'prettyName': 'Braviary',
+        'prettyName': 'Hisuian Braviary',
         'types': {
             'primary': 'psychic',
             'secondary': 'flying',
@@ -12798,7 +12798,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'braviary-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 629,
@@ -14833,7 +14833,7 @@ export const FullPokemonList = [
         'id': 705,
         'name': 'sliggoo',
         'genderDifferences': false,
-        'prettyName': 'Sliggoo',
+        'prettyName': 'Hisuian Sliggoo',
         'types': {
             'primary': 'steel',
             'secondary': 'dragon',
@@ -14843,7 +14843,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'sliggoo-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 706,
@@ -14864,7 +14864,7 @@ export const FullPokemonList = [
         'id': 706,
         'name': 'goodra',
         'genderDifferences': false,
-        'prettyName': 'Goodra',
+        'prettyName': 'Hisuian Goodra',
         'types': {
             'primary': 'steel',
             'secondary': 'dragon',
@@ -14874,7 +14874,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'goodra-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 707,
@@ -15086,7 +15086,7 @@ export const FullPokemonList = [
         'id': 713,
         'name': 'avalugg',
         'genderDifferences': false,
-        'prettyName': 'Avalugg',
+        'prettyName': 'Hisuian Avalugg',
         'types': {
             'primary': 'ice',
             'secondary': 'rock',
@@ -15096,7 +15096,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'avalugg-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 714,
@@ -15356,7 +15356,7 @@ export const FullPokemonList = [
         'id': 724,
         'name': 'decidueye',
         'genderDifferences': false,
-        'prettyName': 'Decidueye',
+        'prettyName': 'Hisuian Decidueye',
         'types': {
             'primary': 'grass',
             'secondary': 'fighting',
@@ -15366,7 +15366,7 @@ export const FullPokemonList = [
             'formName': 'hisui',
             'fullFormName': 'decidueye-hisui',
         },
-        'formPrettyName': 'Hisuian Form',
+        'formPrettyName': '',
     },
     {
         'id': 725,
