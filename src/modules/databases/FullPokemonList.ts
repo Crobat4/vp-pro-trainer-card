@@ -577,6 +577,7 @@ export const FullPokemonList = [
         },
         'formPrettyName': '',
     },
+    /*
     {
         'id': 25,
         'name': 'pikachu',
@@ -585,7 +586,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 7,
+        'formID': 1,
         'form': {
             'formName': 'original-cap',
             'fullFormName': 'pikachu-original-cap',
@@ -600,7 +601,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 8,
+        'formID': 2,
         'form': {
             'formName': 'hoenn-cap',
             'fullFormName': 'pikachu-hoenn-cap',
@@ -615,7 +616,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 9,
+        'formID': 3,
         'form': {
             'formName': 'sinnoh-cap',
             'fullFormName': 'pikachu-sinnoh-cap',
@@ -630,7 +631,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 10,
+        'formID': 4,
         'form': {
             'formName': 'unova-cap',
             'fullFormName': 'pikachu-unova-cap',
@@ -645,7 +646,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 11,
+        'formID': 5,
         'form': {
             'formName': 'kalos-cap',
             'fullFormName': 'pikachu-kalos-cap',
@@ -660,7 +661,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 12,
+        'formID': 6,
         'form': {
             'formName': 'alola-cap',
             'fullFormName': 'pikachu-alola-cap',
@@ -675,7 +676,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 13,
+        'formID': 7,
         'form': {
             'formName': 'partner-cap',
             'fullFormName': 'pikachu-partner-cap',
@@ -690,13 +691,14 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 15,
+        'formID': 9,
         'form': {
             'formName': 'world-cap',
             'fullFormName': 'pikachu-world-cap',
         },
         'formPrettyName': 'World Cap',
     },
+    */
     {
         'id': 25,
         'name': 'pikachu',
@@ -11334,7 +11336,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'water',
         },
-        'formID': 0,
+        'formID': 2,
         'form': {
             'formName': 'white-striped',
             'fullFormName': 'basculin-white-striped',
@@ -19414,7 +19416,7 @@ export const FullPokemonList = [
             'primary': 'fairy',
             'secondary': 'flying',
         },
-        'formID': 0,
+        'formID': 1,
         'form': {
             'formName': 'therian',
             'fullFormName': 'enamorus-therian',
