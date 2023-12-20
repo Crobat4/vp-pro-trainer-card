@@ -4970,7 +4970,7 @@ export const FullPokemonList = [
     {
         'id': 215,
         'name': 'sneasel',
-        'genderDifferences': false,
+        'genderDifferences': true,
         'prettyName': 'Hisuian Sneasel',
         'types': {
             'primary': 'fighting',
@@ -7375,7 +7375,7 @@ export const FullPokemonList = [
             'formName': 'sunny',
             'fullFormName': 'castform-sunny',
         },
-        'formPrettyName': 'Sunny Form',
+        'formPrettyName': 'Sunny',
     },
     {
         'id': 351,
@@ -7390,7 +7390,7 @@ export const FullPokemonList = [
             'formName': 'rainy',
             'fullFormName': 'castform-rainy',
         },
-        'formPrettyName': 'Rainy Form',
+        'formPrettyName': 'Rainy',
     },
     {
         'id': 351,
@@ -7405,7 +7405,7 @@ export const FullPokemonList = [
             'formName': 'snowy',
             'fullFormName': 'castform-snowy',
         },
-        'formPrettyName': 'Snowy Form',
+        'formPrettyName': 'Snowy',
     },
     {
         'id': 352,
@@ -8099,7 +8099,7 @@ export const FullPokemonList = [
             'formName': 'normal',
             'fullFormName': 'deoxys-normal',
         },
-        'formPrettyName': 'Normal Forme',
+        'formPrettyName': 'Normal',
     },
     {
         'id': 386,
@@ -8114,7 +8114,7 @@ export const FullPokemonList = [
             'formName': 'attack',
             'fullFormName': 'deoxys-attack',
         },
-        'formPrettyName': 'Attack Forme',
+        'formPrettyName': 'Attack',
     },
     {
         'id': 386,
@@ -8129,7 +8129,7 @@ export const FullPokemonList = [
             'formName': 'defense',
             'fullFormName': 'deoxys-defense',
         },
-        'formPrettyName': 'Defense Forme',
+        'formPrettyName': 'Defense',
     },
     {
         'id': 386,
@@ -8144,7 +8144,7 @@ export const FullPokemonList = [
             'formName': 'speed',
             'fullFormName': 'deoxys-speed',
         },
-        'formPrettyName': 'Speed Forme',
+        'formPrettyName': 'Speed',
     },
     {
         'id': 387,
@@ -8747,7 +8747,7 @@ export const FullPokemonList = [
             'formName': 'overcast',
             'fullFormName': 'cherrim-overcast',
         },
-        'formPrettyName': 'Overcast Form',
+        'formPrettyName': 'Overcast',
     },
     {
         'id': 421,
@@ -8762,7 +8762,7 @@ export const FullPokemonList = [
             'formName': 'sunshine',
             'fullFormName': 'cherrim-sunshine',
         },
-        'formPrettyName': 'Sunshine Form',
+        'formPrettyName': 'Sunshine',
     },
     {
         'id': 422,
@@ -9776,7 +9776,7 @@ export const FullPokemonList = [
             'formName': '',
             'fullFormName': 'rotom',
         },
-        'formPrettyName': 'Rotom',
+        'formPrettyName': '',
     },
     {
         'id': 479,
@@ -9792,7 +9792,7 @@ export const FullPokemonList = [
             'formName': 'heat',
             'fullFormName': 'rotom-heat',
         },
-        'formPrettyName': 'Heat Rotom',
+        'formPrettyName': 'Heat',
     },
     {
         'id': 479,
@@ -9808,7 +9808,7 @@ export const FullPokemonList = [
             'formName': 'wash',
             'fullFormName': 'rotom-wash',
         },
-        'formPrettyName': 'Wash Rotom',
+        'formPrettyName': 'Wash',
     },
     {
         'id': 479,
@@ -9824,7 +9824,7 @@ export const FullPokemonList = [
             'formName': 'frost',
             'fullFormName': 'rotom-frost',
         },
-        'formPrettyName': 'Frost Rotom',
+        'formPrettyName': 'Frost',
     },
     {
         'id': 479,
@@ -9840,7 +9840,7 @@ export const FullPokemonList = [
             'formName': 'fan',
             'fullFormName': 'rotom-fan',
         },
-        'formPrettyName': 'Fan Rotom',
+        'formPrettyName': 'Fan',
     },
     {
         'id': 479,
@@ -9856,7 +9856,7 @@ export const FullPokemonList = [
             'formName': 'mow',
             'fullFormName': 'rotom-mow',
         },
-        'formPrettyName': 'Mow Rotom',
+        'formPrettyName': 'Mow',
     },
     {
         'id': 480,
@@ -9933,7 +9933,7 @@ export const FullPokemonList = [
             'formName': 'origin',
             'fullFormName': 'dialga-origin',
         },
-        'formPrettyName': 'Origin Forme',
+        'formPrettyName': 'Origin',
     },
     {
         'id': 484,
@@ -9965,7 +9965,7 @@ export const FullPokemonList = [
             'formName': 'origin',
             'fullFormName': 'palkia-origin',
         },
-        'formPrettyName': 'Origin Forme',
+        'formPrettyName': 'Origin',
     },
     {
         'id': 485,
@@ -10012,7 +10012,7 @@ export const FullPokemonList = [
             'formName': 'altered',
             'fullFormName': 'giratina-altered',
         },
-        'formPrettyName': 'Altered Forme',
+        'formPrettyName': 'Altered',
     },
     {
         'id': 487,
@@ -10028,7 +10028,7 @@ export const FullPokemonList = [
             'formName': 'origin',
             'fullFormName': 'giratina-origin',
         },
-        'formPrettyName': 'Origin Forme',
+        'formPrettyName': 'Origin',
     },
     {
         'id': 488,
@@ -10103,7 +10103,7 @@ export const FullPokemonList = [
             'formName': 'land',
             'fullFormName': 'shaymin-land',
         },
-        'formPrettyName': 'Land Forme',
+        'formPrettyName': 'Land',
     },
     {
         'id': 492,
@@ -10119,7 +10119,7 @@ export const FullPokemonList = [
             'formName': 'sky',
             'fullFormName': 'shaymin-sky',
         },
-        'formPrettyName': 'Sky Forme',
+        'formPrettyName': 'Sky',
     },
     {
         'id': 493,
@@ -10134,7 +10134,7 @@ export const FullPokemonList = [
             'formName': 'normal',
             'fullFormName': 'arceus-normal',
         },
-        'formPrettyName': 'Normal Type',
+        'formPrettyName': 'Normal-type',
     },
     {
         'id': 493,
@@ -10149,7 +10149,7 @@ export const FullPokemonList = [
             'formName': 'bug',
             'fullFormName': 'arceus-bug',
         },
-        'formPrettyName': 'Bug Type',
+        'formPrettyName': 'Bug-type',
     },
     {
         'id': 493,
@@ -10164,7 +10164,7 @@ export const FullPokemonList = [
             'formName': 'dark',
             'fullFormName': 'arceus-dark',
         },
-        'formPrettyName': 'Dark Type',
+        'formPrettyName': 'Dark-type',
     },
     {
         'id': 493,
@@ -10179,7 +10179,7 @@ export const FullPokemonList = [
             'formName': 'dragon',
             'fullFormName': 'arceus-dragon',
         },
-        'formPrettyName': 'Dragon Type',
+        'formPrettyName': 'Dragon-type',
     },
     {
         'id': 493,
@@ -10194,7 +10194,7 @@ export const FullPokemonList = [
             'formName': 'electric',
             'fullFormName': 'arceus-electric',
         },
-        'formPrettyName': 'Electric Type',
+        'formPrettyName': 'Electric-type',
     },
     {
         'id': 493,
@@ -10209,7 +10209,7 @@ export const FullPokemonList = [
             'formName': 'fighting',
             'fullFormName': 'arceus-fighting',
         },
-        'formPrettyName': 'Fighting Type',
+        'formPrettyName': 'Fighting-type',
     },
     {
         'id': 493,
@@ -10224,7 +10224,7 @@ export const FullPokemonList = [
             'formName': 'fire',
             'fullFormName': 'arceus-fire',
         },
-        'formPrettyName': 'Fire Type',
+        'formPrettyName': 'Fire-type',
     },
     {
         'id': 493,
@@ -10239,7 +10239,7 @@ export const FullPokemonList = [
             'formName': 'flying',
             'fullFormName': 'arceus-flying',
         },
-        'formPrettyName': 'Flying Type',
+        'formPrettyName': 'Flying-type',
     },
     {
         'id': 493,
@@ -10254,7 +10254,7 @@ export const FullPokemonList = [
             'formName': 'ghost',
             'fullFormName': 'arceus-ghost',
         },
-        'formPrettyName': 'Ghost Type',
+        'formPrettyName': 'Ghost-type',
     },
     {
         'id': 493,
@@ -10269,7 +10269,7 @@ export const FullPokemonList = [
             'formName': 'grass',
             'fullFormName': 'arceus-grass',
         },
-        'formPrettyName': 'Grass Type',
+        'formPrettyName': 'Grass-type',
     },
     {
         'id': 493,
@@ -10284,7 +10284,7 @@ export const FullPokemonList = [
             'formName': 'ground',
             'fullFormName': 'arceus-ground',
         },
-        'formPrettyName': 'Ground Type',
+        'formPrettyName': 'Ground-type',
     },
     {
         'id': 493,
@@ -10299,7 +10299,7 @@ export const FullPokemonList = [
             'formName': 'ice',
             'fullFormName': 'arceus-ice',
         },
-        'formPrettyName': 'Ice Type',
+        'formPrettyName': 'Ice-type',
     },
     {
         'id': 493,
@@ -10314,7 +10314,7 @@ export const FullPokemonList = [
             'formName': 'poison',
             'fullFormName': 'arceus-poison',
         },
-        'formPrettyName': 'Poison Type',
+        'formPrettyName': 'Poison-type',
     },
     {
         'id': 493,
@@ -10329,7 +10329,7 @@ export const FullPokemonList = [
             'formName': 'psychic',
             'fullFormName': 'arceus-psychic',
         },
-        'formPrettyName': 'Psychic Type',
+        'formPrettyName': 'Psychic-type',
     },
     {
         'id': 493,
@@ -10344,7 +10344,7 @@ export const FullPokemonList = [
             'formName': 'rock',
             'fullFormName': 'arceus-rock',
         },
-        'formPrettyName': 'Rock Type',
+        'formPrettyName': 'Rock-type',
     },
     {
         'id': 493,
@@ -10359,7 +10359,7 @@ export const FullPokemonList = [
             'formName': 'steel',
             'fullFormName': 'arceus-steel',
         },
-        'formPrettyName': 'Steel Type',
+        'formPrettyName': 'Steel-type',
     },
     {
         'id': 493,
@@ -10374,7 +10374,7 @@ export const FullPokemonList = [
             'formName': 'water',
             'fullFormName': 'arceus-water',
         },
-        'formPrettyName': 'Water Type',
+        'formPrettyName': 'Water-type',
     },
     {
         'id': 493,
@@ -10389,7 +10389,7 @@ export const FullPokemonList = [
             'formName': 'fairy',
             'fullFormName': 'arceus-fairy',
         },
-        'formPrettyName': 'Fairy Type',
+        'formPrettyName': 'Fairy-type',
     },
     {
         'id': 494,
@@ -11311,7 +11311,7 @@ export const FullPokemonList = [
             'formName': 'red-striped',
             'fullFormName': 'basculin-red-striped',
         },
-        'formPrettyName': 'Red-Striped Form',
+        'formPrettyName': 'Red-Striped',
     },
     {
         'id': 550,
@@ -11326,7 +11326,7 @@ export const FullPokemonList = [
             'formName': 'blue-striped',
             'fullFormName': 'basculin-blue-striped',
         },
-        'formPrettyName': 'Blue-Striped Form',
+        'formPrettyName': 'Blue-Striped',
     },
     {
         'id': 550,
@@ -11341,7 +11341,7 @@ export const FullPokemonList = [
             'formName': 'white-striped',
             'fullFormName': 'basculin-white-striped',
         },
-        'formPrettyName': 'White-Striped Form',
+        'formPrettyName': 'White-Striped',
     },
     {
         'id': 551,
@@ -11434,7 +11434,7 @@ export const FullPokemonList = [
             'formName': 'standard',
             'fullFormName': 'darmanitan-standard',
         },
-        'formPrettyName': 'Standard Mode',
+        'formPrettyName': '',
     },
     {
         'id': 555,
@@ -12006,7 +12006,7 @@ export const FullPokemonList = [
             'formName': 'spring',
             'fullFormName': 'deerling-spring',
         },
-        'formPrettyName': 'Spring Form',
+        'formPrettyName': 'Spring',
     },
     {
         'id': 585,
@@ -12022,7 +12022,7 @@ export const FullPokemonList = [
             'formName': 'summer',
             'fullFormName': 'deerling-summer',
         },
-        'formPrettyName': 'Summer Form',
+        'formPrettyName': 'Summer',
     },
     {
         'id': 585,
@@ -12038,7 +12038,7 @@ export const FullPokemonList = [
             'formName': 'autumn',
             'fullFormName': 'deerling-autumn',
         },
-        'formPrettyName': 'Autumn Form',
+        'formPrettyName': 'Autumn',
     },
     {
         'id': 585,
@@ -12054,7 +12054,7 @@ export const FullPokemonList = [
             'formName': 'winter',
             'fullFormName': 'deerling-winter',
         },
-        'formPrettyName': 'Winter Form',
+        'formPrettyName': 'Winter',
     },
     {
         'id': 586,
@@ -12070,7 +12070,7 @@ export const FullPokemonList = [
             'formName': 'spring',
             'fullFormName': 'sawsbuck-spring',
         },
-        'formPrettyName': 'Spring Form',
+        'formPrettyName': 'Spring',
     },
     {
         'id': 586,
@@ -12086,7 +12086,7 @@ export const FullPokemonList = [
             'formName': 'summer',
             'fullFormName': 'sawsbuck-summer',
         },
-        'formPrettyName': 'Summer Form',
+        'formPrettyName': 'Summer',
     },
     {
         'id': 586,
@@ -12102,7 +12102,7 @@ export const FullPokemonList = [
             'formName': 'autumn',
             'fullFormName': 'sawsbuck-autumn',
         },
-        'formPrettyName': 'Autumn Form',
+        'formPrettyName': 'Autumn',
     },
     {
         'id': 586,
@@ -12118,7 +12118,7 @@ export const FullPokemonList = [
             'formName': 'winter',
             'fullFormName': 'sawsbuck-winter',
         },
-        'formPrettyName': 'Winter Form',
+        'formPrettyName': 'Winter',
     },
     {
         'id': 587,
@@ -13006,7 +13006,7 @@ export const FullPokemonList = [
             'formName': 'incarnate',
             'fullFormName': 'tornadus-incarnate',
         },
-        'formPrettyName': 'Incarnate Forme',
+        'formPrettyName': 'Incarnate',
     },
     {
         'id': 641,
@@ -13021,7 +13021,7 @@ export const FullPokemonList = [
             'formName': 'therian',
             'fullFormName': 'tornadus-therian',
         },
-        'formPrettyName': 'Therian Forme',
+        'formPrettyName': 'Therian',
     },
     {
         'id': 642,
@@ -13037,7 +13037,7 @@ export const FullPokemonList = [
             'formName': 'incarnate',
             'fullFormName': 'thundurus-incarnate',
         },
-        'formPrettyName': 'Incarnate Forme',
+        'formPrettyName': 'Incarnate',
     },
     {
         'id': 642,
@@ -13053,7 +13053,7 @@ export const FullPokemonList = [
             'formName': 'therian',
             'fullFormName': 'thundurus-therian',
         },
-        'formPrettyName': 'Therian Forme',
+        'formPrettyName': 'Therian',
     },
     {
         'id': 643,
@@ -13101,7 +13101,7 @@ export const FullPokemonList = [
             'formName': 'incarnate',
             'fullFormName': 'landorus-incarnate',
         },
-        'formPrettyName': 'Incarnate Forme',
+        'formPrettyName': 'Incarnate',
     },
     {
         'id': 645,
@@ -13117,7 +13117,7 @@ export const FullPokemonList = [
             'formName': 'therian',
             'fullFormName': 'landorus-therian',
         },
-        'formPrettyName': 'Therian Forme',
+        'formPrettyName': 'Therian',
     },
     {
         'id': 646,
@@ -13133,13 +13133,13 @@ export const FullPokemonList = [
             'formName': '',
             'fullFormName': 'kyurem',
         },
-        'formPrettyName': 'Kyurem',
+        'formPrettyName': '',
     },
     {
         'id': 646,
         'name': 'kyurem',
         'genderDifferences': false,
-        'prettyName': 'Kyurem',
+        'prettyName': 'Black Kyurem',
         'types': {
             'primary': 'dragon',
             'secondary': 'ice',
@@ -13149,13 +13149,13 @@ export const FullPokemonList = [
             'formName': 'black',
             'fullFormName': 'kyurem-black',
         },
-        'formPrettyName': 'Black Kyurem',
+        'formPrettyName': '',
     },
     {
         'id': 646,
         'name': 'kyurem',
         'genderDifferences': false,
-        'prettyName': 'Kyurem',
+        'prettyName': 'White Kyurem',
         'types': {
             'primary': 'dragon',
             'secondary': 'ice',
@@ -13165,7 +13165,7 @@ export const FullPokemonList = [
             'formName': 'white',
             'fullFormName': 'kyurem-white',
         },
-        'formPrettyName': 'White Kyurem',
+        'formPrettyName': '',
     },
     {
         'id': 647,
@@ -13181,7 +13181,7 @@ export const FullPokemonList = [
             'formName': 'ordinary',
             'fullFormName': 'keldeo-ordinary',
         },
-        'formPrettyName': 'Ordinary Form',
+        'formPrettyName': 'Ordinary',
     },
     {
         'id': 647,
@@ -13197,7 +13197,7 @@ export const FullPokemonList = [
             'formName': 'resolute',
             'fullFormName': 'keldeo-resolute',
         },
-        'formPrettyName': 'Resolute Form',
+        'formPrettyName': 'Resolute',
     },
     {
         'id': 648,
@@ -13213,7 +13213,7 @@ export const FullPokemonList = [
             'formName': 'aria',
             'fullFormName': 'meloetta-aria',
         },
-        'formPrettyName': 'Aria Forme',
+        'formPrettyName': 'Aria',
     },
     {
         'id': 648,
@@ -13229,7 +13229,7 @@ export const FullPokemonList = [
             'formName': 'pirouette',
             'fullFormName': 'meloetta-pirouette',
         },
-        'formPrettyName': 'Pirouette Forme',
+        'formPrettyName': 'Pirouette',
     },
     {
         'id': 649,
@@ -13453,7 +13453,7 @@ export const FullPokemonList = [
         'id': 658,
         'name': 'greninja',
         'genderDifferences': false,
-        'prettyName': 'Greninja',
+        'prettyName': 'Ash-Greninja',
         'types': {
             'primary': 'water',
             'secondary': 'dark',
@@ -13463,7 +13463,7 @@ export const FullPokemonList = [
             'formName': 'ash',
             'fullFormName': 'greninja-ash',
         },
-        'formPrettyName': 'Ash-Greninja',
+        'formPrettyName': '',
     },
     {
         'id': 659,
@@ -14225,7 +14225,7 @@ export const FullPokemonList = [
             'formName': 'natural',
             'fullFormName': 'furfrou-natural',
         },
-        'formPrettyName': 'Natural Form',
+        'formPrettyName': 'Natural',
     },
     {
         'id': 676,
@@ -14438,7 +14438,7 @@ export const FullPokemonList = [
             'formName': 'shield',
             'fullFormName': 'aegislash-shield',
         },
-        'formPrettyName': 'Shield Forme',
+        'formPrettyName': 'Shield',
     },
     {
         'id': 681,
@@ -14454,7 +14454,7 @@ export const FullPokemonList = [
             'formName': 'blade',
             'fullFormName': 'aegislash-blade',
         },
-        'formPrettyName': 'Blade Forme',
+        'formPrettyName': 'Blade',
     },
     {
         'id': 682,
@@ -15192,23 +15192,7 @@ export const FullPokemonList = [
             'formName': '50',
             'fullFormName': 'zygarde-50',
         },
-        'formPrettyName': '50% Forme',
-    },
-    {
-        'id': 718,
-        'name': 'zygarde',
-        'genderDifferences': false,
-        'prettyName': 'Zygarde',
-        'types': {
-            'primary': 'dragon',
-            'secondary': 'ground',
-        },
-        'formID': 4,
-        'form': {
-            'formName': 'complete',
-            'fullFormName': 'zygarde-complete',
-        },
-        'formPrettyName': 'Complete Forme',
+        'formPrettyName': '50%',
     },
     {
         'id': 718,
@@ -15224,7 +15208,23 @@ export const FullPokemonList = [
             'formName': '10',
             'fullFormName': 'zygarde-10',
         },
-        'formPrettyName': '10% Forme',
+        'formPrettyName': '10%',
+    },
+    {
+        'id': 718,
+        'name': 'zygarde',
+        'genderDifferences': false,
+        'prettyName': 'Zygarde',
+        'types': {
+            'primary': 'dragon',
+            'secondary': 'ground',
+        },
+        'formID': 4,
+        'form': {
+            'formName': 'complete',
+            'fullFormName': 'zygarde-complete',
+        },
+        'formPrettyName': 'Complete',
     },
     {
         'id': 719,
@@ -15272,7 +15272,7 @@ export const FullPokemonList = [
             'formName': 'confined',
             'fullFormName': 'hoopa',
         },
-        'formPrettyName': 'Hoopa Confined',
+        'formPrettyName': 'Confined',
     },
     {
         'id': 720,
@@ -15288,7 +15288,7 @@ export const FullPokemonList = [
             'formName': 'unbound',
             'fullFormName': 'hoopa-unbound',
         },
-        'formPrettyName': 'Hoopa Unbound',
+        'formPrettyName': 'Unbound',
     },
     {
         'id': 721,
@@ -15742,7 +15742,7 @@ export const FullPokemonList = [
             'formName': 'midday',
             'fullFormName': 'lycanroc-midday',
         },
-        'formPrettyName': 'Midday Form',
+        'formPrettyName': 'Midday',
     },
     {
         'id': 745,
@@ -15757,7 +15757,7 @@ export const FullPokemonList = [
             'formName': 'midnight',
             'fullFormName': 'lycanroc-midnight',
         },
-        'formPrettyName': 'Midnight Form',
+        'formPrettyName': 'Midnight',
     },
     {
         'id': 745,
@@ -15772,7 +15772,7 @@ export const FullPokemonList = [
             'formName': 'dusk',
             'fullFormName': 'lycanroc-dusk',
         },
-        'formPrettyName': 'Dusk Form',
+        'formPrettyName': 'Dusk',
     },
     {
         'id': 746,
@@ -15787,7 +15787,7 @@ export const FullPokemonList = [
             'formName': 'solo',
             'fullFormName': 'wishiwashi-solo',
         },
-        'formPrettyName': 'Solo Form',
+        'formPrettyName': 'Solo',
     },
     {
         'id': 746,
@@ -15802,7 +15802,7 @@ export const FullPokemonList = [
             'formName': 'school',
             'fullFormName': 'wishiwashi-school',
         },
-        'formPrettyName': 'School Form',
+        'formPrettyName': 'School',
     },
     {
         'id': 747,
@@ -16493,7 +16493,7 @@ export const FullPokemonList = [
             'formName': 'red-meteor',
             'fullFormName': 'minior-red-meteor',
         },
-        'formPrettyName': 'Meteor Form',
+        'formPrettyName': 'Meteor',
     },
     {
         'id': 774,
@@ -16668,7 +16668,7 @@ export const FullPokemonList = [
             'formName': 'disguised',
             'fullFormName': 'mimikyu-disguised',
         },
-        'formPrettyName': 'Disguised Form',
+        'formPrettyName': 'Disguised',
     },
     {
         'id': 778,
@@ -16684,7 +16684,7 @@ export const FullPokemonList = [
             'formName': 'busted',
             'fullFormName': 'mimikyu-busted',
         },
-        'formPrettyName': 'Busted Form',
+        'formPrettyName': 'Busted',
     },
     {
         'id': 779,
@@ -17069,7 +17069,7 @@ export const FullPokemonList = [
         'id': 800,
         'name': 'necrozma',
         'genderDifferences': false,
-        'prettyName': 'Necrozma',
+        'prettyName': 'Ultra Necrozma',
         'types': {
             'primary': 'psychic',
             'secondary': 'dragon',
@@ -17079,7 +17079,7 @@ export const FullPokemonList = [
             'formName': 'ultra',
             'fullFormName': 'necrozma-ultra',
         },
-        'formPrettyName': 'Ultra Necrozma',
+        'formPrettyName': '',
     },
     {
         'id': 801,
@@ -17972,7 +17972,7 @@ export const FullPokemonList = [
             'formName': 'gulping',
             'fullFormName': 'cramorant-gulping',
         },
-        'formPrettyName': 'Gulping Form',
+        'formPrettyName': 'Gulping',
     },
     {
         'id': 845,
@@ -17988,7 +17988,7 @@ export const FullPokemonList = [
             'formName': 'gorging',
             'fullFormName': 'cramorant-gorging',
         },
-        'formPrettyName': 'Gorging Form',
+        'formPrettyName': 'Gorging',
     },
     {
         'id': 846,
@@ -18050,7 +18050,7 @@ export const FullPokemonList = [
             'formName': 'amped',
             'fullFormName': 'toxtricity-amped',
         },
-        'formPrettyName': 'Amped Form',
+        'formPrettyName': 'Amped',
     },
     {
         'id': 849,
@@ -18066,7 +18066,7 @@ export const FullPokemonList = [
             'formName': 'low-key',
             'fullFormName': 'toxtricity-low-key',
         },
-        'formPrettyName': 'Low Key Form',
+        'formPrettyName': 'Low Key',
     },
     {
         'id': 849,
@@ -18175,7 +18175,7 @@ export const FullPokemonList = [
             'formName': 'phony',
             'fullFormName': 'sinistea-phony',
         },
-        'formPrettyName': 'Phony Form',
+        'formPrettyName': 'Phony',
     },
     {
         'id': 854,
@@ -18190,7 +18190,7 @@ export const FullPokemonList = [
             'formName': 'antique',
             'fullFormName': 'sinistea-antique',
         },
-        'formPrettyName': 'Antique Form',
+        'formPrettyName': 'Antique',
     },
     {
         'id': 855,
@@ -18205,7 +18205,7 @@ export const FullPokemonList = [
             'formName': 'phony',
             'fullFormName': 'polteageist-phony',
         },
-        'formPrettyName': 'Phony Form',
+        'formPrettyName': 'Phony',
     },
     {
         'id': 855,
@@ -18220,7 +18220,7 @@ export const FullPokemonList = [
             'formName': 'antique',
             'fullFormName': 'polteageist-antique',
         },
-        'formPrettyName': 'Antique Form',
+        'formPrettyName': 'Antique',
     },
     {
         'id': 856,
@@ -19048,7 +19048,7 @@ export const FullPokemonList = [
         'id': 890,
         'name': 'eternatus',
         'genderDifferences': false,
-        'prettyName': 'Eternatus',
+        'prettyName': 'Eternamax Eternatus',
         'types': {
             'primary': 'poison',
             'secondary': 'dragon',
@@ -19058,7 +19058,7 @@ export const FullPokemonList = [
             'formName': 'eternamax',
             'fullFormName': 'eternatus-eternamax',
         },
-        'formPrettyName': 'Eternamax',
+        'formPrettyName': '',
     },
     {
         'id': 891,
@@ -19405,7 +19405,7 @@ export const FullPokemonList = [
             'formName': 'incarnate',
             'fullFormName': 'enamorus-incarnate',
         },
-        'formPrettyName': 'Incarnate Forme',
+        'formPrettyName': 'Incarnate',
     },
     {
         'id': 905,
@@ -19421,7 +19421,7 @@ export const FullPokemonList = [
             'formName': 'therian',
             'fullFormName': 'enamorus-therian',
         },
-        'formPrettyName': 'Therian Forme',
+        'formPrettyName': 'Therian',
     },
     {
         'id': 906,
@@ -19724,10 +19724,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'family-of-four',
-            'fullFormName': 'maushold-family-of-four',
+            'formName': 'family-of-three',
+            'fullFormName': 'maushold-family-of-three',
         },
-        'formPrettyName': 'Family of Four',
+        'formPrettyName': 'Family of Three',
     },
     {
         'id': 925,
@@ -19739,10 +19739,10 @@ export const FullPokemonList = [
         },
         'formID': 1,
         'form': {
-            'formName': 'family-of-three',
-            'fullFormName': 'maushold-family-of-three',
+            'formName': 'family-of-four',
+            'fullFormName': 'maushold-family-of-four',
         },
-        'formPrettyName': 'Family of Three',
+        'formPrettyName': 'Family of Four',
     },
     {
         'id': 926,
@@ -20395,7 +20395,7 @@ export const FullPokemonList = [
             'formName': 'zero',
             'fullFormName': 'palafin-zero',
         },
-        'formPrettyName': 'Zero Form',
+        'formPrettyName': 'Zero',
     },
     {
         'id': 964,
@@ -20410,7 +20410,7 @@ export const FullPokemonList = [
             'formName': 'hero',
             'fullFormName': 'palafin-hero',
         },
-        'formPrettyName': 'Hero Form',
+        'formPrettyName': 'Hero',
     },
     {
         'id': 965,
@@ -20628,7 +20628,7 @@ export const FullPokemonList = [
             'formName': 'curly',
             'fullFormName': 'tatsugiri-curly',
         },
-        'formPrettyName': 'Curly Form',
+        'formPrettyName': 'Curly',
     },
     {
         'id': 978,
@@ -20644,7 +20644,7 @@ export const FullPokemonList = [
             'formName': 'droopy',
             'fullFormName': 'tatsugiri-droopy',
         },
-        'formPrettyName': 'Droopy Form',
+        'formPrettyName': 'Droopy',
     },
     {
         'id': 978,
@@ -20660,7 +20660,7 @@ export const FullPokemonList = [
             'formName': 'stretchy',
             'fullFormName': 'tatsugiri-stretchy',
         },
-        'formPrettyName': 'Stretchy Form',
+        'formPrettyName': 'Stretchy',
     },
     {
         'id': 979,
@@ -20723,7 +20723,7 @@ export const FullPokemonList = [
             'formName': 'two-segment',
             'fullFormName': 'dudunsparce-two-segment',
         },
-        'formPrettyName': 'Two-Segment Form',
+        'formPrettyName': 'Two-Segment',
     },
     {
         'id': 982,
@@ -20738,7 +20738,7 @@ export const FullPokemonList = [
             'formName': 'three-segment',
             'fullFormName': 'dudunsparce-three-segment',
         },
-        'formPrettyName': 'Three-Segment Form',
+        'formPrettyName': 'Three-Segment',
     },
     {
         'id': 983,
@@ -21009,7 +21009,7 @@ export const FullPokemonList = [
             'formName': 'chest',
             'fullFormName': 'gimmighoul-chest',
         },
-        'formPrettyName': 'Chest Form',
+        'formPrettyName': 'Chest',
     },
     {
         'id': 999,
@@ -21024,7 +21024,7 @@ export const FullPokemonList = [
             'formName': 'roaming',
             'fullFormName': 'gimmighoul-roaming',
         },
-        'formPrettyName': 'Roaming Form',
+        'formPrettyName': 'Roaming',
     },
     {
         'id': 1000,
@@ -21232,7 +21232,23 @@ export const FullPokemonList = [
             'formName': '',
             'fullFormName': 'poltchageist',
         },
-        'formPrettyName': '',
+        'formPrettyName': 'Counterfeit',
+    },
+    {
+        'id': 1012,
+        'name': 'poltchageist',
+        'genderDifferences': false,
+        'prettyName': 'Poltchageist',
+        'types': {
+            'primary': 'grass',
+            'secondary': 'ghost',
+        },
+        'formID': 1,
+        'form': {
+            'formName': '',
+            'fullFormName': 'poltchageist',
+        },
+        'formPrettyName': 'Artisan',
     },
     {
         'id': 1013,
@@ -21248,7 +21264,23 @@ export const FullPokemonList = [
             'formName': '',
             'fullFormName': 'sinistcha',
         },
-        'formPrettyName': '',
+        'formPrettyName': 'Unremarkable',
+    },
+    {
+        'id': 1013,
+        'name': 'sinistcha',
+        'genderDifferences': false,
+        'prettyName': 'Sinistcha',
+        'types': {
+            'primary': 'grass',
+            'secondary': 'ghost',
+        },
+        'formID': 1,
+        'form': {
+            'formName': '',
+            'fullFormName': 'sinistcha',
+        },
+        'formPrettyName': 'Masterpiece',
     },
     {
         'id': 1014,
