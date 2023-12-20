@@ -7996,7 +7996,7 @@ export const FullPokemonList = [
         'id': 382,
         'name': 'kyogre',
         'genderDifferences': false,
-        'prettyName': 'Kyogre',
+        'prettyName': 'Primal Kyogre',
         'types': {
             'primary': 'water',
         },
@@ -8005,7 +8005,7 @@ export const FullPokemonList = [
             'formName': 'primal',
             'fullFormName': 'kyogre-primal',
         },
-        'formPrettyName': 'Primal Reversion',
+        'formPrettyName': '',
     },
     {
         'id': 383,
@@ -8026,7 +8026,7 @@ export const FullPokemonList = [
         'id': 383,
         'name': 'groudon',
         'genderDifferences': false,
-        'prettyName': 'Groudon',
+        'prettyName': 'Primal Groudon',
         'types': {
             'primary': 'ground',
             'secondary': 'fire',
@@ -8036,7 +8036,7 @@ export const FullPokemonList = [
             'formName': 'primal',
             'fullFormName': 'groudon-primal',
         },
-        'formPrettyName': 'Primal Reversion',
+        'formPrettyName': '',
     },
     {
         'id': 384,
@@ -19251,7 +19251,7 @@ export const FullPokemonList = [
         'id': 898,
         'name': 'calyrex',
         'genderDifferences': false,
-        'prettyName': 'Calyrex',
+        'prettyName': 'Ice Rider Calyrex',
         'types': {
             'primary': 'psychic',
             'secondary': 'ice',
@@ -19261,13 +19261,13 @@ export const FullPokemonList = [
             'formName': 'ice',
             'fullFormName': 'calyrex-ice',
         },
-        'formPrettyName': 'Ice Rider',
+        'formPrettyName': '',
     },
     {
         'id': 898,
         'name': 'calyrex',
         'genderDifferences': false,
-        'prettyName': 'Calyrex',
+        'prettyName': 'Shadow Rider Calyrex',
         'types': {
             'primary': 'psychic',
             'secondary': 'ghost',
@@ -19277,7 +19277,7 @@ export const FullPokemonList = [
             'formName': 'shadow',
             'fullFormName': 'calyrex-shadow',
         },
-        'formPrettyName': 'Shadow Rider',
+        'formPrettyName': '',
     },
     {
         'id': 899,
