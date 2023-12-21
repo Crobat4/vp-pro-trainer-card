@@ -18466,10 +18466,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'vanilla-cream',
-            'fullFormName': 'alcremie-vanilla-cream',
+            'formName': 'strawberry',
+            'fullFormName': 'alcremie-strawberry',
         },
-        'formPrettyName': 'Vanilla Cream',
+        'formPrettyName': 'Strawberry',
     },
     {
         'id': 869,
@@ -18481,10 +18481,10 @@ export const FullPokemonList = [
         },
         'formID': 1,
         'form': {
-            'formName': 'ruby-cream',
-            'fullFormName': 'alcremie-ruby-cream',
+            'formName': 'berry',
+            'fullFormName': 'alcremie-berry',
         },
-        'formPrettyName': 'Ruby Cream',
+        'formPrettyName': 'Berry',
     },
     {
         'id': 869,
@@ -18496,10 +18496,10 @@ export const FullPokemonList = [
         },
         'formID': 2,
         'form': {
-            'formName': 'matcha-cream',
-            'fullFormName': 'alcremie-matcha-cream',
+            'formName': 'love',
+            'fullFormName': 'alcremie-love',
         },
-        'formPrettyName': 'Matcha Cream',
+        'formPrettyName': 'Love',
     },
     {
         'id': 869,
@@ -18511,10 +18511,10 @@ export const FullPokemonList = [
         },
         'formID': 3,
         'form': {
-            'formName': 'mint-cream',
-            'fullFormName': 'alcremie-mint-cream',
+            'formName': 'star',
+            'fullFormName': 'alcremie-star',
         },
-        'formPrettyName': 'Mint Cream',
+        'formPrettyName': 'Star',
     },
     {
         'id': 869,
@@ -18526,10 +18526,10 @@ export const FullPokemonList = [
         },
         'formID': 4,
         'form': {
-            'formName': 'lemon-cream',
-            'fullFormName': 'alcremie-lemon-cream',
+            'formName': 'clover',
+            'fullFormName': 'alcremie-clover',
         },
-        'formPrettyName': 'Lemon Cream',
+        'formPrettyName': 'Clover',
     },
     {
         'id': 869,
@@ -18541,10 +18541,10 @@ export const FullPokemonList = [
         },
         'formID': 5,
         'form': {
-            'formName': 'salted-cream',
-            'fullFormName': 'alcremie-salted-cream',
+            'formName': 'flower',
+            'fullFormName': 'alcremie-flower',
         },
-        'formPrettyName': 'Salted Cream',
+        'formPrettyName': 'Flower',
     },
     {
         'id': 869,
@@ -18556,40 +18556,10 @@ export const FullPokemonList = [
         },
         'formID': 6,
         'form': {
-            'formName': 'ruby-swirl',
-            'fullFormName': 'alcremie-ruby-swirl',
+            'formName': 'ribbon',
+            'fullFormName': 'alcremie-ribbon',
         },
-        'formPrettyName': 'Ruby Swirl',
-    },
-    {
-        'id': 869,
-        'name': 'alcremie',
-        'genderDifferences': false,
-        'prettyName': 'Alcremie',
-        'types': {
-            'primary': 'fairy',
-        },
-        'formID': 7,
-        'form': {
-            'formName': 'caramel-swirl',
-            'fullFormName': 'alcremie-caramel-swirl',
-        },
-        'formPrettyName': 'Caramel Swirl',
-    },
-    {
-        'id': 869,
-        'name': 'alcremie',
-        'genderDifferences': false,
-        'prettyName': 'Alcremie',
-        'types': {
-            'primary': 'fairy',
-        },
-        'formID': 8,
-        'form': {
-            'formName': 'rainbow-swirl',
-            'fullFormName': 'alcremie-rainbow-swirl',
-        },
-        'formPrettyName': 'Rainbow Swirl',
+        'formPrettyName': 'Ribbon',
     },
     {
         'id': 869,
