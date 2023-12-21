@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'preact/hooks';
 import axios from 'axios';
-import { BannedMoves } from 'modules/Constants';
+import { BannedForms, BannedMoves } from 'modules/Constants';
 import { sanitizeString } from 'modules/Utils';
 import PokemonData from 'modules/pokemon/PokemonData';
 
 export function fetchPokemonList() {
-    const [pokemondata, setPokemondata] = useState([]);
+    const [pokemonData, setPokemonData] = useState([]);
     const lastPokemonID = 1017; // Ogerpon
     useEffect(() => {
         console.log('Getting all Pokemon data...');
@@ -27,15 +27,60 @@ export function fetchPokemonList() {
                             );
                         });
                 })
-        )).then(setPokemondata);
+        )).then(setPokemonData);
     },[]);
     //console.log(JSON.stringify(pokemondata))
-    console.log(pokemondata);
-    return pokemondata;
+    console.log(pokemonData);
+    return pokemonData;
+}
+
+export function fetchPokemonFormsList() {
+    const [pokemonFormsData, setPokemonFormsData] = useState([]);
+    const lastPokemonID = 1017;
+    const lastPokemonFormID = 444;
+    useEffect(() => {
+        console.log('Getting all Pokemon Forms data...');
+        Promise.all(Array.from({ length: lastPokemonID + lastPokemonFormID }, (_, i) =>
+            axios.get(`https://pokeapi.co/api/v2/pokemon-form/${i + (i < lastPokemonID ? 0 : 10000 - lastPokemonID) + 1}`)
+                //.then(res => res.json())
+                .then((resPokemonForm) => {
+                    const urlPokemon = resPokemonForm.data.pokemon.url;
+                    return axios.get(urlPokemon)
+                        .then((resPokemon) => {
+                            const urlPokemonSpecies = resPokemon.data.species.url;
+                            return axios.get(urlPokemonSpecies)
+                                .then((resPokemonSpecies) => {
+                                    const isBannedForm = BannedForms.find((bf) => bf === resPokemonForm.data.name);
+                                    if (!isBannedForm) {
+                                        return new PokemonData(
+                                            resPokemonSpecies.data.id,
+                                            resPokemonSpecies.data.name,
+                                            resPokemonForm.data.id <= lastPokemonID ? resPokemonSpecies.data.has_gender_differences : false,
+                                            resPokemonSpecies.data.names.find((ns) => ns.language.name == 'en').name,
+                                            {
+                                                primary: resPokemonForm.data.types[0]?.type.name,
+                                                secondary: resPokemonForm.data.types[1]?.type.name,
+                                            },
+                                            resPokemonForm.data.form_order - 1,
+                                            {
+                                                formName: resPokemonForm.data.form_name,
+                                                fullFormName: resPokemonForm.data.name,
+                                            },
+                                            resPokemonForm.data.form_names.find((ns) => ns.language.name == 'en')?.name
+                                        );
+                                    }
+                                });
+                        });
+                })
+        )).then(setPokemonFormsData);
+    },[]);
+    //console.log(JSON.stringify(pokemonFormsData))
+    console.log(pokemonFormsData?.filter((pf) => pf).sort((a,b) => a.id - b.id));
+    return pokemonFormsData;
 }
 
 export function fetchMoveList() {
-    const [movedata, setMovedata] = useState([]);
+    const [moveData, setMoveData] = useState([]);
     const lastMoveID = 904;
     useEffect(() => {
         console.log('Getting all move data...');
@@ -53,10 +98,10 @@ export function fetchMoveList() {
                     }
                 })
             //.catch((error) => console.log(error))
-        )).then(setMovedata);
+        )).then(setMoveData);
     },[]);
     //console.log(JSON.stringify(pokemondata))
     // Filter: Remove all undefined elements (Banned moves)
-    console.log(movedata?.filter((m) => m));
-    return movedata;
+    console.log(moveData?.filter((m) => m));
+    return moveData;
 }

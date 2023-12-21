@@ -163,6 +163,7 @@ img {
 .pokemon-btn, .badge-img-container {
 	background-position: center center;
     background-size: contain;
+	background-repeat: no-repeat;
 	border: 1px solid rgba(100, 100, 100, 0.25) !important;
 }
 .pokemon-btn {
