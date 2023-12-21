@@ -108,6 +108,15 @@ export const BannedForms = [
     'ribombee-totem',
     'araquanid-totem',
     'togedemaru-totem',
+    // Without shiny image
+    'pikachu-original-cap',
+    'pikachu-hoenn-cap',
+    'pikachu-sinnoh-cap',
+    'pikachu-unova-cap',
+    'pikachu-kalos-cap',
+    'pikachu-alola-cap',
+    'pikachu-partner-cap',
+    'pikachu-world-cap',
 ];
 
 export const BannedMoves = [
@@ -210,6 +219,10 @@ export const Sparkle = 'assets/icons/sparkle-sharp.svg';
 export const Female = 'assets/icons/female.svg';
 export const Star = 'assets/icons/shiny-icon.png';
 export const Amelia = 'assets/icons/amelia.png';
+
+// Battle Form IDs
+export const MegaID = 100;
+export const GMaxID = 200;
 
 /*
 export const Strings = {

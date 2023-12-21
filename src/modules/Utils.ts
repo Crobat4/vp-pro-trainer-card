@@ -1,5 +1,6 @@
 import PokemonType from 'modules/emums/PokemonType';
 import States from 'modules/States';
+import { GMaxID, MegaID } from 'modules/Constants';
 
 export function enumStrings(enumList: any): string[] {
     return Object.keys(enumList).filter((key) => Number.isNaN(Number(key)));
@@ -18,11 +19,19 @@ export function generateTypeSelect() {
     return types;
 }
 
-export function getPokemonImage(id = 0, shiny = false, female = false, formID = 0, formName = '') {
-    const isGMax = formName === 'gmax';
-    const femaleToggle = female && !isGMax && States.pokemonList.value.find((p) => p.id === id && p.formID === formID).genderDifferences;
+export function getPokemonImage(id = 0, shiny = false, female = false, formID = 0) {
+    const femaleToggle = female && States.pokemonList.value.find((p) => p.id === id && p.formID === formID).genderDifferences;
     const isForm = formID > 0;
-    return `assets/${shiny ? 'shiny' : ''}pokemon/${femaleToggle ? 'female/' : ''}${isForm || isGMax ? 'forms/' : ''}${id.toString().padStart(4, '0')}${isForm || isGMax ? `_${formID.toString().padStart(3, '0')}` : ''}${isGMax ? '_GMAX' : ''}.png`;
+    const isMega = formID >= MegaID && formID < GMaxID;
+    const isGMax = formID >= GMaxID;
+    // Directory strings
+    const shinyString = `${shiny ? 'shiny' : ''}`;
+    const femaleString = `${femaleToggle ? 'female/' : ''}`;
+    const formString = `${isForm ? 'forms/' : ''}`;
+    const idString = `${id.toString().padStart(4, '0')}`;
+    const formIDString = `${isForm ? `_${formID.toString().padStart(3, '0')}` : ''}`;
+    const battleFormString = `${isMega ? '_MEGA' : ''}${isGMax ? '_GMAX' : ''}`;
+    return `assets/${shinyString}pokemon/${femaleString}${formString}${idString}${formIDString}${battleFormString}.png`;
 }
 
 export function sanitizeString(str) { // Remove all non-alphanumeric characters (except blank spaces)

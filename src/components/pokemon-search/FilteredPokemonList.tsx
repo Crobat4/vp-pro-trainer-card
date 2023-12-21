@@ -42,7 +42,7 @@ function FilteredPokemonList({ itemList }: Props) {
                         <LazyLoadImage
                             className="gallery-img"
                             effect={'opacity'}
-                            src={getPokemonImage(pokemon.id, States.search.shiny.value, States.search.female.value, pokemon.formID, pokemon.form.formName)}
+                            src={getPokemonImage(pokemon.id, States.search.shiny.value, States.search.female.value, pokemon.formID)}
                             width={'100%'}
                             wrapperClassName="gallery-img-wrapper"
                             threshold={200}

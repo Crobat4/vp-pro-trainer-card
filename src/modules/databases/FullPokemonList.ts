@@ -56,7 +56,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'poison',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'venusaur-mega',
@@ -72,7 +72,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'poison',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'venusaur-gmax',
@@ -134,7 +134,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'dragon',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega-x',
             'fullFormName': 'charizard-mega-x',
@@ -150,7 +150,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'flying',
         },
-        'formID': 2,
+        'formID': 101,
         'form': {
             'formName': 'mega-y',
             'fullFormName': 'charizard-mega-y',
@@ -166,7 +166,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'flying',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'charizard-gmax',
@@ -226,7 +226,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'water',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'blastoise-mega',
@@ -241,7 +241,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'water',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'blastoise-gmax',
@@ -303,7 +303,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'flying',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'butterfree-gmax',
@@ -367,7 +367,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'poison',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'beedrill-mega',
@@ -431,7 +431,7 @@ export const FullPokemonList = [
             'primary': 'normal',
             'secondary': 'flying',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'pidgeot-mega',
@@ -707,7 +707,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'pikachu-gmax',
@@ -1281,7 +1281,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'normal',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'meowth-gmax',
@@ -1539,7 +1539,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'alakazam-mega',
@@ -1599,7 +1599,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'fighting',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'machamp-gmax',
@@ -1899,7 +1899,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'slowbro-mega',
@@ -2198,7 +2198,7 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'poison',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'gengar-mega',
@@ -2214,7 +2214,7 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'poison',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'gengar-gmax',
@@ -2305,7 +2305,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'water',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'kingler-gmax',
@@ -2644,7 +2644,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'normal',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'kangaskhan-mega',
@@ -2860,7 +2860,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'flying',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'pinsir-mega',
@@ -2969,7 +2969,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'dark',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'gyarados-mega',
@@ -3001,7 +3001,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'ice',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'lapras-gmax',
@@ -3046,7 +3046,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'normal',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'eevee-gmax',
@@ -3202,7 +3202,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'aerodactyl-mega',
@@ -3232,7 +3232,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'normal',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'snorlax-gmax',
@@ -3405,7 +3405,7 @@ export const FullPokemonList = [
             'primary': 'psychic',
             'secondary': 'fighting',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega-x',
             'fullFormName': 'mewtwo-mega-x',
@@ -3420,7 +3420,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'psychic',
         },
-        'formID': 2,
+        'formID': 101,
         'form': {
             'formName': 'mega-y',
             'fullFormName': 'mewtwo-mega-y',
@@ -3930,7 +3930,7 @@ export const FullPokemonList = [
             'primary': 'electric',
             'secondary': 'dragon',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'ampharos-mega',
@@ -4802,7 +4802,7 @@ export const FullPokemonList = [
             'primary': 'steel',
             'secondary': 'ground',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'steelix-mega',
@@ -4896,7 +4896,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'steel',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'scizor-mega',
@@ -4944,7 +4944,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'fighting',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'heracross-mega',
@@ -5226,7 +5226,7 @@ export const FullPokemonList = [
             'primary': 'dark',
             'secondary': 'fire',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'houndoom-mega',
@@ -5532,7 +5532,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'dark',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'tyranitar-mega',
@@ -5641,7 +5641,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'dragon',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'sceptile-mega',
@@ -5704,7 +5704,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'fighting',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'blaziken-mega',
@@ -5767,7 +5767,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'ground',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'swampert-mega',
@@ -6159,7 +6159,7 @@ export const FullPokemonList = [
             'primary': 'psychic',
             'secondary': 'fairy',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'gardevoir-mega',
@@ -6483,7 +6483,7 @@ export const FullPokemonList = [
             'primary': 'dark',
             'secondary': 'ghost',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'sableye-mega',
@@ -6515,7 +6515,7 @@ export const FullPokemonList = [
             'primary': 'steel',
             'secondary': 'fairy',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'mawile-mega',
@@ -6578,7 +6578,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'steel',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'aggron-mega',
@@ -6626,7 +6626,7 @@ export const FullPokemonList = [
             'primary': 'fighting',
             'secondary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'medicham-mega',
@@ -6671,7 +6671,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'electric',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'manectric-mega',
@@ -6825,7 +6825,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'dark',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'sharpedo-mega',
@@ -6903,7 +6903,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'ground',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'camerupt-mega',
@@ -7089,7 +7089,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'fairy',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'altaria-mega',
@@ -7460,7 +7460,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'ghost',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'banette-mega',
@@ -7551,7 +7551,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'dark',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'absol-mega',
@@ -7611,7 +7611,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'ice',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'glalie-mega',
@@ -7797,7 +7797,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'flying',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'salamence-mega',
@@ -7861,7 +7861,7 @@ export const FullPokemonList = [
             'primary': 'steel',
             'secondary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'metagross-mega',
@@ -7938,7 +7938,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'latias-mega',
@@ -7970,7 +7970,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'psychic',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'latios-mega',
@@ -8063,7 +8063,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'flying',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'rayquaza-mega',
@@ -8912,7 +8912,7 @@ export const FullPokemonList = [
             'primary': 'normal',
             'secondary': 'fighting',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'lopunny-mega',
@@ -9194,7 +9194,7 @@ export const FullPokemonList = [
             'primary': 'dragon',
             'secondary': 'ground',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'garchomp-mega',
@@ -9256,7 +9256,7 @@ export const FullPokemonList = [
             'primary': 'fighting',
             'secondary': 'steel',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'lucario-mega',
@@ -9459,7 +9459,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'ice',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'abomasnow-mega',
@@ -9708,7 +9708,7 @@ export const FullPokemonList = [
             'primary': 'psychic',
             'secondary': 'fighting',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'gallade-mega',
@@ -10995,7 +10995,7 @@ export const FullPokemonList = [
             'primary': 'normal',
             'secondary': 'fairy',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'audino-mega',
@@ -11726,7 +11726,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'poison',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'garbodor-gmax',
@@ -15251,7 +15251,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'fairy',
         },
-        'formID': 1,
+        'formID': 100,
         'form': {
             'formName': 'mega',
             'fullFormName': 'diancie-mega',
@@ -17245,7 +17245,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'steel',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'melmetal-gmax',
@@ -17305,7 +17305,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'grass',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'rillaboom-gmax',
@@ -17365,7 +17365,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'fire',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'cinderace-gmax',
@@ -17425,7 +17425,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'water',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'inteleon-gmax',
@@ -17517,7 +17517,7 @@ export const FullPokemonList = [
             'primary': 'flying',
             'secondary': 'steel',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'corviknight-gmax',
@@ -17580,7 +17580,7 @@ export const FullPokemonList = [
             'primary': 'bug',
             'secondary': 'psychic',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'orbeetle-gmax',
@@ -17717,7 +17717,7 @@ export const FullPokemonList = [
             'primary': 'water',
             'secondary': 'rock',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'drednaw-gmax',
@@ -17810,7 +17810,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'fire',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'coalossal-gmax',
@@ -17858,7 +17858,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'dragon',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'flapple-gmax',
@@ -17890,7 +17890,7 @@ export const FullPokemonList = [
             'primary': 'grass',
             'secondary': 'dragon',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'appletun-gmax',
@@ -17935,7 +17935,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'ground',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'sandaconda-gmax',
@@ -18077,7 +18077,7 @@ export const FullPokemonList = [
             'primary': 'electric',
             'secondary': 'poison',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'toxtricity-amped-gmax',
@@ -18125,7 +18125,7 @@ export const FullPokemonList = [
             'primary': 'fire',
             'secondary': 'bug',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'centiskorch-gmax',
@@ -18277,7 +18277,7 @@ export const FullPokemonList = [
             'primary': 'psychic',
             'secondary': 'fairy',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'hatterene-gmax',
@@ -18341,7 +18341,7 @@ export const FullPokemonList = [
             'primary': 'dark',
             'secondary': 'fairy',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'grimmsnarl-gmax',
@@ -18599,7 +18599,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'fairy',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'alcremie-gmax',
@@ -18815,7 +18815,7 @@ export const FullPokemonList = [
         'types': {
             'primary': 'steel',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'copperajah-gmax',
@@ -18911,7 +18911,7 @@ export const FullPokemonList = [
             'primary': 'steel',
             'secondary': 'dragon',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'duraludon-gmax',
@@ -19116,7 +19116,7 @@ export const FullPokemonList = [
             'primary': 'fighting',
             'secondary': 'dark',
         },
-        'formID': 0,
+        'formID': 200,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'urshifu-single-strike-gmax',
@@ -19132,7 +19132,7 @@ export const FullPokemonList = [
             'primary': 'fighting',
             'secondary': 'water',
         },
-        'formID': 1,
+        'formID': 201,
         'form': {
             'formName': 'gmax',
             'fullFormName': 'urshifu-rapid-strike-gmax',
