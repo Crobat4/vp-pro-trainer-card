@@ -1,9 +1,9 @@
 import React from 'react';
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { getPokemonImage } from 'modules/Utils';
 import States from 'modules/States';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import PokemonData from 'modules/pokemon/PokemonData';
+import { PokemonWithSubForms } from 'modules/Constants';
+import PokemonButton from 'components/pokemon-button';
 
 // Pokemon list buttons
 const handlePokemonClick = (pokemonID, formID, formName) => {
@@ -14,8 +14,21 @@ const handlePokemonClick = (pokemonID, formID, formName) => {
     pokemon.female = States.search.female.value;
     pokemon.formID = formID;
     pokemon.formName = formName;
+    pokemon.subFormID = 0;
 
     States.modal.pokemonListModal.value = false;
+};
+
+const handleSubFormClick = (pokemonID, formID, formName) => {
+    const pokemon = States.modal.pokemonSlot.pokemon;
+    pokemon.id = pokemonID;
+    pokemon.shiny = States.search.shiny.value;
+    pokemon.female = States.search.female.value;
+    pokemon.formID = formID;
+    pokemon.formName = formName;
+
+    States.subFormModal.value = true;
+    States.subFormPokemon = pokemon;
 };
 
 /**
@@ -28,28 +41,19 @@ type Props = {
 }
 function FilteredPokemonList({ itemList }: Props) {
     const listItems = itemList?.map((pokemon) => {
-        const formName = pokemon.formPrettyName ? `(${pokemon.formPrettyName})` : '';
-        const list =
-            <div className="col-6 col-md-4 col-lg-3 col-xl-2">
-                <OverlayTrigger placement="bottom" flip={true} overlay={(props) => (
-                    <Tooltip id="button-tooltip" {...props} name={pokemon.prettyName}>
-                        {`${pokemon.prettyName} ${formName}`}
-                    </Tooltip>
-                )}>
-                    <button className={`pokemon-btn btn btn-light d-block m-auto my-3 ${States.darkMode.value ? 'btn-dark' : 'btn-light'}`}
-                        data-id={pokemon.id}
-                        onClick={() => handlePokemonClick(pokemon.id, pokemon.formID, pokemon.form.formName)}>
-                        <LazyLoadImage
-                            className="gallery-img"
-                            effect={'opacity'}
-                            src={getPokemonImage(pokemon.id, States.search.shiny.value, States.search.female.value, pokemon.formID)}
-                            width={'100%'}
-                            wrapperClassName="gallery-img-wrapper"
-                            threshold={200}
-                        />
-                    </button>
-                </OverlayTrigger>
-            </div>;
+        const imgSrc = getPokemonImage(pokemon.id, States.search.shiny.value, States.search.female.value, pokemon.formID);
+        const list = (
+            <PokemonButton id={pokemon.id} name={pokemon.prettyName} formID={pokemon.formID} formName={pokemon.formPrettyName}
+                onClick={() => {
+                    if (PokemonWithSubForms.find((id) => pokemon.id === id) && pokemon.hasSubForm && !States.search.shiny.value) {
+                        handleSubFormClick(pokemon.id, pokemon.formID, pokemon.form.formName);
+                    } else {
+                        handlePokemonClick(pokemon.id, pokemon.formID, pokemon.form.formName);
+                    }
+                }}
+                imgSrc={imgSrc}
+            />
+        );
         return list;
     });
     const pokemonElementsList = <>{listItems}</>;

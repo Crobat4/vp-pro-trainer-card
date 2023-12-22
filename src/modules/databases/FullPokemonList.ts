@@ -18470,6 +18470,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-strawberry',
         },
         'formPrettyName': 'Strawberry',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18485,6 +18486,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-berry',
         },
         'formPrettyName': 'Berry',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18500,6 +18502,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-love',
         },
         'formPrettyName': 'Love',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18515,6 +18518,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-star',
         },
         'formPrettyName': 'Star',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18530,6 +18534,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-clover',
         },
         'formPrettyName': 'Clover',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18545,6 +18550,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-flower',
         },
         'formPrettyName': 'Flower',
+        'hasSubForm': true,
     },
     {
         'id': 869,
@@ -18560,6 +18566,7 @@ export const FullPokemonList = [
             'fullFormName': 'alcremie-ribbon',
         },
         'formPrettyName': 'Ribbon',
+        'hasSubForm': true,
     },
     {
         'id': 869,

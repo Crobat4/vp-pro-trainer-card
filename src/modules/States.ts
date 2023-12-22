@@ -8,4 +8,7 @@ export default class States {
     public static modal = { pokemonListModal: signal(false), pokemonSlot: null };
     public static loadingState = signal(true);
     public static darkMode = signal(false);
+
+    public static subFormModal = signal(false);
+    public static subFormPokemon = null;
 }

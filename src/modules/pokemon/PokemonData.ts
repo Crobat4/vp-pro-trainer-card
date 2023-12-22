@@ -7,6 +7,7 @@ export default class PokemonData {
     formID: number;
     form: FormNameProps;
     formPrettyName: string;
+    hasSubForm: boolean;
 
     constructor (
         public id: number,
@@ -20,10 +21,12 @@ export default class PokemonData {
         },
         formID: number = 1,
         form: FormNameProps = {formName: '', fullFormName: ''},
-        formPrettyName: string = ''
+        formPrettyName: string = '',
+        hasSubForm: boolean = false
     ) {
         this.formID = formID;
         this.form = form;
         this.formPrettyName = formPrettyName;
+        this.hasSubForm = hasSubForm;
     }
 }
