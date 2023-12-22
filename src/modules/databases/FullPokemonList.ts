@@ -8001,9 +8001,9 @@ export const FullPokemonList = [
         'formID': 0,
         'form': {
             'formName': '',
-            'fullFormName': 'kyogre',
+            'fullFormName': '',
         },
-        'formPrettyName': 'Kyogre',
+        'formPrettyName': '',
     },
     {
         'id': 382,
@@ -8031,9 +8031,9 @@ export const FullPokemonList = [
         'formID': 0,
         'form': {
             'formName': '',
-            'fullFormName': 'groudon',
+            'fullFormName': '',
         },
-        'formPrettyName': 'Groudon',
+        'formPrettyName': '',
     },
     {
         'id': 383,
