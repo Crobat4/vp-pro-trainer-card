@@ -577,7 +577,6 @@ export const FullPokemonList = [
         },
         'formPrettyName': '',
     },
-    /*
     {
         'id': 25,
         'name': 'pikachu',
@@ -698,7 +697,6 @@ export const FullPokemonList = [
         },
         'formPrettyName': 'World Cap',
     },
-    */
     {
         'id': 25,
         'name': 'pikachu',
@@ -3779,6 +3777,21 @@ export const FullPokemonList = [
         'form': {
             'formName': '',
             'fullFormName': 'pichu',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 172,
+        'name': 'pichu',
+        'genderDifferences': false,
+        'prettyName': 'Spiky-eared Pichu',
+        'types': {
+            'primary': 'electric',
+        },
+        'formID': 1,
+        'form': {
+            'formName': '',
+            'fullFormName': 'pichu-spiky-eared',
         },
         'formPrettyName': '',
     },
@@ -7988,9 +8001,9 @@ export const FullPokemonList = [
         'formID': 0,
         'form': {
             'formName': '',
-            'fullFormName': 'kyogre',
+            'fullFormName': '',
         },
-        'formPrettyName': 'Kyogre',
+        'formPrettyName': '',
     },
     {
         'id': 382,
@@ -8018,9 +8031,9 @@ export const FullPokemonList = [
         'formID': 0,
         'form': {
             'formName': '',
-            'fullFormName': 'groudon',
+            'fullFormName': '',
         },
-        'formPrettyName': 'Groudon',
+        'formPrettyName': '',
     },
     {
         'id': 383,
@@ -14387,10 +14400,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'meowstic-male',
+            'formName': '',
+            'fullFormName': 'meowstic',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 679,
@@ -14935,12 +14948,12 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'grass',
         },
-        'formID': 0,
+        'formID': 1,
         'form': {
-            'formName': 'average',
-            'fullFormName': 'pumpkaboo-average',
+            'formName': 'small',
+            'fullFormName': 'pumpkaboo-small',
         },
-        'formPrettyName': 'Average Size',
+        'formPrettyName': 'Small Size',
     },
     {
         'id': 710,
@@ -14951,12 +14964,12 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'grass',
         },
-        'formID': 1,
+        'formID': 0,
         'form': {
-            'formName': 'small',
-            'fullFormName': 'pumpkaboo-small',
+            'formName': 'average',
+            'fullFormName': 'pumpkaboo-average',
         },
-        'formPrettyName': 'Small Size',
+        'formPrettyName': 'Average Size',
     },
     {
         'id': 710,
@@ -14999,12 +15012,12 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'grass',
         },
-        'formID': 0,
+        'formID': 1,
         'form': {
-            'formName': 'average',
-            'fullFormName': 'gourgeist-average',
+            'formName': 'small',
+            'fullFormName': 'gourgeist-small',
         },
-        'formPrettyName': 'Average Size',
+        'formPrettyName': 'Small Size',
     },
     {
         'id': 711,
@@ -15015,12 +15028,12 @@ export const FullPokemonList = [
             'primary': 'ghost',
             'secondary': 'grass',
         },
-        'formID': 1,
+        'formID': 0,
         'form': {
-            'formName': 'small',
-            'fullFormName': 'gourgeist-small',
+            'formName': 'average',
+            'fullFormName': 'gourgeist-average',
         },
-        'formPrettyName': 'Small Size',
+        'formPrettyName': 'Average Size',
     },
     {
         'id': 711,
@@ -16490,8 +16503,8 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'red-meteor',
-            'fullFormName': 'minior-red-meteor',
+            'formName': 'meteor',
+            'fullFormName': 'minior-meteor',
         },
         'formPrettyName': 'Meteor',
     },
@@ -16504,7 +16517,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 7,
+        'formID': 1,
         'form': {
             'formName': 'red',
             'fullFormName': 'minior-red',
@@ -16520,7 +16533,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 8,
+        'formID': 2,
         'form': {
             'formName': 'orange',
             'fullFormName': 'minior-orange',
@@ -16536,7 +16549,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 9,
+        'formID': 3,
         'form': {
             'formName': 'yellow',
             'fullFormName': 'minior-yellow',
@@ -16552,7 +16565,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 10,
+        'formID': 4,
         'form': {
             'formName': 'green',
             'fullFormName': 'minior-green',
@@ -16568,7 +16581,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 11,
+        'formID': 5,
         'form': {
             'formName': 'blue',
             'fullFormName': 'minior-blue',
@@ -16584,7 +16597,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 12,
+        'formID': 6,
         'form': {
             'formName': 'indigo',
             'fullFormName': 'minior-indigo',
@@ -16600,7 +16613,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 13,
+        'formID': 7,
         'form': {
             'formName': 'violet',
             'fullFormName': 'minior-violet',
@@ -18693,7 +18706,7 @@ export const FullPokemonList = [
     {
         'id': 876,
         'name': 'indeedee',
-        'genderDifferences': false,
+        'genderDifferences': true,
         'prettyName': 'Indeedee',
         'types': {
             'primary': 'psychic',
@@ -18701,26 +18714,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'indeedee-male',
+            'formName': '',
+            'fullFormName': 'indeedee',
         },
-        'formPrettyName': 'Male',
-    },
-    {
-        'id': 876,
-        'name': 'indeedee',
-        'genderDifferences': false,
-        'prettyName': 'Indeedee',
-        'types': {
-            'primary': 'psychic',
-            'secondary': 'normal',
-        },
-        'formID': 1,
-        'form': {
-            'formName': 'female',
-            'fullFormName': 'indeedee-female',
-        },
-        'formPrettyName': 'Female',
+        'formPrettyName': '',
     },
     {
         'id': 877,
@@ -19331,10 +19328,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'basculegion-male',
+            'formName': '',
+            'fullFormName': 'basculegion',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 903,
@@ -19556,17 +19553,17 @@ export const FullPokemonList = [
     {
         'id': 916,
         'name': 'oinkologne',
-        'genderDifferences': false,
+        'genderDifferences': true,
         'prettyName': 'Oinkologne',
         'types': {
             'primary': 'normal',
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
+            'formName': '',
             'fullFormName': 'oinkologne',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 917,
