@@ -16490,8 +16490,8 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'red-meteor',
-            'fullFormName': 'minior-red-meteor',
+            'formName': 'meteor',
+            'fullFormName': 'minior-meteor',
         },
         'formPrettyName': 'Meteor',
     },
@@ -16504,7 +16504,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 7,
+        'formID': 1,
         'form': {
             'formName': 'red',
             'fullFormName': 'minior-red',
@@ -16520,7 +16520,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 8,
+        'formID': 2,
         'form': {
             'formName': 'orange',
             'fullFormName': 'minior-orange',
@@ -16536,7 +16536,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 9,
+        'formID': 3,
         'form': {
             'formName': 'yellow',
             'fullFormName': 'minior-yellow',
@@ -16552,7 +16552,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 10,
+        'formID': 4,
         'form': {
             'formName': 'green',
             'fullFormName': 'minior-green',
@@ -16568,7 +16568,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 11,
+        'formID': 5,
         'form': {
             'formName': 'blue',
             'fullFormName': 'minior-blue',
@@ -16584,7 +16584,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 12,
+        'formID': 6,
         'form': {
             'formName': 'indigo',
             'fullFormName': 'minior-indigo',
@@ -16600,7 +16600,7 @@ export const FullPokemonList = [
             'primary': 'rock',
             'secondary': 'flying',
         },
-        'formID': 13,
+        'formID': 7,
         'form': {
             'formName': 'violet',
             'fullFormName': 'minior-violet',
