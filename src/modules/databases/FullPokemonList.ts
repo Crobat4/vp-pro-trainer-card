@@ -577,7 +577,6 @@ export const FullPokemonList = [
         },
         'formPrettyName': '',
     },
-    /*
     {
         'id': 25,
         'name': 'pikachu',
@@ -698,7 +697,6 @@ export const FullPokemonList = [
         },
         'formPrettyName': 'World Cap',
     },
-    */
     {
         'id': 25,
         'name': 'pikachu',
