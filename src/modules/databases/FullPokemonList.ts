@@ -3781,6 +3781,21 @@ export const FullPokemonList = [
         'formPrettyName': '',
     },
     {
+        'id': 172,
+        'name': 'pichu',
+        'genderDifferences': false,
+        'prettyName': 'Spiky-eared Pichu',
+        'types': {
+            'primary': 'electric',
+        },
+        'formID': 1,
+        'form': {
+            'formName': '',
+            'fullFormName': 'pichu-spiky-eared',
+        },
+        'formPrettyName': '',
+    },
+    {
         'id': 173,
         'name': 'cleffa',
         'genderDifferences': false,
