@@ -14387,10 +14387,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'meowstic-male',
+            'formName': '',
+            'fullFormName': 'meowstic',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 679,
@@ -18693,7 +18693,7 @@ export const FullPokemonList = [
     {
         'id': 876,
         'name': 'indeedee',
-        'genderDifferences': false,
+        'genderDifferences': true,
         'prettyName': 'Indeedee',
         'types': {
             'primary': 'psychic',
@@ -18701,26 +18701,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'indeedee-male',
+            'formName': '',
+            'fullFormName': 'indeedee',
         },
-        'formPrettyName': 'Male',
-    },
-    {
-        'id': 876,
-        'name': 'indeedee',
-        'genderDifferences': false,
-        'prettyName': 'Indeedee',
-        'types': {
-            'primary': 'psychic',
-            'secondary': 'normal',
-        },
-        'formID': 1,
-        'form': {
-            'formName': 'female',
-            'fullFormName': 'indeedee-female',
-        },
-        'formPrettyName': 'Female',
+        'formPrettyName': '',
     },
     {
         'id': 877,
@@ -19331,10 +19315,10 @@ export const FullPokemonList = [
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
-            'fullFormName': 'basculegion-male',
+            'formName': '',
+            'fullFormName': 'basculegion',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 903,
@@ -19556,17 +19540,17 @@ export const FullPokemonList = [
     {
         'id': 916,
         'name': 'oinkologne',
-        'genderDifferences': false,
+        'genderDifferences': true,
         'prettyName': 'Oinkologne',
         'types': {
             'primary': 'normal',
         },
         'formID': 0,
         'form': {
-            'formName': 'male',
+            'formName': '',
             'fullFormName': 'oinkologne',
         },
-        'formPrettyName': 'Male',
+        'formPrettyName': '',
     },
     {
         'id': 917,
