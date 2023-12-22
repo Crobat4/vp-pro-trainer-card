@@ -22,7 +22,6 @@ export const TypeColors = [
 // Forms without HOME image
 export const BannedForms = [
     'arceus-unknown',
-    'pichu-spiky-eared',
     'floette-eternal',
     'pikachu-rock-star',
     'pikachu-belle',
@@ -93,6 +92,7 @@ export const BannedForms = [
     'miraidon-glide-mode',
     // Female
     'meowstic-female',
+    'indeedee-female',
     'basculegion-female',
     'oinkologne-female',
     // Totem
@@ -108,15 +108,6 @@ export const BannedForms = [
     'ribombee-totem',
     'araquanid-totem',
     'togedemaru-totem',
-    // Without shiny image
-    'pikachu-original-cap',
-    'pikachu-hoenn-cap',
-    'pikachu-sinnoh-cap',
-    'pikachu-unova-cap',
-    'pikachu-kalos-cap',
-    'pikachu-alola-cap',
-    'pikachu-partner-cap',
-    'pikachu-world-cap',
 ];
 
 export const BannedMoves = [
