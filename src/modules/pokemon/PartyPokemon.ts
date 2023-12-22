@@ -3,6 +3,7 @@ export default class PartyPokemon {
     female: boolean;
     formID: number;
     formName: string;
+    subFormID: number;
 
     constructor (
         public id: number
@@ -11,6 +12,7 @@ export default class PartyPokemon {
         this.female = false;
         this.formID = 0;
         this.formName = '';
+        this.subFormID = 0;
     }
 
     getPokemonFilename() {

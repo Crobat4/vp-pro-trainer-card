@@ -9,6 +9,7 @@ import GeneralInfo from 'components/home/general-info';
 import GymTeam from 'components/home/gym-team';
 import EliteTeam from 'components/home/elite-team';
 import { FullPokemonList } from 'modules/databases/FullPokemonList';
+import AlcremieModal from 'components/alcremie';
 
 function initialize() {
     States.pokemonList.value = FullPokemonList;
@@ -47,7 +48,8 @@ export function Home() {
                 </div>
             </div>
             {/* Modals calls */}
-            {PokemonSearchModal()}
+            <PokemonSearchModal />
+            <AlcremieModal />
         </>
     );
 }

@@ -252,7 +252,8 @@ img {
 	}
 }
 
-.search-list-modal .modal-content {
+.search-list-modal .modal-content,
+.h-100-modal .modal-content {
 	height: 100%;
 }
 .empty-list-bg {
@@ -543,4 +544,12 @@ img {
 		transform: translateX(-50%);
 		line-height: 1;
 	}
+}
+
+// Nested modal
+.modal:nth-of-type(even) {
+    z-index: 1056 !important;
+}
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1055 !important;
 }

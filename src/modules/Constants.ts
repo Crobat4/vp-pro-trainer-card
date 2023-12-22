@@ -224,6 +224,9 @@ export const Amelia = 'assets/icons/amelia.png';
 export const MegaID = 100;
 export const GMaxID = 200;
 
+// Pokemon with sub forms (ID)
+export const PokemonWithSubForms = [869];
+
 /*
 export const Strings = {
     site: '/vp/\'s PRO TRAINER CARD',

@@ -8,15 +8,16 @@ type Props = {
     show: boolean,
     onClose: () => void,
     size?: 'lg' | 'sm' | 'xl',
+    modalClass?: string,
     bodyClass?: string,
     closeText?: string,
 }
 
-function ModalTemplate({title, show, onClose, size = 'lg', bodyClass = '', closeText = 'Close'}: Props) {
+function ModalTemplate({title, show, onClose, size = 'lg', modalClass = '', bodyClass = '', closeText = 'Close'}: Props) {
     return (
         <Modal
             show={show}
-            className={`${spacesToDashesLowerCase(title)}-modal`}
+            className={`${spacesToDashesLowerCase(title)}-modal ${spacesToDashesLowerCase(modalClass)}`}
             onHide={onClose}
             scrollable={true}
             size={size}
