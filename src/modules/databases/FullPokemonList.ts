@@ -21367,4 +21367,161 @@ export const FullPokemonList = [
         },
         'formPrettyName': 'Cornerstone Mask',
     },
+    {
+        'id': 1018,
+        'name': 'archaludon',
+        'genderDifferences': false,
+        'prettyName': 'Archaludon',
+        'types': {
+            'primary': 'steel',
+            'secondary': 'dragon',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'archaludon',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1019,
+        'name': 'hydrapple',
+        'genderDifferences': false,
+        'prettyName': 'Hydrapple',
+        'types': {
+            'primary': 'grass',
+            'secondary': 'dragon',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'hydrapple',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1020,
+        'name': 'gouging-fire',
+        'genderDifferences': false,
+        'prettyName': 'Gouging Fire',
+        'types': {
+            'primary': 'fire',
+            'secondary': 'dragon',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'gouging-fire',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1021,
+        'name': 'raging-bolt',
+        'genderDifferences': false,
+        'prettyName': 'Raging Bolt',
+        'types': {
+            'primary': 'electric',
+            'secondary': 'dragon',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'raging-bolt',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1022,
+        'name': 'iron-boulder',
+        'genderDifferences': false,
+        'prettyName': 'Iron Boulder',
+        'types': {
+            'primary': 'rock',
+            'secondary': 'psychic',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'iron-boulder',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1023,
+        'name': 'iron-crown',
+        'genderDifferences': false,
+        'prettyName': 'Iron Crown',
+        'types': {
+            'primary': 'steel',
+            'secondary': 'psychic',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'iron-crown',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1024,
+        'name': 'terapagos',
+        'genderDifferences': false,
+        'prettyName': 'Terapagos',
+        'types': {
+            'primary': 'normal',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'terapagos',
+        },
+        'formPrettyName': '',
+    },
+    {
+        'id': 1024,
+        'name': 'terapagos',
+        'genderDifferences': false,
+        'prettyName': 'Terapagos',
+        'types': {
+            'primary': 'normal',
+        },
+        'formID': 1,
+        'form': {
+            'formName': 'terastal',
+            'fullFormName': 'terapagos-terastal',
+        },
+        'formPrettyName': 'Terastal',
+    },
+    {
+        'id': 1024,
+        'name': 'terapagos',
+        'genderDifferences': false,
+        'prettyName': 'Terapagos',
+        'types': {
+            'primary': 'normal',
+        },
+        'formID': 2,
+        'form': {
+            'formName': 'stellar',
+            'fullFormName': 'terapagos-stellar',
+        },
+        'formPrettyName': 'Stellar',
+    },
+    {
+        'id': 1025,
+        'name': 'pecharunt',
+        'genderDifferences': false,
+        'prettyName': 'Pecharunt',
+        'types': {
+            'primary': 'poison',
+            'secondary': 'ghost',
+        },
+        'formID': 0,
+        'form': {
+            'formName': '',
+            'fullFormName': 'pecharunt',
+        },
+        'formPrettyName': '',
+    },
 ];
