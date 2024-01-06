@@ -7,6 +7,14 @@ import Changelog from 'modules/changelog/Changelog';
  */
 
 export const ChangelogList = [
+    new Changelog('1.1.0', new Date('2024-1-6'), 'Forms',
+        {
+            added: [
+                'Pokémon Forms can now be selected',
+                'Added Indigo Disk Pokémon (Archaludon - Pecharunt)',
+            ],
+        }
+    ),
     new Changelog('1.0.1', new Date('2023-12-15'), '',
         {
             added: [
