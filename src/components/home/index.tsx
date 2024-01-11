@@ -12,8 +12,21 @@ import { FullPokemonList } from 'modules/databases/FullPokemonList';
 import AlcremieModal from 'components/alcremie';
 
 function initialize() {
+    // Get databases
     States.pokemonList.value = FullPokemonList;
     States.moveList.value = MoveList;
+
+    // Store Pokemon and options when reloading or closing the tab/window
+    window.onbeforeunload = () => {
+        localStorage.setItem('type', JSON.stringify(Data.type.value));
+        localStorage.setItem('theme', JSON.stringify(Data.theme.value));
+        localStorage.setItem('move', JSON.stringify(Data.move.value));
+        localStorage.setItem('slotsPerBadge', JSON.stringify(Data.slotsPerBadge));
+        localStorage.setItem('darkMode', JSON.stringify(States.darkMode.value));
+    };
+
+    // Set everything to dark/light
+    document.documentElement.setAttribute('data-bs-theme', `${States.darkMode.value ? 'dark' : 'light'}`);
 }
 
 export function Home() {

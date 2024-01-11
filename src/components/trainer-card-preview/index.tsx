@@ -6,6 +6,7 @@ import PokemonType from 'modules/emums/PokemonType';
 import GeneratePokemonSlot from 'components/shared/GeneratePokemonSlot';
 import PreviewGymSlots from 'components/trainer-card-preview/PreviewGymSlots';
 import TeamTitle from 'components/shared/TeamTitle';
+import { getMoveNameByID } from 'modules/Utils';
 
 function TrainerCardPreview () {
     const gymLeaderTitleSparkle =
@@ -55,7 +56,7 @@ function TrainerCardPreview () {
                                 />
                             </div>
                             <div className="d-flex align-items-center justify-content-start bg-white fw-bold" style={{ width: signatureSize, height: 56, fontSize: 20, margin: '16px auto', padding: '0 16px', color: TypeColors[Data.type.value].darker }}>
-                            TM: {Data.move.value}
+                            TM: {getMoveNameByID(Data.move.value)}
                             </div>
                         </div>
                         <div className="badge-slot-0-3 p-0 d-inline-block">
