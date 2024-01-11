@@ -2,6 +2,7 @@ import PokemonType from 'modules/emums/PokemonType';
 import States from 'modules/States';
 import { GMaxID, MegaID } from 'modules/Constants';
 import { FullPokemonList } from 'modules/databases/FullPokemonList';
+import { MoveList } from 'modules/databases/MoveList';
 
 export function enumStrings(enumList: any): string[] {
     return Object.keys(enumList).filter((key) => Number.isNaN(Number(key)));
@@ -49,4 +50,9 @@ export function spacesToDashesLowerCase(str: string) { // Replace all spaces and
 // Get Pokemon by ID and form ID
 export function getPokemonByID(id, formID = 0) {
     return FullPokemonList.find((p) => p.id === id && p.formID === formID);
+}
+
+// Get move name by move ID
+export function getMoveNameByID(id): string {
+    return MoveList.find((m) => m.value === id)?.label || '';
 }

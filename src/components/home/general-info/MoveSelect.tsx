@@ -2,6 +2,7 @@ import React, { useState } from 'preact/compat';
 import Select from 'react-select';
 import Data from 'modules/Data';
 import States from 'modules/States';
+import { getMoveNameByID } from 'modules/Utils';
 
 type Props = {
     size: number,
@@ -21,14 +22,14 @@ function MoveSelect({ size }: Props) {
         <Select
             className="basic-single"
             classNamePrefix="select"
-            defaultValue={{ value: null, label: 'Search move...' }}
+            defaultValue={{ value: Data.move.value || null, label: getMoveNameByID(Data.move.value) || 'Search move...' }}
             name="color"
             isDisabled={!States.moveList.value.length}
             noOptionsMessage={() => moveSearchState.noResultsMessage}
             isSearchable={true}
             onInputChange={(e) => inputEntered(e)}
             onChange={(move) => {
-                Data.move.value = move.label;
+                Data.move.value = move.value;
             }}
             options={moveSearchState.showOptions ? States.moveList.value : []}
             styles={{

@@ -9,7 +9,7 @@ function TypeSelect() {
             //defaultMenuIsOpen
             className="basic-single"
             classNamePrefix="select"
-            defaultValue={generateTypeSelect()[0]}
+            defaultValue={generateTypeSelect()[Data.type.value]}
             name="color"
             isSearchable={false}
             onChange={(type) => {

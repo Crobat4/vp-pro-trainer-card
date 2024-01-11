@@ -23,11 +23,10 @@ function MenuSidebar() {
     const handleCloseCredits = () => setShowCredits(false);
 
     // Dark mode
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(!States.darkMode.value);
     const handleClickDarkMode = () => {
         setDarkMode(!darkMode);
         States.darkMode.value = darkMode;
-        document.documentElement.setAttribute('data-bs-theme', `${darkMode ? 'dark' : 'light'}`);
     };
 
     return (
