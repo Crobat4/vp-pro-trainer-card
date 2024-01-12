@@ -81,7 +81,7 @@ export function fetchPokemonFormsList() {
 
 export function fetchMoveList() {
     const [moveData, setMoveData] = useState([]);
-    const lastMoveID = 904;
+    const lastMoveID = 919;
     useEffect(() => {
         console.log('Getting all move data...');
         Promise.all(Array.from({ length: lastMoveID }, (_, i) =>
