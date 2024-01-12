@@ -6,7 +6,7 @@ import React, { render } from 'preact/compat';
 import { Home } from 'components/home';
 import Loader from 'components/Loader';
 import MenuSidebar from 'components/menu-sidebar';
-import { fetchPokemonFormsList } from 'modules/FetchLists';
+import { fetchMoveList } from 'modules/FetchLists';
 
 function App() {
     // Use these to get the data for database files (one at time)

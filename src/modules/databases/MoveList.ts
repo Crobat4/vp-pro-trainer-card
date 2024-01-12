@@ -3328,4 +3328,64 @@ export const MoveList = [
         'value': 904,
         'label': 'Ivy Cudgel',
     },
+    {
+        'value': 905,
+        'label': 'Electro Shot',
+    },
+    {
+        'value': 906,
+        'label': 'Tera Starstorm',
+    },
+    {
+        'value': 907,
+        'label': 'Fickle Beam',
+    },
+    {
+        'value': 908,
+        'label': 'Burning Bulwark',
+    },
+    {
+        'value': 909,
+        'label': 'Thunderclap',
+    },
+    {
+        'value': 910,
+        'label': 'Mighty Cleave',
+    },
+    {
+        'value': 911,
+        'label': 'Tachyon Cutter',
+    },
+    {
+        'value': 912,
+        'label': 'Hard Press',
+    },
+    {
+        'value': 913,
+        'label': 'Dragon Cheer',
+    },
+    {
+        'value': 914,
+        'label': 'Alluring Voice',
+    },
+    {
+        'value': 915,
+        'label': 'Temper Flare',
+    },
+    {
+        'value': 916,
+        'label': 'Supercell Slam',
+    },
+    {
+        'value': 917,
+        'label': 'Psychic Noise',
+    },
+    {
+        'value': 918,
+        'label': 'Upper Hand',
+    },
+    {
+        'value': 919,
+        'label': 'Malignant Chain',
+    },
 ];
