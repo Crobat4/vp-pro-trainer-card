@@ -26,7 +26,7 @@ function PokemonButton({ id, name, formID, formName, imgSrc, onClick }: Props) {
                     data-id={id}
                     onClick={onClick}>
                     <LazyLoadImage
-                        className="gallery-img"
+                        className="pokemon-image"
                         effect={'opacity'}
                         src={imgSrc}
                         width={'100%'}
