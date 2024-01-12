@@ -21,6 +21,16 @@
 	--sidebar-expanded-width: 280px;
 }
 
+// Light mode
+[data-bs-theme=light] {
+	--drop-shadow-color: black;
+}
+
+// Dark mode
+[data-bs-theme=dark] {
+	--drop-shadow-color: white;
+}
+
 body {
 	margin: 0;
 	display: flex;
@@ -474,6 +484,10 @@ img {
 	}
 }
 
+.sidebar-menu-item {
+	transition: .2s;
+}
+
 /* Titles */
 @include media-breakpoint-up(xl) {
 	.type-specialist-title {
@@ -546,10 +560,18 @@ img {
 	}
 }
 
-// Nested modal
+/* Nested modal */
 .modal:nth-of-type(even) {
     z-index: 1056 !important;
 }
 .modal-backdrop.show:nth-of-type(even) {
     z-index: 1055 !important;
+}
+
+/* Pokemon image */
+.pokemon-image {
+	filter: drop-shadow(0 0 1px var(--drop-shadow-color));
+}
+.pokemon-image.drop-shadow-black {
+	filter: drop-shadow(0 0 1px black);
 }

@@ -12,7 +12,7 @@ type Props = {
 function SidebarMenuItem({ iconWidth, iconElement, titleClass = '', iconBackground = true, onClick }: Props) {
     const iconMargin = 10;
     return (
-        <a className={'text-decoration-none text-reset sidebar-menu-item d-block list-group-item list-group-item-action p-0 border-0'} href={'#'} onClick={onClick}>
+        <a className={'sidebar-menu-item text-decoration-none text-reset d-block list-group-item list-group-item-action p-0 border-0'} href={'#'} onClick={onClick}>
             <div className={'d-flex align-items-center text-truncate'}>
                 <div className={`d-flex align-items-center justify-content-center ${iconBackground ? 'bg-body-secondary' : ''}`}
                     style={{flex: `0 0 ${iconWidth - (iconMargin * 2)}px`, height: iconWidth - (iconMargin * 2), margin: iconMargin}}>
