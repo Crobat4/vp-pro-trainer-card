@@ -1,0 +1,64 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.menu-sidebar {
+	z-index: 11;
+}
+
+.ps-sidebar-container {
+	background-color: unset !important;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	z-index: 0;
+}
+
+.overlay.visible {
+	visibility: visible;
+	opacity: 1;
+	z-index: 10;
+}
+
+.icon-bg .ps-menu-icon {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.expand-button {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.expand-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-margin {
+	flex: 0 0 calc(var(--sidebar-collapsed-width) + var(--sidebar-expand-bar));
+}
+
+.sidebar {
+	max-width: var(--sidebar-expanded-width);
+}
+
+.sidebar.collapsed {
+	max-width: var(--sidebar-collapsed-width);
+}
+
+@include media-breakpoint-down(xl) { // Mobile
+	.sidebar-margin {
+		flex: 0 0 calc(var(--sidebar-collapsed-width-mobile) + var(--sidebar-expand-bar));
+	}
+	.sidebar.collapsed {
+		max-width: var(--sidebar-collapsed-width-mobile);
+	}
+}
+
+.sidebar-menu-item {
+	transition: .2s;
+}
