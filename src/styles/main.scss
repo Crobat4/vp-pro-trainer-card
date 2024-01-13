@@ -30,6 +30,10 @@ body {
 	min-height: 100vh;
 }
 
+img {
+	margin: 0;
+}
+
 #main-page-pkmn {
 	padding: 1%;
     border-radius: 10px;
@@ -44,17 +48,29 @@ body {
 		margin-right: .25rem!important;
     	margin-left: .25rem!important;
 	}
+
+	.slots {
+		justify-content: center;
+	}
 }
 
-img {
-	margin: 0;
+.badge-stars {
+	pointer-events: none;
 }
 
-.square {
-	background-color: white;
-	width: 70px;
-	height: 70px;
-	display: inline-block;
+.sparkle-icon {
+	width: 18px;
+	margin: 0 1px;
+}
+
+.white-icon {
+	filter: invert(1) !important;
+}
+
+.badge-image, .crown-icon {
+    height: 100%;
+    object-fit: contain;
+	padding: 10%;
 }
 
 // Pokemon button (Home and Search modal)
@@ -69,7 +85,7 @@ img {
 }
 // END
 
-// Badge button
+// Badge button (Home)
 .badge-img-container {
 	position: relative;
 }
@@ -92,42 +108,36 @@ img {
 	height: 100%;
 }
 
-#main-page-pkmn .slots {
-	justify-content: center;
-}
-
 /* Dropdowns */
 .basic-single * {
 	text-align: left;
 }
 /* END */
 
-/* Shared Home/Template */
-.type-specialist-title, .theme-title, .trainer-card-title {
+/* Shared Titles (Home/Trainer Card Preview) */
+.type-specialist-title {
 	font-size: 32px;
-}
-
-.trainer-card-title, .type-specialist-title {
 	margin-bottom: 12px;
-}
-
-.trainer-card-title, .gym-leader-title {
-	color: white;
-}
-
-.type-specialist-title, .theme-title {
 	font-weight: lighter;
 	width: 100%;
 	background-color: white;
 	padding: 0 16px;
+	letter-spacing: 5px;
 }
 
 .trainer-card-title {
-	letter-spacing: 2px; 
+	font-size: 32px;
+	margin-bottom: 12px;
+	color: white;
+	letter-spacing: 2px;
 }
 
-.type-specialist-title {
-	letter-spacing: 5px;
+.theme-title {
+	font-size: 32px;
+	font-weight: lighter;
+	width: 100%;
+	background-color: white;
+	padding: 0 16px;
 }
 
 .gym-leader-title-container {
@@ -146,34 +156,20 @@ img {
 	.gym-leader-title {
 		font-size: 28px; 
 		letter-spacing: 3px;
+		color: white;
 	}
 }
 
-.signature-title, .badge-title, .signature-img-container .pokemon-btn, .badge-img-container {
+.signature-title,
+.badge-title,
+.signature-img-container .pokemon-btn,
+.badge-img-container {
 	margin: 8px 0;
 }
 
-.signature-title, .badge-title {
+.signature-title,
+.badge-title {
 	font-size: 22px;
-}
-
-.badge-stars {
-	pointer-events: none;
-}
-
-.sparkle-icon {
-	width: 18px;
-	margin: 0 1px;
-}
-
-.white-icon {
-	filter: invert(1) !important;
-}
-
-.badge-image, .crown-icon {
-    height: 100%;
-    object-fit: contain;
-	padding: 10%;
 }
 
 .signature-img-container .signature-slot {
@@ -182,38 +178,10 @@ img {
 }
 /* END */
 
-/* Titles */
-@include media-breakpoint-up(xl) {
-	.type-specialist-title {
-		height: 48px;
-	}
-	.gym-leader-title-container {
-		height: 56px;
-	}
-}
-/* END */
-
 /* Badge Pokemon Slot */
 .pokemon-slot-button {
 	background-repeat: no-repeat;
 }
-
-@include media-breakpoint-down(xl) {
-	#main-page-pkmn {
-		.badge-pokemon-slot .pokemon-slot-button {
-			width: 100% !important;
-		}
-	}
-}
-
-@include media-breakpoint-down(md) {
-	#main-page-pkmn {
-		.type-specialist-title, .gym-leader-title {
-			letter-spacing: normal !important;
-		}
-	}
-}
-
 /* END */
 
 /* Nested modal */
