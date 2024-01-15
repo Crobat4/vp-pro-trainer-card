@@ -1,0 +1,104 @@
+:root {
+    --btn-size: 40px;
+    --color-male: #499FFF;
+    --color-female: #F6807A;
+}
+
+.search-box-close-button {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.pokemon-search {
+    /* Both Buttons */
+    .btn-shiny-gender {
+        width: var(--btn-size);
+        height: var(--btn-size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 2px solid var(--bs-emphasis-color);
+        transition: .2s;
+    }
+    /* END */
+
+    /* Shiny Button */
+    .btn-shiny {
+        background-color: var(--bs-warning);
+        svg {
+            fill: var(--bs-danger) !important;
+        }
+    }
+
+    .btn-check:not(:checked)+.btn-shiny {
+        background-color: transparent;
+        svg {
+            fill: var(--bs-emphasis-color) !important;
+        }
+    }
+    /* END */
+    
+    /* Gender Button */
+    .btn-gender {
+        background-color: var(--color-female);
+        color: white;
+    }
+
+    .btn-check:not(:checked)+.btn-gender {
+        background-color: var(--color-male);
+    }
+    /* END */
+    
+    /* Search Bar */
+    .search-bar {
+        height: var(--btn-size);
+    }
+    /* END */
+}
+
+/* Background Pikachu */
+.empty-list-bg {
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center center;
+	opacity: 0.3;
+    filter: grayscale(0.75);
+
+	::after {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
+.empty-list-bg.less-than-two-characters {
+	background-image: url('/assets/icons/pikachu-normal.png');
+
+	::after {
+		content: "Type two more characters";
+	}
+}
+
+.empty-list-bg.one-left-character {
+	background-image: url('/assets/icons/pikachu-happy.png');
+
+	::after {
+		content: "Type one more character";
+	}
+}
+
+.empty-list-bg.no-results {
+	background-image: url('/assets/icons/pikachu-sleeping.png');
+
+	::after {
+		content: "No Pokémon found";
+	}
+}

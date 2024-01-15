@@ -8,7 +8,7 @@ import { toPng } from 'html-to-image';
 function PreviewModal() {
     // Image download
     const downloadImage = useCallback(() => {
-        const node = document.getElementById('template-pkmn');
+        const node = document.getElementById('trainer-card-preview-pkmn');
         toPng(node, { /*cacheBust: true,*/ pixelRatio: 2 })
             .then((dataUrl) => {
                 const link = document.createElement('a');

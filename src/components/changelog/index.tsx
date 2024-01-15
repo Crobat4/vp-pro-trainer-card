@@ -14,7 +14,7 @@ function ChangelogContent() {
             return <ChangelogItem key={key} title={'Changes'} description={desc} variant={'primary'} />;
         });
         const fixedList = cLog.items.fixed?.map((desc, key) => {
-            return <ChangelogItem key={key} title={'Fix'} description={desc} variant={'info'} />;
+            return <ChangelogItem key={key} title={'Fix'} description={desc} variant={'warning'} />;
         });
         const removedList = cLog.items.removed?.map((desc, key) => {
             return <ChangelogItem key={key} title={'Removed'} description={desc} variant={'danger'} />;

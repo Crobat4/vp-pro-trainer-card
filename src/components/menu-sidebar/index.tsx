@@ -1,3 +1,5 @@
+import 'styles/sidebar.scss';
+
 import React, { useState } from 'preact/compat';
 import { CaretRightFill, CaretLeftFill, MoonStarsFill, SunFill, ClockHistory, PeopleFill } from 'react-bootstrap-icons';
 import SidebarMenuItem from 'components/menu-sidebar/SidebarMenuItem';

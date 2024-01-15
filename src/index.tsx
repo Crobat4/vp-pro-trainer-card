@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'styles/style.scss';
+import 'styles/main.scss';
+import 'styles/fonts.scss';
+import 'styles/loader.scss';
+import 'styles/breakpoints.scss';
 
 import React, { render } from 'preact/compat';
 import { Home } from 'components/home';

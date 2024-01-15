@@ -4,7 +4,7 @@ import GeneratePokemonSlot from 'components/shared/GeneratePokemonSlot';
 import Data from 'modules/Data';
 
 function generateSparklesSlot(baseSize, badges, isTemplate) {
-    return <div className={`d-flex justify-content-center align-items-center p-0 badge-slot w-100 ${!isTemplate ? 'btn' : ''}`}
+    return <div className={`d-flex justify-content-center align-items-center p-0 badge-stars w-100 ${badges > 8 ? 'champion-crown' : `gym-${badges}-stars`} ${!isTemplate ? 'btn' : ''}`}
         style={{ height: baseSize, backgroundColor: TypeColors[Data.type.value].dark, borderColor: TypeColors[Data.type.value].dark }}>
         <div className={`${badges > 8 ? 'h-100 d-flex justify-content-center align-items-center' : 'px-0'}`}>
             {generateSparkles(badges)}

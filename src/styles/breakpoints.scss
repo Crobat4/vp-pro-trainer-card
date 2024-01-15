@@ -1,0 +1,27 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-up(xl) {
+	.type-specialist-title {
+		height: 48px;
+	}
+	.gym-leader-title-container {
+		height: 56px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	#main-page-pkmn {
+		.type-specialist-title,
+		.gym-leader-title {
+			letter-spacing: normal !important;
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	#main-page-pkmn {
+		.badge-pokemon-slot .pokemon-slot-button {
+			width: 100% !important;
+		}
+	}
+}

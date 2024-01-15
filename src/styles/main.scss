@@ -1,0 +1,205 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+	--sidebar-expand-bar: 12px;
+	--sidebar-expanded-width: 280px;
+	--sidebar-collapsed-width: 60px;
+	--sidebar-collapsed-width-mobile: 0;
+}
+
+// Light mode
+[data-bs-theme=light] {
+	--drop-shadow-color: black;
+}
+
+// Dark mode
+[data-bs-theme=dark] {
+	--drop-shadow-color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', 'Arial', sans-serif;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+img {
+	margin: 0;
+}
+
+#main-page-pkmn {
+	padding: 1%;
+    border-radius: 10px;
+	transition: 0.2s;
+	text-align: center;
+
+	.crown-icon {
+		padding: 0;
+	}
+
+	.sparkle-icon {
+		margin-right: .25rem!important;
+    	margin-left: .25rem!important;
+	}
+
+	.slots {
+		justify-content: center;
+	}
+}
+
+.badge-stars {
+	pointer-events: none;
+}
+
+.sparkle-icon {
+	width: 18px;
+	margin: 0 1px;
+}
+
+.white-icon {
+	filter: invert(1) !important;
+}
+
+.badge-image, .crown-icon {
+    height: 100%;
+    object-fit: contain;
+	padding: 10%;
+}
+
+// Pokemon button (Home and Search modal)
+.pokemon-btn {
+	background-position: center center;
+    background-size: contain;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(100, 100, 100, 0.25) !important;
+	background-image: url('/assets/icons/pokeball-icon-transparent.png');
+	position: relative;
+	padding: 4%;
+}
+// END
+
+// Badge button (Home)
+.badge-img-container {
+	position: relative;
+}
+
+.badge-file-button-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 32px;
+    opacity: .5;
+}
+// END
+
+.search-list-modal .modal-content,
+.h-100-modal .modal-content {
+	height: 100%;
+}
+
+/* Dropdowns */
+.basic-single * {
+	text-align: left;
+}
+/* END */
+
+/* Shared Titles (Home/Trainer Card Preview) */
+.type-specialist-title {
+	font-size: 32px;
+	margin-bottom: 12px;
+	font-weight: lighter;
+	width: 100%;
+	background-color: white;
+	padding: 0 16px;
+	letter-spacing: 5px;
+}
+
+.trainer-card-title {
+	font-size: 32px;
+	margin-bottom: 12px;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.theme-title {
+	font-size: 32px;
+	font-weight: lighter;
+	width: 100%;
+	background-color: white;
+	padding: 0 16px;
+}
+
+.gym-leader-title-container {
+	width: 100%; 
+	margin-bottom: 8px;
+
+	.gym-leader-title-sparkle {
+		margin: 0 16px;
+
+		img {
+			width: 22px; 
+			margin: 0 6px;
+		}
+	}
+
+	.gym-leader-title {
+		font-size: 28px; 
+		letter-spacing: 3px;
+		color: white;
+	}
+}
+
+.signature-title,
+.badge-title,
+.signature-img-container .pokemon-btn,
+.badge-img-container {
+	margin: 8px 0;
+}
+
+.signature-title,
+.badge-title {
+	font-size: 22px;
+}
+
+.signature-img-container .signature-slot {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* END */
+
+/* Badge Pokemon Slot */
+.pokemon-slot-button {
+	background-repeat: no-repeat;
+}
+/* END */
+
+/* Nested modal */
+.modal:nth-of-type(even) {
+    z-index: 1056 !important;
+}
+
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1055 !important;
+}
+/* END */
+
+/* Pokemon image */
+.pokemon-image {
+	filter: drop-shadow(0 0 1px var(--drop-shadow-color));
+}
+
+.pokemon-image.drop-shadow-black {
+	filter: drop-shadow(0 0 1px black);
+}
+/* END */

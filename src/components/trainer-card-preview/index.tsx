@@ -1,3 +1,5 @@
+import 'styles/trainer-card-preview.scss';
+
 import React from 'preact/compat';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Data from 'modules/Data';
@@ -27,7 +29,7 @@ function TrainerCardPreview () {
     </span>;
     return (
         <>
-            <div id="template-pkmn" className="template-bg text-center" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
+            <div id="trainer-card-preview-pkmn" className="trainer-card-preview-bg text-center" style={{ backgroundColor: TypeColors[Data.type.value].base }}>
                 {/* Trainer card title */}
                 <div className="trainer-card-title fw-bold">{'/vp/\'s PRO TRAINER CARD'}</div>
                 {/* Type specialist title */}
@@ -59,7 +61,7 @@ function TrainerCardPreview () {
                             TM: {getMoveNameByID(Data.move.value)}
                             </div>
                         </div>
-                        <div className="badge-slot-0-3 p-0 d-inline-block">
+                        <div className="badge-stars-0-3 p-0 d-inline-block">
                             <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges0} />
                             <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges1} />
                             <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges2} />
@@ -73,28 +75,28 @@ function TrainerCardPreview () {
                                     Badge
                             </div>
                             <div style="width: 116px; height: 116px; margin: 8px auto; background: white;">
-                                <img className="badge-image-template" style={{}} src={Data.badgeURL.value || Amelia} />
+                                <img className="trainer-card-preview-badge-image" style={{}} src={Data.badgeURL.value || Amelia} />
                             </div>
                         </div>
-                        <div className="badge-slot-4-5 p-0 d-inline-block">
+                        <div className="badge-stars-4-5 p-0 d-inline-block">
                             <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges4} />
                             <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges5} />
                         </div>
                     </div>
 
-                    <div className="badge-slot-6 p-0 d-inline-block w-100">
+                    <div className="badge-stars-6 p-0 d-inline-block w-100">
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges6} />
                     </div>
-                    <div className="badge-slot-7 p-0 d-inline-block w-100">
+                    <div className="badge-stars-7 p-0 d-inline-block w-100">
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges7} />
                     </div>
                     {/* Elite 4 */}
-                    <div className="badge-slot-elite-4 p-0 d-inline-block w-100">
+                    <div className="badge-stars-elite-4 p-0 d-inline-block w-100">
                         <TeamTitle content={eliteFourTitleContent}/>
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges8} />
                     </div>
                     {/* Champion */}
-                    <div className="badge-slot-champion p-0 d-inline-block w-100">
+                    <div className="badge-stars-champion p-0 d-inline-block w-100">
                         <TeamTitle content={championTitleContent}/>
                         <PreviewGymSlots slotGroup={Data.slotsPerBadge.badges9} />
                     </div>

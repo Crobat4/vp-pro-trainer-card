@@ -1,0 +1,80 @@
+#trainer-card-preview-pkmn {
+	height: 100%;
+	width: 664px;
+	padding: 16px;
+
+	.trainer-card-preview-badge-image {
+		height: 100%;
+		object-fit: contain;
+		padding: 10%;
+		width: 100%;
+	}
+
+	.slots {
+		justify-content: end;
+	}
+
+	.type-specialist-title {
+		height: 72px;
+	}
+
+	.theme-title, .gym-leader-title-container {
+		height: 56px;
+	}
+
+	.gym-leader-title {
+		letter-spacing: 2px;
+	}
+
+	.signature-tm {
+		width: 272px;
+	}
+
+	.badge-stars-0-3 {
+		width: 360px;
+	}
+
+	.badge-container {
+		width: 184px;
+	}
+
+	.badge-stars-4-5 {
+		width: 448px;
+	}
+
+	.badge-title {
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+		line-height: 1;
+	}
+
+	/* Stars spacing */
+	.gym-2-stars,
+	.gym-3-stars,
+	.gym-5-stars {
+		img {
+			margin: 0 3px;
+		}
+	}
+
+	.gym-4-stars {
+		img {
+			margin: 3px 6px;
+		}
+	}
+
+	.gym-6-stars {
+		img {
+			margin: 0 9px;
+		}
+	}
+
+	.gym-7-stars {
+		img {
+			margin: 0 12px;
+		}
+	}
+	
+}

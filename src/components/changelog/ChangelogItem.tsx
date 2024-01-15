@@ -12,7 +12,7 @@ function ChangelogItem({ key, title, description, variant, active = false }: Pro
     return (
         <tr className={active ? 'table-active' : ''}>
             <td style={{ width: '1%', verticalAlign: 'middle' }}>
-                <span className={`badge w-100 text-uppercase text-bg-${variant}`}>{title}</span>
+                <span className={`badge w-100 text-uppercase bg-gradient text-bg-${variant}`}>{title}</span>
             </td>
             <td>
                 <span key={key}>{description}</span>

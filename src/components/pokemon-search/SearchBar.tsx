@@ -2,7 +2,7 @@ import React from 'react';
 import States from 'modules/States';
 import PokemonSearchStates from 'modules/emums/PokemonSearchState';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { Star, Female } from 'modules/Constants';
+import { Stars } from 'react-bootstrap-icons';
 
 function filterBySearch(event) {
     const searchMinCharacters = 2;
@@ -54,30 +54,33 @@ function SearchBar() {
 
     return (
         <>
-            <div className="form-check p-0 pokemon-search input-group">
-                <input id="search-box" className="form-control m-0" type="text" name="search-pkmn" placeholder="Search Pokémon..." onChange={filterBySearch} />
+            <div className="form-check p-0 pokemon-search d-flex">
+                <div className={'flex-grow-1'}>
+                    <input id="search-box" className="form-control m-0 search-bar" type="text" name="search-pkmn" placeholder="Search Pokémon..." onChange={filterBySearch} />
+                </div>
+                <div className={'d-flex'}>
+                    <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-shiny" autoComplete="off" checked={States.search.shiny.value} onClick={toggleShiny}/>
+                    <OverlayTrigger placement="bottom" overlay={(props) => (
+                        <Tooltip id="button-tooltip" {...props}>
+                            Toggle Shiny
+                        </Tooltip>
+                    )}>
+                        <label className="rounded-circle btn-shiny btn-shiny-gender ms-2" htmlFor="btn-check-shiny">
+                            <Stars size={24} />
+                        </label>
+                    </OverlayTrigger>
 
-                <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-shiny" autoComplete="off" checked={States.search.shiny.value} onClick={toggleShiny}/>
-                <OverlayTrigger placement="bottom" overlay={(props) => (
-                    <Tooltip id="button-tooltip" {...props}>
-                        Toggle Shiny images
-                    </Tooltip>
-                )}>
-                    <label className="btn btn-warning btn-shiny" htmlFor="btn-check-shiny">
-                        <img src={Star} width={30} height={30}/>
-                    </label>
-                </OverlayTrigger>
-
-                <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-female" autoComplete="off" checked={States.search.female.value} onClick={toggleFemale}/>
-                <OverlayTrigger placement="bottom" overlay={(props) => (
-                    <Tooltip id="button-tooltip" {...props}>
-                        Toggle female images (when applies)
-                    </Tooltip>
-                )}>
-                    <label className="btn btn-warning btn-female" htmlFor="btn-check-female">
-                        <img className="" src={Female} width={30} height={30}/>
-                    </label>
-                </OverlayTrigger>
+                    <input type="checkbox" className="btn-check d-none" style="opacity: 0;" id="btn-check-female" autoComplete="off" checked={States.search.female.value} onClick={toggleFemale}/>
+                    <OverlayTrigger placement="bottom" overlay={(props) => (
+                        <Tooltip id="button-tooltip" {...props}>
+                            Toggle Gender (when applies)
+                        </Tooltip>
+                    )}>
+                        <label className="rounded-circle btn-gender btn-shiny-gender ms-2" htmlFor="btn-check-female">
+                            <i className={States.search.female.value ? 'icon-female' : 'icon-male'} style={{fontSize: 24}} />
+                        </label>
+                    </OverlayTrigger>
+                </div>
             </div>
         </>
     );
