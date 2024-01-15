@@ -49,4 +49,32 @@
 		transform: translateX(-50%);
 		line-height: 1;
 	}
+
+	/* Stars spacing */
+	.gym-2-stars,
+	.gym-3-stars,
+	.gym-5-stars {
+		img {
+			margin: 0 3px;
+		}
+	}
+
+	.gym-4-stars {
+		img {
+			margin: 3px 6px;
+		}
+	}
+
+	.gym-6-stars {
+		img {
+			margin: 0 9px;
+		}
+	}
+
+	.gym-7-stars {
+		img {
+			margin: 0 12px;
+		}
+	}
+	
 }
