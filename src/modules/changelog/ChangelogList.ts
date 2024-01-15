@@ -7,6 +7,15 @@ import Changelog from 'modules/changelog/Changelog';
  */
 
 export const ChangelogList = [
+    new Changelog('1.1.1', new Date('2024-1-15'), '',
+        {
+            added: [
+                'All data are now saved when the tab/window is reloaded/closed',
+                'Added Indigo Disk moves',
+            ],
+            changed: ['Styles improvements'],
+        }
+    ),
     new Changelog('1.1.0', new Date('2024-1-6'), 'Forms',
         {
             added: [
