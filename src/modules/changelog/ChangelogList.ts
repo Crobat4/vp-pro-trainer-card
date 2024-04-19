@@ -7,6 +7,13 @@ import Changelog from 'modules/changelog/Changelog';
  */
 
 export const ChangelogList = [
+    new Changelog('1.1.2', new Date('2024-1-15'), '',
+        {
+            fixed: [
+                'Font issues',
+            ],
+        }
+    ),
     new Changelog('1.1.1', new Date('2024-1-15'), '',
         {
             added: [
